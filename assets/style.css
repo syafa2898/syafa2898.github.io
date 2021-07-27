@@ -1,0 +1,132 @@
+body {
+    margin: -10px;
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+}
+
+.logo {
+    margin: 20px 0 10px 20px;
+    width: 80px;
+}
+
+.container {
+    padding: 0;
+    width: 480px;
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    box-shadow: 8px 8px 40px 8px rgba(0, 0, 0, 0.15);
+}
+
+.banner {
+    background: #9CC2F7;
+    color: #403965;
+    padding-top: 50px;
+}
+
+.timer {
+    margin-left: 50px;
+}
+
+.banner .timer h6 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 0;
+}
+
+.banner .timer h5 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.banner .timer button {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.btn-location {
+    background: #403965;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+.btn:hover {
+    color: #fff
+}
+
+.vector {
+    margin-top: -28px;
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.date {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.date h5 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 0;
+}
+
+.date h6 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.time {
+    margin: 40px 30px 20px 30px;
+}
+
+.time .row {
+    margin-bottom: 5px;
+}
+
+.time h5 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.time h6 {
+    color: rgba(64, 57, 101);
+}
+
+.time .t-50 {
+    color: rgba(64, 57, 101, 0.5);
+}
+
+.time img {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.time hr {
+    margin: auto;
+    width: 420px;
+    border: 1px solid #959595;
+}
