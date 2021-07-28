@@ -13,6 +13,7 @@ body {
 .container-sm {
     padding: 0;
     width: 480px;
+    /* background: #FFFFFF; */
     /* border: 0 1px solid rgba(188, 188, 188, 0.5); */
     /* box-shadow: 8px 8px 40px 8px rgba(0, 0, 0, 0.15); */
 }
@@ -127,6 +128,12 @@ body {
 
 .time hr {
     margin: auto;
-    width: 420px;
+    width: 96%;
     border: 1px solid #959595;
+}
+
+@media only screen and (max-width: 480px) {
+    .container-sm {
+        width: 100%;
+    }
 }
