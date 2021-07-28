@@ -10,10 +10,9 @@ body {
     height: 41px;
 }
 
-.container {
+.container-sm {
     padding: 0;
     width: 480px;
-    background: #FFFFFF;
     /* border: 0 1px solid rgba(188, 188, 188, 0.5); */
     /* box-shadow: 8px 8px 40px 8px rgba(0, 0, 0, 0.15); */
 }
