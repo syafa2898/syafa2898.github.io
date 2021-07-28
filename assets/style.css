@@ -1,13 +1,22 @@
 body {
-    margin: -10px;
+    width: 480px;
+    margin: auto;
+    margin-top: -10px;
     font-family: 'Poppins', sans-serif;
     color: #333333;
+    box-sizing: border-box;
 }
 
 .logo {
     margin: 20px 0 10px 20px;
     width: 80px;
     height: 41px;
+}
+
+.nav {
+    margin: 20px 30px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .container-sm {
@@ -93,7 +102,7 @@ body {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 9px;
     line-height: 21px;
 }
 
