@@ -1,5 +1,5 @@
 body {
-    width: 480px;
+    width: 36%;
     margin: auto;
     margin-top: -10px;
     font-family: 'Poppins', sans-serif;
@@ -14,30 +14,23 @@ body {
 }
 
 .nav {
-    margin: 20px 30px;
+    margin: 30px 30px 12px 3px;
     font-size: 12px;
     font-weight: bold;
 }
 
-.container-sm {
-    padding: 0;
-    width: 480px;
-    /* background: #FFFFFF; */
-    /* border: 0 1px solid rgba(188, 188, 188, 0.5); */
-    /* box-shadow: 8px 8px 40px 8px rgba(0, 0, 0, 0.15); */
-}
-
-.banner {
+.banner-sholat {
     background: #9CC2F7;
     color: #403965;
-    padding-top: 50px;
+    margin: auto;
+    padding: 50px 35px 20px 0;
 }
 
 .timer {
     margin-left: 50px;
 }
 
-.banner .timer h6 {
+.banner-sholat .timer h6 {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -46,7 +39,7 @@ body {
     margin-bottom: 0;
 }
 
-.banner .timer h5 {
+.banner-sholat .timer h5 {
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
@@ -55,7 +48,7 @@ body {
     margin-bottom: 10px;
 }
 
-.banner .timer button {
+.banner-sholat .timer button {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -77,11 +70,9 @@ body {
     color: #fff
 }
 
-.vector {
-    margin-top: -28px;
-    width: 220px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+.vector-sholat {
+    margin-top: -18px;
+    width: 240px;
 }
 
 .date {
@@ -141,8 +132,134 @@ body {
     border: 1px solid #959595;
 }
 
-@media only screen and (max-width: 480px) {
-    .container-sm {
+.banner-zakat {
+    background: #FDE3C8;
+    width: 100%;
+    margin: auto;
+    color: #65564D;
+    padding: 50px 18px 20px 0;
+}
+
+.cta {
+    margin-left: 50px;
+}
+
+.banner-zakat h5 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.banner-zakat button {
+    background: #65564D;
+    border-radius: 5px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #fff;
+    margin-top: 6px;
+}
+
+.vector-zakat {
+    margin-top: -101px;
+    width: 240px;
+}
+
+.jenis-zakat {
+    margin: auto;
+    margin-top: 50px;
+    padding: 0 15px;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    background: #FDE3C8;
+    border-radius: 15px;
+    padding: 18px 0;
+    margin-bottom: 30px;
+}
+
+.box h6 {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 13px;
+    color: #333333;
+    margin-top: 10px;
+}
+
+.kalkulator-zakat {
+    width: 90%;
+    height: 386px;
+    border: 2px solid #2E3349;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.kalkulator-zakat h5 {
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form-zakat h6 {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    margin: 20px 0 20px 20px;
+    margin-bottom: 10px;
+}
+
+.form-kalkulator,
+.input-pendapatan,
+.input-bonus {
+    width: 90%;
+    margin: auto;
+    font-size: 10px;
+}
+
+.input-pendapatan,
+.input-bonus {
+    margin-top: -10px;
+}
+
+.kalkulator-zakat .row button {
+    background: #FDE3C8;
+    border: 1px solid #2E3349;
+    border-radius: 5px;
+    font-weight: 500;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 30px;
+}
+
+.kalkulator-zakat button:hover {
+    color: #333;
+}
+
+@media only screen and (max-width: 1140px) {
+    body {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    body {
         width: 100%;
     }
 }
