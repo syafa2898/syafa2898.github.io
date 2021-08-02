@@ -7,53 +7,56 @@ body {
     box-sizing: border-box;
 }
 
-.logo {
-    margin: 20px 0 10px 20px;
-    width: 80px;
-    height: 41px;
+.body {
+    margin-bottom: 130px;
+}
+
+.navbar {
+    padding: 20px 30px;
+}
+
+.back {
+    width: 15px;
+    height: 20px;
 }
 
 .nav {
-    margin: 30px 30px 12px 3px;
+    margin-top: 5px;
     font-size: 12px;
     font-weight: bold;
 }
 
-.banner-sholat {
-    background: #9CC2F7;
-    color: #403965;
-    margin: auto;
-    padding: 50px 35px 20px 0;
-}
-
-.timer {
+.cta {
     margin-left: 50px;
 }
 
-.banner-sholat .timer h6 {
-    font-family: Poppins;
-    font-style: normal;
+
+/* Sholat */
+
+.banner-sholat {
+    border-top: 1px solid #888888;
+    background: #9CC2F7;
+    color: #403965;
+    padding: 50px 35px 20px 0;
+}
+
+.banner-sholat .cta h6 {
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 0;
 }
 
-.banner-sholat .timer h5 {
-    font-family: Poppins;
-    font-style: normal;
+.banner-sholat .cta h5 {
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 10px;
 }
 
-.banner-sholat .timer button {
-    font-family: Poppins;
-    font-style: normal;
+.banner-sholat .cta button {
     font-weight: 500;
     font-size: 10px;
-    line-height: 15px;
 }
 
 .btn-location {
@@ -98,7 +101,7 @@ body {
 }
 
 .time {
-    margin: 40px 30px 120px 30px;
+    margin: 40px 30px 0 30px;
 }
 
 .time .row {
@@ -132,40 +135,53 @@ body {
     border: 1px solid #959595;
 }
 
+.menu {
+    width: 36%;
+    height: 80px;
+    padding: 18px 30px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #2E3349;
+}
+
+.menu a {
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 13px;
+    color: #333;
+    text-decoration: none;
+}
+
+
+/* Zakat */
+
 .banner-zakat {
     background: #FDE3C8;
+    border-top: 1px solid #888888;
     width: 100%;
     margin: auto;
     color: #65564D;
     padding: 50px 18px 20px 0;
 }
 
-.cta {
-    margin-left: 50px;
-}
-
-.banner-zakat h5 {
-    font-family: Poppins;
-    font-style: normal;
+.banner-zakat .cta h5 {
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
 }
 
-.banner-zakat button {
+.banner-zakat .cta button {
     background: #65564D;
     border-radius: 5px;
-    font-family: Poppins;
-    font-style: normal;
     font-weight: 500;
     font-size: 10px;
-    line-height: 15px;
     color: #fff;
     margin-top: 6px;
 }
 
 .vector-zakat {
-    margin-top: -101px;
+    margin-top: -100px;
     width: 240px;
 }
 
@@ -245,6 +261,38 @@ body {
 
 .kalkulator-zakat button:hover {
     color: #333;
+}
+
+
+/* Puasa */
+
+.banner-puasa {
+    background: #FFC7C0;
+    border-top: 1px solid #888888;
+    width: 100%;
+    margin: auto;
+    color: #7B3A3A;
+    padding: 50px 18px 20px 0;
+}
+
+.banner-puasa .cta h5 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.banner-puasa .cta button {
+    background: #7B3A3A;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 10px;
+    color: #fff;
+    margin-top: 6px;
+}
+
+.vector-puasa {
+    margin-top: -29px;
+    width: 240px;
 }
 
 @media only screen and (max-width: 1140px) {
