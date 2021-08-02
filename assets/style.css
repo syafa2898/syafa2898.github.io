@@ -30,6 +30,24 @@ body {
     margin-left: 50px;
 }
 
+.menu {
+    width: inherit;
+    height: 80px;
+    padding: 18px 30px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #2E3349;
+}
+
+.menu a {
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 13px;
+    color: #333;
+    text-decoration: none;
+}
+
 
 /* Sholat */
 
@@ -133,24 +151,6 @@ body {
     margin: auto;
     width: 96%;
     border: 1px solid #959595;
-}
-
-.menu {
-    width: 36%;
-    height: 80px;
-    padding: 18px 30px;
-    background-color: #fff;
-    position: fixed;
-    bottom: 0;
-    border-top: 1px solid #2E3349;
-}
-
-.menu a {
-    font-weight: 600;
-    font-size: 9px;
-    line-height: 13px;
-    color: #333;
-    text-decoration: none;
 }
 
 
