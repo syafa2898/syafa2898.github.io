@@ -114,15 +114,15 @@ body {
     line-height: 21px;
 }
 
-.time {
+.schedule {
     margin: 40px 30px 0 30px;
 }
 
-.time .row {
+.schedule .row {
     margin-bottom: 5px;
 }
 
-.time h5 {
+.schedule h5 {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -130,20 +130,15 @@ body {
     line-height: 24px;
 }
 
-.time h6 {
+.schedule h6 {
     color: rgba(64, 57, 101);
 }
 
-.time .t-50 {
+.schedule .t-50 {
     color: rgba(64, 57, 101, 0.5);
 }
 
-.time img {
-    margin-left: 15px;
-    margin-right: 0;
-}
-
-.time hr {
+.schedule hr {
     margin: auto;
     width: 96%;
     border: 1px solid #959595;
@@ -362,8 +357,10 @@ body {
     line-height: 15px;
 }
 
-.line hr {
-    border: 3px solid rgba(123, 58, 58, 100);
+.search_select_box {}
+
+.search_select_box select {
+    width: 100%;
 }
 
 @media only screen and (max-width: 1140px) {
