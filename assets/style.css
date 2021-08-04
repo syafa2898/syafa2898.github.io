@@ -175,6 +175,7 @@ body {
 .jenis-zakat {
     margin: auto;
     margin-top: 50px;
+    padding: 0 15px;
 }
 
 .box {
@@ -349,8 +350,6 @@ body {
     font-size: 10px;
     line-height: 15px;
 }
-
-.search_select_box {}
 
 .search_select_box select {
     width: 100%;
