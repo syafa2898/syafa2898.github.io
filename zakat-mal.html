@@ -64,18 +64,26 @@
             <div class="form-zakat">
                 <h6>Jenis Zakat</h6>
                 <select style="background: #FDE3C8;" class="form-kalkulator form-select form-select-sm" aria-label=".form-select-sm example Disabled" disabled>
-                    <option value="penghasilan" selected>Zakat Penghasilan</option>
-                    <option value="mall">Zakat Mall</option>
+                    <option value="penghasilan">Zakat Penghasilan</option>
+                    <option value="mall" selected>Zakat Mall</option>
                     <option value="fidyah">Zakat Fidyah</option>
                 </select>
             </div>
             <div class="form-zakat">
-                <label for="pendapatan" class="form-label"><h6>Pendapatan</h6></label>
-                <input type="text" class="form-control input-form" id="pendapatan">
+                <label for="perhiasan" class="form-label"><h6>Nilai Perhiasan (emas, perak, permata)</h6></label>
+                <input type="text" class="form-control input-form" id="perhiasan">
             </div>
             <div class="form-zakat">
-                <label for="bonus" class="form-label"><h6>Bonus/ THR/ Pendapatan Lainnya</h6></label>
-                <input type="text" class="form-control input-form" id="bonus">
+                <label for="tabungan" class="form-label"><h6>Uang tunai, tabungan, deposito</h6></label>
+                <input type="text" class="form-control input-form" id="tabungan">
+            </div>
+            <div class="form-zakat">
+                <label for="aset" class="form-label"><h6>Kendaraan, rumah, aset lain</h6></label>
+                <input type="text" class="form-control input-form" id="aset">
+            </div>
+            <div class="form-zakat">
+                <label for="hutang" class="form-label"><h6>Jumlah hutang/cicilan (optional)</h6></label>
+                <input type="text" class="form-control input-form" id="hutang">
             </div>
             <div class="row justify-content-center">
                 <button type="submit" class="btn btn-hitung">Hitung</button>

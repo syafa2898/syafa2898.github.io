@@ -175,7 +175,6 @@ body {
 .jenis-zakat {
     margin: auto;
     margin-top: 50px;
-    padding: 0 15px;
 }
 
 .box {
@@ -221,15 +220,13 @@ body {
 }
 
 .form-kalkulator,
-.input-pendapatan,
-.input-bonus {
+.input-form {
     width: 90%;
     margin: auto;
     font-size: 10px;
 }
 
-.input-pendapatan,
-.input-bonus {
+.input-form {
     margin-top: -10px;
 }
 
