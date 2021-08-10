@@ -323,12 +323,11 @@ body {
 }
 
 .card {
-    margin: auto;
+    margin: 30px;
     width: 90%;
     border: 2px solid #7B3A3A;
     box-sizing: border-box;
     border-radius: 10px;
-    margin-bottom: 0px;
 }
 
 .tag {
@@ -357,6 +356,21 @@ body {
 
 .accordion {
     margin: 30px;
+}
+
+.keutamaan {
+    padding: 25px 30px;
+    color: #333;
+}
+
+.keutamaan h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.keutamaan p {
+    font-size: 12px;
+    margin-top: 10px;
 }
 
 
