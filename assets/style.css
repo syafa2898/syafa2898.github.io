@@ -35,6 +35,10 @@ body {
     margin-left: 50px;
 }
 
+.header {
+    margin: 50px 30px 0 30px;
+}
+
 .jenis-jenis {
     margin-top: 50px;
     margin-left: 5%;
@@ -325,6 +329,10 @@ body {
     background-color: #D57BFF;
 }
 
+.puasa-tasua {
+    background-color: #49DFD6;
+}
+
 .card {
     margin: 30px;
     width: 90%;
@@ -501,9 +509,17 @@ body {
     border-radius: 10px;
 }
 
+.ayat h3 {
+    font-family: 'Scheherazade';
+}
+
+.ayat h6 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
 .ayat p {
     font-size: 11px;
-    font-weight: 600;
     margin-top: 20px;
 }
 
