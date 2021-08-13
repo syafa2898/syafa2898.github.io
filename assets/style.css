@@ -361,6 +361,10 @@ body {
     line-height: 15px;
 }
 
+.modal-body p {
+    font-size: 13px;
+}
+
 .search_select_box select {
     width: 100%;
 }
