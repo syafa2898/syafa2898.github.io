@@ -508,8 +508,8 @@ body {
 }
 
 .ayat h3,
-h2,
-h1 {
+.ayat h2,
+.ayat h1 {
     font-family: 'Scheherazade', serif;
 }
 
