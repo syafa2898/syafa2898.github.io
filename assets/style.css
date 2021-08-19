@@ -507,7 +507,9 @@ body {
     border-radius: 10px;
 }
 
-.ayat h3 {
+.ayat h3,
+h2,
+h1 {
     font-family: 'Scheherazade', serif;
 }
 
