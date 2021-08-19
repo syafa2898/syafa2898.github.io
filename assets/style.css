@@ -488,14 +488,13 @@ body {
 
 .title h6 {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 21px;
 }
 
 .title p {
     font-weight: 500;
-    font-size: 11px;
-    line-height: 15px;
+    font-size: 14px;
 }
 
 .ayat {
@@ -513,12 +512,12 @@ body {
 }
 
 .ayat h6 {
-    font-size: 14px;
+    font-size: 17px;
     margin-bottom: 20px;
 }
 
 .ayat p {
-    font-size: 11px;
+    font-size: 15px;
     margin-top: 20px;
 }
 
