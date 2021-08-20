@@ -387,11 +387,11 @@ body {
 /* Doaaa */
 
 .banner-doa {
-    background: #ABA4FF;
+    background: #80CACA;
     border-top: 1px solid #888888;
     width: 100%;
     margin: auto;
-    color: #46427D;
+    color: #1F4B4B;
     padding: 50px 18px 20px 0;
 }
 
@@ -402,7 +402,7 @@ body {
 }
 
 .banner-doa .cta button {
-    background: #46427D;
+    background: #1F4B4B;
     border-radius: 5px;
     font-size: 10px;
     color: #fff;
@@ -415,14 +415,14 @@ body {
 }
 
 .box-doa {
-    background: #ABA4FF;
+    background: #80CACA;
 }
 
 .box-doa h6 {
     font-weight: 700;
     font-size: 10px;
     line-height: 13px;
-    color: #1D194B;
+    color: #333;
     margin-top: 10px;
 }
 
@@ -490,6 +490,7 @@ body {
     font-weight: bold;
     font-size: 20px;
     line-height: 21px;
+    color: #3b8686;
 }
 
 .title p {
@@ -501,14 +502,34 @@ body {
     width: 92%;
     margin: auto;
     margin-top: 30px;
-    border: 1px solid #46464E;
-    padding: 30px 25px 15px 25px;
-    border-radius: 10px;
+    background: #FFFFFF;
+    border: 3px solid #83D0CD;
+    box-sizing: border-box;
+    border-radius: 13px;
+}
+
+.head-ayat {
+    margin: 0;
+    background: #83D0CD;
+    border: 3px solid #83D0CD;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0px 0px;
+    color: #333;
+}
+
+.head-ayat h6 {
+    margin: 18px 30px 0 30px;
+}
+
+.body-ayat {
+    margin-top: 30px;
+    padding: 0 25px 15px 25px;
 }
 
 .ayat h2 {
     font-family: 'Scheherazade', serif;
     font-size: 40px;
+    color: #333;
 }
 
 .ayat h6 {
@@ -519,6 +540,7 @@ body {
 .ayat p {
     font-size: 15px;
     margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 @media only screen and (max-width: 1140px) {
