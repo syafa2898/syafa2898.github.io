@@ -481,7 +481,7 @@ body {
 /* Dzikir Pagi Sugrooo */
 
 .title {
-    width: 96%;
+    width: 92%;
     margin: auto;
     margin-top: 40px;
 }
@@ -515,10 +515,7 @@ body {
     box-sizing: border-box;
     border-radius: 10px 10px 0px 0px;
     color: #333;
-}
-
-.head-ayat h6 {
-    margin: 18px 30px 0 30px;
+    padding: 0 20px 0 10px;
 }
 
 .body-ayat {
@@ -526,21 +523,21 @@ body {
     padding: 0 25px 15px 25px;
 }
 
-.ayat h2 {
+.body-ayat h2 {
     font-family: 'Scheherazade', serif;
     font-size: 40px;
     color: #333;
 }
 
-.ayat h6 {
+.body-ayat h6 {
     font-size: 17px;
     margin-bottom: 20px;
 }
 
-.ayat p {
+.body-ayat p {
     font-size: 15px;
     margin-top: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 1140px) {
