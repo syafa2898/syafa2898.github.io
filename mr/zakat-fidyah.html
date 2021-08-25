@@ -14,8 +14,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
-    <!-- <link rel="stylesheet" href="assets/style.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <title>MR - Kalkulator Zakat</title>
 </head>
@@ -31,7 +30,7 @@
         <div class="banner-zakat">
             <div class="cta">
                 <h5>Yuk Hitung <br> Zakatmu Sekarang</h5>
-                <a class="scrollto" href="#kalkulator-zakat"><button class="btn btn-hitung">Hitung Zakat</button></a>
+                <a href="#"><button class="btn btn-hitung">Hitung Zakat</button></a>
             </div>
             <div class="row justify-content-end">
                 <img src="assets/img/zakat.svg" alt="" class="vector-zakat">
@@ -46,9 +45,9 @@
                 </a>
             </div>
             <div class="box box-zakat text-center align-items-center">
-                <a href="zakat-mal.html" class="text-decoration-none">
-                    <img class="mt-1" src="assets/img/mall.svg" alt="">
-                    <h6>Zakat Mall</h6>
+                <a href="zakat-maal.html" class="text-decoration-none">
+                    <img class="mt-1" src="assets/img/maal.svg" alt="">
+                    <h6>Zakat Maal</h6>
                 </a>
             </div>
             <div class="box box-zakat text-center align-items-center">
@@ -59,23 +58,19 @@
             </div>
         </div>
         <!-- jenis-jenis -->
-        <div class="kalkulator-zakat" id="kalkulator-zakat">
+        <div class="kalkulator-zakat">
             <h5>Kalkulator Zakat</h5>
             <div class="form-zakat">
                 <h6>Jenis Zakat</h6>
                 <select style="background: #FDE3C8;" class="form-kalkulator form-select form-select-sm" aria-label=".form-select-sm example Disabled" disabled>
-                    <option value="penghasilan" selected>Zakat Penghasilan</option>
-                    <option value="mall">Zakat Mall</option>
-                    <option value="fidyah">Zakat Fidyah</option>
+                    <option value="penghasilan">Zakat Penghasilan</option>
+                    <option value="maal">Zakat Maal</option>
+                    <option value="fidyah" selected>Zakat Fidyah</option>
                 </select>
             </div>
             <div class="form-zakat">
-                <label for="pendapatan" class="form-label"><h6>Pendapatan</h6></label>
-                <input type="text" class="form-control input-form" id="pendapatan">
-            </div>
-            <div class="form-zakat">
-                <label for="bonus" class="form-label"><h6>Bonus/ THR/ Pendapatan Lainnya</h6></label>
-                <input type="text" class="form-control input-form" id="bonus">
+                <label for="fidyah" class="form-label"><h6>Jumlah hari tidak berpuasa</h6></label>
+                <input type="text" class="form-control input-form" id="fidyah">
             </div>
             <div class="row justify-content-center">
                 <button type="submit" class="btn btn-hitung">Hitung</button>
@@ -107,16 +102,4 @@
         </div>
     </div>
     <!-- menu -->
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
-    -->
 </body>
-
-</html>
