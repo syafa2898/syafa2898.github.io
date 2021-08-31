@@ -93,7 +93,7 @@ body {
     margin-right: 8px;
 }
 
-.btn:hover {
+.btn-location:hover {
     color: #fff
 }
 
@@ -411,7 +411,7 @@ body {
 
 .vector-doa {
     margin-top: -60px;
-    width: 180px;
+    width: 220px;
 }
 
 .box-doa {
@@ -453,8 +453,8 @@ body {
 }
 
 .vector-doa-anak {
-    margin-top: -87px;
-    width: 170px;
+    margin-top: -20doapx;
+    width: 220px;
 }
 
 .search {
@@ -525,6 +525,92 @@ body {
     font-size: 15px;
     margin-top: 20px;
     margin-bottom: 15px;
+}
+
+
+/* Doa Pilihan */
+
+.banner-doa-pilihan {
+    background: #80CACA;
+    border-top: 1px solid #888888;
+    width: 100%;
+    margin: auto;
+    color: #1F4B4B;
+    padding: 50px 18px 20px 0;
+}
+
+.banner-doa-pilihan .cta h5 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.banner-doa-pilihan .cta button {
+    background: #1F4B4B;
+    border-radius: 5px;
+    font-size: 10px;
+    color: #fff;
+    margin-top: 6px;
+}
+
+.vector-doa-pilihan {
+    margin-top: -19px;
+    width: 220px;
+}
+
+.row-doa {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+.doa-pilihan {
+    margin-top: 50px;
+}
+
+.tag-doa {
+    width: 45%;
+    border: 3px solid #80CACA;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 50px;
+    padding: 0;
+}
+
+.head-tag {
+    background-color: #80CACA;
+    box-sizing: border-box;
+    height: 44px;
+}
+
+.head-tag h4 {
+    margin-top: 11px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.body-tag {
+    box-sizing: border-box;
+}
+
+.body-tag button {
+    padding-top: 3px;
+    height: 44px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.modal-doa .modal-header {
+    background-color: #80CACA;
+}
+
+.modal-doa h1 {
+    font-family: 'Scheherazade', serif;
+    font-size: 40px;
+}
+
+.modal-doa p {
+    font-size: 15px;
 }
 
 @media only screen and (max-width: 1140px) {
