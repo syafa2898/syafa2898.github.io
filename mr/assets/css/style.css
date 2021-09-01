@@ -453,7 +453,7 @@ body {
 }
 
 .vector-doa-anak {
-    margin-top: -20doapx;
+    margin-top: -20px;
     width: 220px;
 }
 
@@ -462,6 +462,10 @@ body {
     margin: auto;
     margin-bottom: -20px;
     margin-top: 50px;
+}
+
+.modall h6 {
+    font-size: 16px;
 }
 
 
@@ -528,7 +532,7 @@ body {
 }
 
 
-/* Doa Pilihan */
+/* Doa Pilihannn */
 
 .banner-doa-pilihan {
     background: #80CACA;
@@ -554,63 +558,51 @@ body {
 }
 
 .vector-doa-pilihan {
-    margin-top: -19px;
+    margin-top: -20px;
     width: 220px;
 }
 
-.row-doa {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 20px;
-}
-
 .doa-pilihan {
+    margin: auto;
     margin-top: 50px;
+    width: 90%;
 }
 
-.tag-doa {
-    width: 45%;
-    border: 3px solid #80CACA;
-    box-sizing: border-box;
-    border-radius: 10px;
-    height: 50px;
-    padding: 0;
-}
-
-.head-tag {
-    background-color: #80CACA;
-    box-sizing: border-box;
-    height: 44px;
-}
-
-.head-tag h4 {
-    margin-top: 11px;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.body-tag {
-    box-sizing: border-box;
-}
-
-.body-tag button {
-    padding-top: 3px;
-    height: 44px;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.modal-doa .modal-header {
+.modal-custom .modal-header {
     background-color: #80CACA;
 }
 
-.modal-doa h1 {
+.modal-custom .modal-header h6 {
+    font-weight: 600;
+    color: #333
+}
+
+.modal-custom .modal-body h2 {
     font-family: 'Scheherazade', serif;
     font-size: 40px;
+    color: #333;
 }
 
-.modal-doa p {
-    font-size: 15px;
+.modal-custom .modal-footer p {
+    font-size: 14px;
+}
+
+.table-doa {
+    color: #333;
+}
+
+.border-custom {
+    border: solid #406e6e;
+}
+
+.table-doa thead {
+    background-color: #80CACA;
+}
+
+.table-doa a {
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
 }
 
 @media only screen and (max-width: 1140px) {
