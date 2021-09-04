@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Scheherazade:wght@400;700&display=swap');
 body {
     width: 36%;
@@ -10,42 +11,24 @@ body {
 
 .body {
     margin-bottom: 130px;
-    /* background-color: coral; */
+    background-color: lightcyan;
 }
 
 .navbar {
-    padding: 20px 30px;
-    /* background-color: aqua; */
-}
-
-.line {
-    border: 1px solid rgba(136, 136, 136, 0.3);
-    margin-top: 0;
+    background-color: aqua;
+    width: 92%;
+    margin: auto;
+    padding: 20px;
 }
 
 .back {
     width: 15px;
-    height: 20px;
 }
 
-.nav {
+.navbar .nav {
     margin-top: 5px;
     font-size: 12px;
     font-weight: bold;
-}
-
-.cta {
-    margin-left: 50px;
-}
-
-.header {
-    margin: 40px 30px 20px 30px;
-}
-
-.jenis-jenis {
-    margin-top: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 .menu {
@@ -66,53 +49,33 @@ body {
     text-decoration: none;
 }
 
-.modal-custom .modal-header {
-    background-color: #80CACA;
+.banner {
+    border-top: 1px solid #888888;
+    padding: 50px 35px 20px 50px;
+    margin-bottom: 50px;
 }
 
-.modal-custom .modal-header h6 {
-    font-weight: 600;
-    color: #333;
-    font-size: 15px;
-}
-
-.modal-custom .modal-body h2 {
-    font-family: 'Scheherazade', serif;
-    font-size: 40px;
-    color: #333;
-}
-
-.modal-custom .modal-footer p {
-    font-size: 14px;
+.banner .cta h5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
 }
 
 
 /* Sholattt */
 
 .banner-sholat {
-    border-top: 1px solid #888888;
     background: #9CC2F7;
     color: #403965;
-    padding: 50px 35px 20px 0;
-}
-
-.banner-sholat .cta h5 {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 10px;
 }
 
 .btn-location {
     background: #403965;
     border-radius: 5px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 10px;
-}
-
-.icon {
-    margin-right: 8px;
 }
 
 .btn-location:hover {
@@ -120,25 +83,19 @@ body {
 }
 
 .vector-sholat {
-    margin-top: -16px;
+    margin-top: -18px;
     width: 220px;
 }
 
-.date h5 {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 21px;
-    margin-bottom: 0;
+.time {
+    width: 90%;
+    margin: auto;
 }
 
-.date h6 {
-    font-weight: 500;
-    font-size: 9px;
+.date p {
+    font-weight: 600;
+    font-size: 16px;
     line-height: 21px;
-}
-
-.schedule {
-    margin: 30px 30px 0 30px;
 }
 
 .schedule .row {
@@ -146,17 +103,16 @@ body {
 }
 
 .schedule h5 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 24px;
 }
 
 .schedule h6 {
-    color: rgba(64, 57, 101);
-}
-
-.schedule .t-50 {
-    color: rgba(64, 57, 101, 0.5);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #403965;
 }
 
 .schedule hr {
@@ -608,9 +564,15 @@ body {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 1140px) {
+@media only screen and (max-width: 1100px) {
     body {
-        width: 80%;
+        width: 53%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        width: 70%;
     }
 }
 
@@ -623,5 +585,20 @@ body {
 @media only screen and (max-width: 530px) {
     body {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .banner {
+        padding: 30px 25px 15px 30px;
+    }
+    .vector-sholat {
+        width: 200px;
+    }
+    .banner .cta h5 {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 25px;
+        margin-bottom: 8px;
     }
 }
