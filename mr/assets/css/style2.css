@@ -228,34 +228,33 @@ body {
 
 .banner-puasa {
     background: #FFC7C0;
-    border-top: 1px solid #888888;
-    width: 100%;
-    margin: auto;
     color: #7B3A3A;
-    padding: 50px 18px 20px 0;
 }
 
-.banner-puasa .cta h5 {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 30px;
-}
-
-.banner-puasa .cta button {
+.banner .cta .btn-puasa {
     background: #7B3A3A;
     border-radius: 5px;
-    font-weight: 500;
-    font-size: 10px;
     color: #fff;
-    margin-top: 6px;
+    font-weight: 400;
+    font-size: 10px;
 }
 
 .vector-puasa {
-    margin-top: -29px;
+    margin-top: -28px;
     width: 240px;
 }
 
-.hari {
+.puasa {
+    width: 90%;
+    margin: auto;
+}
+
+.date h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.day {
     width: 40px;
     height: 50px;
     background: #FFD4CE;
@@ -264,23 +263,45 @@ body {
     border-radius: 5px;
 }
 
-.hari h6 {
-    font-weight: 300;
+.day h6 {
+    font-weight: 500;
     font-size: 8px;
     line-height: 12px;
     margin-bottom: 4px;
     margin-top: 5px;
 }
 
-.hari h4 {
+.day h4 {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
 }
 
-.puasa-sunnah {
-    width: 8px;
-    height: 8px;
+.card-puasa {
+    margin-bottom: 30px;
+    border: 2px solid #7B3A3A;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.tag {
+    width: 10px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 15px 10px 15px 20px;
+}
+
+.card-puasa h6 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 7px;
+}
+
+.card-puasa p {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 15px;
 }
 
 .ayyamul-bidh {
@@ -299,73 +320,15 @@ body {
     background-color: #49DFD6;
 }
 
-.week {
-    width: 96%;
-    margin: auto;
-    margin-bottom: 40px;
-}
-
-.card {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 30px;
-    border: 2px solid #7B3A3A;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-.tag {
-    width: 10px;
-    height: 50px;
-    border-radius: 5px;
-    margin: 15px 10px 15px 20px;
-}
-
-.card h6 {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 7px;
-}
-
-.card p {
-    font-weight: 300;
-    font-size: 10px;
-    line-height: 15px;
-}
-
-.modal-body p {
+.modal-puasa .modal-body p {
     font-size: 13px;
-}
-
-.search_select_box select {
-    width: 100%;
-}
-
-.accordion {
-    margin: 30px;
-}
-
-.keutamaan {
-    padding: 25px 30px;
-    color: #333;
-}
-
-.keutamaan h5 {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.keutamaan p {
-    font-size: 12px;
-    margin-top: 10px;
 }
 
 
 /* Doaaa */
 
 .banner-doa {
-    color: #2e6464;
+    color: #1F4B4B;
     background-color: #80CACA;
 }
 
@@ -587,7 +550,8 @@ body {
     .banner {
         padding: 30px 25px 15px 30px;
     }
-    .vector-sholat {
+    .vector-sholat,
+    .vector-puasa {
         width: 200px;
     }
     .vector-doa {
@@ -599,6 +563,9 @@ body {
         line-height: 25px;
         margin-bottom: 8px;
     }
+    .banner .cta button {
+        font-size: 9px;
+    }
     .box {
         width: 90px;
         height: 90px;
@@ -608,5 +575,21 @@ body {
     }
     .box img {
         height: 40px;
+    }
+    .day {
+        width: 35px;
+        height: 45px;
+    }
+    .day h6 {
+        font-weight: 500;
+        font-size: 7px;
+        line-height: 10px;
+        margin-bottom: 3px;
+        margin-top: 6px;
+    }
+    .day h4 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
     }
 }
