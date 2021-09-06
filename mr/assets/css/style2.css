@@ -92,7 +92,7 @@ body {
     margin: auto;
 }
 
-.date p {
+.date h5 {
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
@@ -109,7 +109,7 @@ body {
 }
 
 .schedule h6 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     color: #403965;
@@ -550,9 +550,17 @@ body {
     .banner {
         padding: 30px 25px 15px 30px;
     }
+    .menu p {
+        font-size: 8px;
+    }
     .vector-sholat,
     .vector-puasa {
         width: 200px;
+    }
+    .schedule h6,
+    .schedule h5,
+    .date h5 {
+        font-size: 14px;
     }
     .vector-doa {
         width: 180px;
