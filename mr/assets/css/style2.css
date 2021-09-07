@@ -11,11 +11,11 @@ body {
 
 .body {
     margin-bottom: 130px;
-    background-color: lightcyan;
+    /* background-color: lightcyan; */
 }
 
 .navbar {
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 92%;
     margin: auto;
     padding: 20px;
@@ -341,8 +341,8 @@ body {
 }
 
 .vector-doa {
-    margin-top: -55px;
-    width: 210px;
+    margin-top: -20px;
+    width: 220px;
 }
 
 .buttons {
@@ -366,6 +366,67 @@ body {
     font-size: 12px;
     color: #333;
     font-weight: 600;
+}
+
+
+/* Dzikir Pagiii */
+
+.title,
+.intro {
+    width: 90%;
+    margin: auto;
+}
+
+.title h6 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #3b8686;
+}
+
+.title p {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.ayat {
+    width: 90%;
+    margin: auto;
+    background: #FFFFFF;
+    border: 3px solid #83D0CD;
+    box-sizing: border-box;
+    border-radius: 13px;
+}
+
+.head-ayat {
+    margin: 0;
+    background: #83D0CD;
+    border: 3px solid #83D0CD;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0px 0px;
+    color: #333;
+    padding: 10px 20px 10px 10px;
+}
+
+.body-ayat {
+    margin-top: 30px;
+    padding: 0 25px 15px 25px;
+}
+
+.body-ayat h2 {
+    font-family: 'Scheherazade', serif;
+    font-size: 40px;
+    color: #333;
+}
+
+.body-ayat h6 {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.body-ayat p {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 
@@ -408,69 +469,6 @@ body {
 
 .modall h6 {
     font-size: 15px;
-}
-
-
-/* Dzikir Pagi Sugrooo */
-
-.title {
-    width: 92%;
-    margin: auto;
-    margin-top: 40px;
-}
-
-.title h6 {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 21px;
-    color: #3b8686;
-}
-
-.title p {
-    font-weight: 500;
-    font-size: 14px;
-}
-
-.ayat {
-    width: 92%;
-    margin: auto;
-    margin-top: 30px;
-    background: #FFFFFF;
-    border: 3px solid #83D0CD;
-    box-sizing: border-box;
-    border-radius: 13px;
-}
-
-.head-ayat {
-    margin: 0;
-    background: #83D0CD;
-    border: 3px solid #83D0CD;
-    box-sizing: border-box;
-    border-radius: 10px 10px 0px 0px;
-    color: #333;
-    padding: 10px 20px 10px 10px;
-}
-
-.body-ayat {
-    margin-top: 30px;
-    padding: 0 25px 15px 25px;
-}
-
-.body-ayat h2 {
-    font-family: 'Scheherazade', serif;
-    font-size: 40px;
-    color: #333;
-}
-
-.body-ayat h6 {
-    font-size: 17px;
-    margin-bottom: 20px;
-}
-
-.body-ayat p {
-    font-size: 15px;
-    margin-top: 20px;
-    margin-bottom: 15px;
 }
 
 
