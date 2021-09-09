@@ -16,9 +16,9 @@ body {
 
 .navbar {
     /* background-color: aqua; */
-    width: 92%;
+    width: 90%;
     margin: auto;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .back {
@@ -28,7 +28,7 @@ body {
 .navbar .nav {
     margin-top: 5px;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .menu {
@@ -94,7 +94,14 @@ body {
 
 .date h5 {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 0;
+}
+
+.date h6 {
+    font-weight: 600;
+    font-size: 10px;
     line-height: 21px;
 }
 
@@ -292,20 +299,20 @@ body {
 }
 
 .card-puasa h6 {
-    font-weight: 600;
-    font-size: 12px;
+    font-weight: 700;
+    font-size: 13px;
     line-height: 18px;
     margin-bottom: 7px;
 }
 
 .card-puasa p {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 10px;
     line-height: 15px;
 }
 
 .ayyamul-bidh {
-    background-color: #8BDF49;
+    background-color: #80CACA;
 }
 
 .senin-kamis {
@@ -351,7 +358,6 @@ body {
 }
 
 .btn-dzikir {
-    width: 180px;
     height: 50px;
     border-radius: 10px;
     border: 3px solid #80CACA;
@@ -395,6 +401,7 @@ body {
     border: 3px solid #83D0CD;
     box-sizing: border-box;
     border-radius: 13px;
+    margin-bottom: 50px;
 }
 
 .head-ayat {
@@ -517,6 +524,14 @@ body {
     height: 20px;
 }
 
+.buttons .btn-dzikir .btn {
+    padding: 0;
+}
+
+.btn-dzikir .btn img {
+    height: 25px;
+}
+
 .btn-doa {
     /* width: 45%; */
     color: #333;
@@ -603,5 +618,12 @@ body {
         font-weight: 600;
         font-size: 16px;
         line-height: 20px;
+    }
+    .buttons .btn-dzikir .btn {
+        padding: 0;
+        font-size: 10px;
+    }
+    .btn-dzikir .btn img {
+        height: 20px;
     }
 }

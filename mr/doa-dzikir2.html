@@ -15,15 +15,16 @@
 
 <body>
     <div class="body">
-        <div class="navbar align-content-center">
+        <div class="navbar">
             <a class="navbar-brand" href="https://mosqueranger.org/">
                 <img src="assets/img/back.svg" alt="" class="back">
             </a>
             <p class="nav">Dzikir Pagi</p>
         </div>
+        <!-- navbar -->
         <div class="banner banner-doa">
             <div class="cta">
-                <h5>Berdoalah kepada-Ku, <br> Kuperkenankan bagimu</h5>
+                <h5>Berdoalah Kepada-Ku, <br> Kuperkenankan Bagimu</h5>
                 <a class="scrollto" href="#dzikir"><button class="btn btn-doa">Baca Sekarang</button></a>
             </div>
             <div class="row justify-content-end">
@@ -32,8 +33,14 @@
         </div>
         <!-- div banner -->
         <div class="buttons row justify-content-between mb-5">
+            <!-- <div class="button-switch row">
+                <label class="form-check-label" class="col-3" for="flexSwitchCheckChecked"><img src="{{asset('mobile/assets/img/dzikir-pagi.svg')}}" alt=""></label>
+                <div class="form-check form-switch col-3">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                </div>
+            </div> -->
             <div class="btn-dzikir-pagi btn-dzikir col-5 d-flex align-items-center justify-content-center btn-active">
-                <a href="#"><button class="btn"><img src="assets/img/dzikir-pagi.svg" alt="" class="me-2">Dzikir Pagi</button></a></a>
+                <a href="#"><button class="btn"><img src="assets/img/dzikir-pagi.svg')}}" alt="" class="me-2">Dzikir Pagi</button></a></a>
             </div>
             <div class="btn-dzikir-petang btn-dzikir col-5 d-flex align-items-center justify-content-center">
                 <a href="#"><button class="btn"><img src="assets/img/dzikir-petang.svg" alt="" class="me-2">Dzikir Petang</button></a></a>
@@ -42,7 +49,7 @@
         </div>
         <!-- buttons -->
         <div class="dzikir-pagi" id="dzikir">
-            <div class="text-center title">
+            <div class="title text-center">
                 <h6>Dzikir yang Dibaca di Waktu Pagi</h6>
                 <p>(Antara Shubuh hingga siang hari ketika matahari akan bergeser ke barat)</p>
                 <p style="font-size: 10px;">Source : Rumaysho</p> <br>
@@ -52,8 +59,9 @@
                     dibaca sampai matahari akan bergeser ke barat (mendekati waktu Zhuhur). <br><br> Adapun dzikir yang kali ini kami publish adalah revisi dari yang ada sebelumnya setelah menyaring dzikir yang menurut kami lemah (dho’if) berdasarkan
                     penilaian para ulama. <br><br> Juga dalam dzikir pagi kali ini, kami sertakan dengan faedah dari setiap dzikir berdasarkan hadits yang menyebutkan dzikir tersebut sehingga dengan itu bisa merenung maksud dzikir dan raih manfaatnya.
                     <br><br> Dzikir kali ini pun kami bantu dengan transliterasi untuk setiap bacaan selain bacaan Al Qur’an, moga bermanfaat bagi yang sulit membaca dzikir yang ada huruf demi huruf.</p>
+                <p class="fw-bold fst-italic">Klik icon info untuk mengetahui faedah / dalil</p>
             </div>
-            <div class="ayat mt-5">
+            <div class="ayat">
                 <div class="head-ayat row d-flex align-items-center">
                     <div class="col-10 mt-1">
                         <h6>Membaca Ta'awudz</h6>
@@ -97,22 +105,22 @@
     </div>
     <!-- body -->
     <div class="menu d-flex justify-content-between">
-        <div class="ikon_sholat text-center">
+        <div class="ikon-sholat text-center">
             <a href="jadwal-sholat2.html"><img width="24" class="mb-2" src="assets/img/ikon-jam.svg" alt="">
                 <p class="text-black-50">Waktu Sholat</p>
             </a>
         </div>
-        <div class="ikon_puasa text-center">
+        <div class="ikon-puasa text-center">
             <a href="kalender-puasa2.html"><img width="24" class="mb-2" src="assets/img/ikon-kalender.svg" alt="">
                 <p class="text-black-50">Kalender Puasa</p>
             </a>
         </div>
-        <div class="ikon_zakat text-center">
+        <div class="ikon-zakat text-center">
             <a href="kalkulator-zakat.html"><img width="24" class="mb-2" src="assets/img/ikon-kalkulator.svg" alt="">
                 <p class="text-black-50">Kalkulator Zakat</p>
             </a>
         </div>
-        <div class="ikon_doa text-center">
+        <div class="ikon-doa text-center">
             <a href="doa-dzikir2.html"><img height="24" class="mb-2" src="assets/img/ikon-doa-aktif.svg" alt="">
                 <p class="">Doa dan Dzikir</p>
             </a>
