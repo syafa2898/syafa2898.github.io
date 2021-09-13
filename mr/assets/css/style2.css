@@ -62,6 +62,11 @@ body {
     margin-bottom: 10px;
 }
 
+.modal-custom .modal-body p {
+    font-size: 13px;
+    font-weight: 500;
+}
+
 
 /* Sholattt */
 
@@ -327,8 +332,8 @@ body {
     background-color: #49DFD6;
 }
 
-.modal-puasa .modal-body p {
-    font-size: 13px;
+.modal-puasa .modal-header {
+    background-color: #FFC7C0;
 }
 
 
@@ -342,7 +347,7 @@ body {
 .banner-doa .cta .btn-doa {
     background: #1F4B4B;
     color: white;
-    border-radius: 8px;
+    border-radius: 5px;
     font-weight: 400;
     font-size: 10px;
 }
@@ -372,6 +377,15 @@ body {
     font-size: 12px;
     color: #333;
     font-weight: 600;
+    padding: 0;
+}
+
+.btn-dzikir .btn img {
+    height: 25px;
+}
+
+.modal-doa .modal-header {
+    background-color: #80CACA;
 }
 
 
@@ -473,71 +487,67 @@ body {
     margin-top: 50px;
 }
 
-.modall h6 {
-    font-size: 15px;
-}
-
 
 /* Doa Pilihannn */
 
-.banner-doa-pilihan {
-    background: #80CACA;
-    border-top: 1px solid #888888;
-    width: 100%;
-    margin: auto;
-    color: #1F4B4B;
-    padding: 50px 18px 20px 0;
-}
-
-.banner-doa-pilihan .cta h5 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-}
-
-.banner-doa-pilihan .cta button {
-    background: #1F4B4B;
-    border-radius: 5px;
-    font-size: 10px;
-    color: #fff;
-    margin-top: 6px;
-}
-
-.vector-doa-pilihan {
-    margin-top: -60px;
-    width: 220px;
-}
-
 .doa-pilihan {
-    margin: auto;
-    margin-top: 50px;
-    /* background-color: lightblue; */
     width: 90%;
-    height: 50px;
+    margin: auto;
 }
 
 .card-doa {
-    /* background-color: lightcoral; */
-    width: 100%;
-    margin: auto;
-    height: 20px;
-}
-
-.buttons .btn-dzikir .btn {
-    padding: 0;
-}
-
-.btn-dzikir .btn img {
-    height: 25px;
-}
-
-.btn-doa {
-    /* width: 45%; */
-    color: #333;
-    font-weight: 600;
-    font-size: 12px;
     border: 3px solid #80CACA;
+    box-sizing: border-box;
     border-radius: 10px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.card-doa h6 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333;
+}
+
+.card-ganjil {
+    background: #80CACA;
+}
+
+.box-card {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    margin-left: 15px;
+    margin-right: 3px;
+}
+
+.box-card h3 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    margin: auto;
+}
+
+.box-ganjil {
+    background-color: #fff;
+}
+
+.box-genap {
+    background-color: #80CACA;
+}
+
+.modal-doa h2 {
+    font-family: 'Scheherazade', serif;
+    font-size: 40px;
+    text-align: right;
+    margin: 5px 0 10px 0;
+}
+
+.dalil {
+    font-size: 12px;
+    font-weight: normal;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -592,6 +602,10 @@ body {
     .banner .cta button {
         font-size: 9px;
     }
+    .banner .cta .btn-doa,
+    .banner .cta .btn-puasa {
+        font-size: 9px;
+    }
     .box {
         width: 90px;
         height: 90px;
@@ -618,11 +632,39 @@ body {
         font-size: 16px;
         line-height: 20px;
     }
+    .buttons,
+    .doa-pilihan {
+        width: 85%;
+    }
     .buttons .btn-dzikir .btn {
         padding: 0;
         font-size: 10px;
     }
     .btn-dzikir .btn img {
         height: 20px;
+    }
+    .card-doa {
+        height: 60px;
+    }
+    .box-card {
+        padding: 5px;
+        width: 40px;
+        height: 40px;
+        border-radius: 7px;
+        margin-left: 10px;
+    }
+    .box-card h3 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .card-doa h6 {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .card-doa button img {
+        width: 25px;
+        margin-left: -15px;
     }
 }

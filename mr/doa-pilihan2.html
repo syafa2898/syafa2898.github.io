@@ -19,7 +19,7 @@
             <a class="navbar-brand" href="https://mosqueranger.org/">
                 <img src="assets/img/back.svg" alt="" class="back">
             </a>
-            <p class="nav">Dzikir Pagi</p>
+            <p class="nav">Doa Pilihan</p>
         </div>
         <!-- navbar -->
         <div class="banner banner-doa">
@@ -32,77 +32,85 @@
             </div>
         </div>
         <!-- div banner -->
-        <div class="buttons row justify-content-between mb-5">
+        <div class="buttons mb-5">
             <!-- <div class="button-switch row">
                 <label class="form-check-label" class="col-3" for="flexSwitchCheckChecked"><img src="{{asset('mobile/assets/img/dzikir-pagi.svg')}}" alt=""></label>
                 <div class="form-check form-switch col-3">
                     <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
                 </div>
             </div> -->
-            <div class="btn-dzikir-pagi btn-dzikir col-5 d-flex align-items-center justify-content-center btn-active">
-                <a href="#"><button class="btn"><img src="assets/img/dzikir-pagi.svg" alt="" class="me-2">Dzikir Pagi</button></a></a>
+            <div class="row justify-content-between">
+                <div class="btn-dzikir-pagi btn-dzikir col-5 d-flex align-items-center justify-content-center">
+                    <a href="#"><button class="btn"><img src="assets/img/dzikir-pagi.svg" alt="" class="me-3">Dzikir Pagi</button></a></a>
+                </div>
+                <div class="btn-dzikir-petang btn-dzikir col-5 d-flex align-items-center justify-content-center">
+                    <a href="#"><button class="btn"><img src="assets/img/dzikir-petang.svg" alt="" class="me-3">Dzikir Petang</button></a></a>
+                </div>
             </div>
-            <div class="btn-dzikir-petang btn-dzikir col-5 d-flex align-items-center justify-content-center">
-                <a href="#"><button class="btn"><img src="assets/img/dzikir-petang.svg" alt="" class="me-2">Dzikir Petang</button></a></a>
+            <div class="row justify-content-between mt-3">
+                <div class="btn-dzikir-pagi btn-dzikir col-5 d-flex align-items-center justify-content-center btn-active">
+                    <a href="#"><button class="btn"><img src="assets/img/doa-pilihan-aktif.svg" alt="" class="me-3">Doa Pilihan</button></a></a>
+                </div>
             </div>
             <hr class="mt-5">
         </div>
         <!-- buttons -->
-        <div class="dzikir-pagi" id="dzikir">
-            <div class="title text-center">
-                <h6>Dzikir yang Dibaca di Waktu Pagi</h6>
-                <p>(Antara Shubuh hingga siang hari ketika matahari akan bergeser ke barat)</p>
-                <p style="font-size: 10px;">Source : Rumaysho</p> <br>
-            </div>
-            <div class="intro mb-5">
-                <p>Dzikir pagi berikut patut diamalkan karena akan membuat kita lebih semangat di pagi hari dan dimudahkan Allah dalam segala urusan. <br><br> Untuk waktunya, yang utama dibaca saat masuk waktu Shubuh hingga matahari terbit. Namun boleh juga
-                    dibaca sampai matahari akan bergeser ke barat (mendekati waktu Zhuhur). <br><br> Adapun dzikir yang kali ini kami publish adalah revisi dari yang ada sebelumnya setelah menyaring dzikir yang menurut kami lemah (dho’if) berdasarkan
-                    penilaian para ulama. <br><br> Juga dalam dzikir pagi kali ini, kami sertakan dengan faedah dari setiap dzikir berdasarkan hadits yang menyebutkan dzikir tersebut sehingga dengan itu bisa merenung maksud dzikir dan raih manfaatnya.
-                    <br><br> Dzikir kali ini pun kami bantu dengan transliterasi untuk setiap bacaan selain bacaan Al Qur’an, moga bermanfaat bagi yang sulit membaca dzikir yang ada huruf demi huruf.</p>
-                <p class="fw-bold fst-italic">Klik icon info untuk mengetahui faedah / dalil</p>
-            </div>
-            <div class="ayat">
-                <div class="head-ayat row d-flex align-items-center">
-                    <div class="col-10 mt-1">
-                        <h6>Membaca Ta'awudz</h6>
+        <div class="doa-pilihan" id="dzikir">
+            <div class="card-doa card-ganjil d-flex align-items-center row">
+                <div class="box-card box-ganjil text-center col-1">
+                    <h3>01</h3>
+                </div>
+                <div class="body-card-doa col-8 align-self-center">
+                    <h6 class="mt-2">Doa Taubat Nabi Adam Menyesali Perbuatannya</h6>
+                </div>
+                <div class="col-1"><button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#doaSatu"><img src="assets/img/info-faedah.svg" alt=""></button></div>
+                <!-- Modal -->
+                <div class="modal-doa modal-custom modal fade" id="doaSatu" tabindex="-1" aria-labelledby="doaSatuLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fw-bold" id="doaSatuLabel">Doa Taubat Nabi Adam Menyesali Perbuatannya</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>
+                                    رَبَّنَا ظَلَمْنَآ اَنْفُسَنَا وَاِنْ لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُوْنَنَّ مِنَ الْخٰسِرِيْنَ
+                                </h2>
+                                <p class="arti">"Ya Tuhan kami, kami telah menzalimi diri kami sendiri. Jika Engkau tidak mengampuni kami dan memberi rahmat kepada kami, niscaya kami termasuk orang-orang yang rugi."<br> <span class="dalil">(QS. Al - A'raf : 23)</span></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="body-ayat">
-                    <h2 class="text-end">
-                        اللَّهُ لاَ إِلَهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ، لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ، لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ، مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ، يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ، وَلَا يُحِيطُونَ
-                        بِشَيْءٍ مِنْ عِلْمِهٖ إِلاَّ بِمَا شَاءَ، وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ، وَلَا يَئُودُهُ حِفْظُهُمَا، وَهُوَ الْعَلِيُّ الْعَظِيمُ
-                    </h2>
-                    <p class="text-start">“Aku berlindung kepada Allah dari godaan syaitan yang terkutuk.”</p>
+                <!-- Modal -->
+            </div>
+            <div class="card-doa card-genap d-flex align-items-center row">
+                <div class="box-card box-genap  text-center col-1">
+                    <h3>02</h3>
                 </div>
+                <div class="body-card-doa col-8 align-self-center">
+                    <h6 class="mt-2">Doa Mohon Kebaikan Dunia Akhirat</h6>
+                </div>
+                <div class="col-1"><button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#doaDua"><img src="assets/img/info-faedah-genap.svg" alt=""></button></div>
+                <!-- Modal -->
+                <div class="modal-doa modal-custom modal fade" id="doaDua" tabindex="-1" aria-labelledby="doaDuaLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fw-bold" id="doaDuaLabel">Doa Mohon Kebaikan Dunia Akhirat</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>
+                                    رَبَّنَآ اٰتِنَا فِى الدُّنْيَا حَسَنَةً وَّفِى الْاٰخِرَةِ حَسَنَةً وَّقِنَا عَذَابَ النَّارِ
+                                </h2>
+                                <p class="arti">“Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari azab neraka.” <br> <span class="dalil">(QS. Al - Baqarah : 201)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
             </div>
         </div>
-        <div class="jenis-jenis row justify-content-between d-none" id="doa-doa">
-            <div class="box box-doa text-center align-items-center">
-                <a href="dzikir-pagi.html" class="text-decoration-none">
-                    <img src="assets/img/dzikir-pagi.svg" alt="" class="mt-1">
-                    <h6>Dzikir Pagi</h6>
-                </a>
-            </div>
-            <div class="box box-doa text-center align-items-center">
-                <a href="dzikir-petang.html" class="text-decoration-none">
-                    <img src="assets/img/dzikir-petang.svg" alt="">
-                    <h6>Dzikir Petang</h6>
-                </a>
-            </div>
-            <div class="box box-doa text-center align-items-center">
-                <a href="doa-anak.html" class="text-decoration-none">
-                    <img src="assets/img/doa-anak.svg" alt="">
-                    <h6>Doa Anak</h6>
-                </a>
-            </div>
-            <div class="box box-doa text-center align-items-center">
-                <a href="doa-pilihan.html" class="text-decoration-none">
-                    <img src="assets/img/doa-pilihan.svg" alt="">
-                    <h6>Doa Pilihan</h6>
-                </a>
-            </div>
-        </div>
-        <!-- jenis-jenis -->
     </div>
     <!-- body -->
     <div class="menu d-flex justify-content-between">
