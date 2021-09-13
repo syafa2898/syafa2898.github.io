@@ -394,6 +394,10 @@ body {
     font-size: 14px;
 }
 
+.intro p {
+    font-size: 14px;
+}
+
 .ayat {
     width: 90%;
     margin: auto;
