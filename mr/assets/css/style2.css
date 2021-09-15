@@ -665,6 +665,8 @@ body {
     }
     .card-doa button img {
         width: 25px;
-        margin-left: -15px;
+    }
+    .card-doa button {
+        margin-left: -17px;
     }
 }
