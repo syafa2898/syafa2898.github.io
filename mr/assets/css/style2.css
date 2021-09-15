@@ -317,7 +317,7 @@ body {
 }
 
 .ayyamul-bidh {
-    background-color: #80CACA;
+    background-color: #FFC7C0;
 }
 
 .senin-kamis {
@@ -360,6 +360,8 @@ body {
 .buttons {
     width: 90%;
     margin: auto;
+    padding: 0 1%;
+    box-sizing: border-box;
 }
 
 .btn-dzikir {
@@ -382,6 +384,7 @@ body {
 
 .btn-dzikir .btn img {
     height: 25px;
+    margin-right: 15px;
 }
 
 .modal-doa .modal-header {
@@ -493,6 +496,7 @@ body {
 .doa-pilihan {
     width: 90%;
     margin: auto;
+    padding: 0 1%;
 }
 
 .card-doa {
@@ -642,6 +646,7 @@ body {
     }
     .btn-dzikir .btn img {
         height: 20px;
+        margin-right: 10px;
     }
     .card-doa {
         height: 60px;
