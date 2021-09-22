@@ -634,6 +634,9 @@ body {
     .vector-doa {
         width: 180px;
     }
+    .banner {
+        height: 220px;
+    }
     .banner .cta h5 {
         font-weight: 700;
         font-size: 17px;
