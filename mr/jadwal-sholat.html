@@ -22,17 +22,61 @@
             <p class="nav">Jadwal Sholat</p>
         </div>
         <!-- navbar -->
-        <div class="banner banner-sholat">
-            <div class="cta">
-                <h5>Selesaikan Masalahmu <br> Dengan Sholat</h5>
-                <a href="search.html"><button type="button" class="btn btn-location"><img src="assets/img/location.svg" alt="" class="icon me-2">Kota Jakarta</button></a>
-            </div>
-            <!-- cta -->
-            <div class="row justify-content-end">
-                <img src="assets/img/sholat.svg" alt="" class="vector-sholat">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="banner banner-sholat">
+                        <div class="cta">
+                            <h5>Selesaikan Masalahmu <br> Dengan Sholat</h5>
+                            <a href="#"><button type="button" class="btn btn-location"><img src="assets/img/location.svg" alt="" class="icon me-2">Kota Jakarta</button></a>
+                        </div>
+                        <!-- cta -->
+                        <div class="row justify-content-end">
+                            <img src="assets/img/sholat.svg" alt="" class="vector-sholat">
+                        </div>
+                    </div>
+                    <!-- div banner -->
+                </div>
+                <div class="carousel-item">
+                    <div class="banner banner-puasa">
+                        <div class="cta">
+                            <h5>Hapuskan Dosamu <br> Dengan Puasa</h5>
+                            <a href="#"><button class="btn btn-puasa">Ingatkan Saya</button></a>
+                        </div>
+                        <div class="row justify-content-end">
+                            <img src="assets/img/puasa.svg" alt="" class="vector-puasa">
+                        </div>
+                    </div>
+                    <!-- div banner -->
+                </div>
+                <div class="carousel-item">
+                    <div class="banner banner-doa">
+                        <div class="cta">
+                            <h5>Berdoalah Kepada-Ku, <br> Kuperkenankan Bagimu</h5>
+                            <a class="scrollto" href="#dzikir"><button class="btn btn-doa">Baca Sekarang</button></a>
+                        </div>
+                        <div class="row justify-content-end">
+                            <img src="assets/img/doa.svg" alt="" class="vector-doa">
+                        </div>
+                    </div>
+                    <!-- div banner -->
+                </div>
             </div>
         </div>
-        <!-- div banner -->
+        <!-- carousel -->
+
+        <div class="card-shalat card-puasa mb-5" style="border: 2px solid #403965;">
+            <div class="row g-0">
+                <div class="tag senin-kamis "></div>
+                <div class="card-body col-2 mt-1 ">
+                    <h6 class="card-title ">Puasa Senin Kamis</h6>
+                    <p class="card-text">16 & 19 Agustus</p>
+                </div>
+                <div class="col-2 mt-3"><button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#senin-kamis"><img src="assets/img/info-senin-kamis.svg" alt=""></button></div>
+            </div>
+        </div>
+        <!-- card -->
+
         <div class="time">
             <div class="header d-flex justify-content-between mb-4">
                 <div class="date">
