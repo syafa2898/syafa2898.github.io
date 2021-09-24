@@ -7,6 +7,8 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #333333;
     box-sizing: border-box;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.1);
+    padding-bottom: 50px;
 }
 
 .body {
@@ -589,6 +591,110 @@ body {
 .dalil {
     font-size: 12px;
     font-weight: normal;
+}
+
+
+/* Detail Program */
+
+.bg-program {
+    background: #3D588F;
+    color: white;
+}
+
+.bg-program:hover {
+    color: white;
+}
+
+.navbar-program {
+    /* background-color: white;
+    margin: auto;
+    position: fixed; */
+}
+
+.banner-program {
+    background-image: url(../img/detail-program/banner-program.jpg);
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.body-program {
+    width: 90%;
+    margin: auto;
+}
+
+.body-program .title-program {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.body-program .btn-donasi {
+    margin-top: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.body-program .subtitle-program {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.body-program .content-program {
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.btn-selengkapnya {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.body-program .show-all {
+    font-size: 12px;
+    line-height: 18px;
+    color: #1959B3;
+    text-decoration: none;
+}
+
+.body-program .update {
+    margin-top: -20px;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.kondisi-awal img {
+    width: 43%;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.body-program .head-rekening {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.body-program .bank {
+    width: 120px;
+}
+
+.body-program .btn-wa {
+    padding: 8px 17px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.body-program .icons {
+    margin-top: -10px;
+}
+
+.body-program .text-contact {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 @media only screen and (max-width: 1100px) {
