@@ -12,14 +12,12 @@ body {
 }
 
 .body {
-    margin-bottom: 130px;
+    padding: 0 6%;
     /* background-color: lightcyan; */
 }
 
 .navbar {
     /* background-color: aqua; */
-    width: 90%;
-    margin: auto;
     padding: 20px 0;
 }
 
@@ -74,6 +72,10 @@ body {
     font-weight: 500;
 }
 
+.footer {
+    margin-bottom: 100px;
+}
+
 
 /* Sholattt */
 
@@ -97,16 +99,6 @@ body {
 .vector-sholat {
     margin-top: -18px;
     width: 220px;
-}
-
-.card-shalat {
-    width: 90%;
-    margin: auto;
-}
-
-.time {
-    width: 90%;
-    margin: auto;
 }
 
 .date h5 {
@@ -290,11 +282,6 @@ body {
     width: 240px;
 }
 
-.puasa {
-    width: 90%;
-    margin: auto;
-}
-
 .date h5 {
     font-size: 16px;
     font-weight: 600;
@@ -392,8 +379,6 @@ body {
 }
 
 .buttons {
-    width: 90%;
-    margin: auto;
     padding: 0 1%;
     box-sizing: border-box;
 }
@@ -428,12 +413,6 @@ body {
 
 /* Dzikir Pagiii */
 
-.title,
-.intro {
-    width: 90%;
-    margin: auto;
-}
-
 .title h6 {
     font-weight: 700;
     font-size: 18px;
@@ -450,8 +429,6 @@ body {
 }
 
 .ayat {
-    width: 90%;
-    margin: auto;
     background: #FFFFFF;
     border: 3px solid #83D0CD;
     box-sizing: border-box;
@@ -523,8 +500,6 @@ body {
 }
 
 .search {
-    width: 90%;
-    margin: auto;
     margin-bottom: -20px;
     margin-top: 50px;
 }
@@ -533,8 +508,6 @@ body {
 /* Doa Pilihannn */
 
 .doa-pilihan {
-    width: 90%;
-    margin: auto;
     padding: 0 1%;
 }
 
@@ -597,7 +570,7 @@ body {
 /* Detail Program */
 
 .bg-program {
-    background: #3D588F;
+    background: #065286;
     color: white;
 }
 
@@ -605,11 +578,12 @@ body {
     color: white;
 }
 
-.navbar-program {
-    /* background-color: white;
+
+/* .navbar-program {
+    background-color: white;
     margin: auto;
-    position: fixed; */
-}
+    position: fixed;
+} */
 
 .banner-program {
     background-image: url(../img/detail-program/banner-program.jpg);
@@ -617,32 +591,27 @@ body {
     margin-bottom: 20px;
 }
 
-.body-program {
-    width: 90%;
-    margin: auto;
-}
-
-.body-program .title-program {
+.title-program {
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
 }
 
-.body-program .btn-donasi {
+.btn-donasi {
     margin-top: 12px;
     border-radius: 5px;
     font-size: 16px;
     font-weight: 600;
 }
 
-.body-program .subtitle-program {
+.subtitle-program {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 20px;
 }
 
-.body-program .content-program {
+.content-program {
     font-size: 14px;
     line-height: 19px;
 }
@@ -652,14 +621,14 @@ body {
     line-height: 18px;
 }
 
-.body-program .show-all {
+.show-all {
     font-size: 12px;
     line-height: 18px;
     color: #1959B3;
     text-decoration: none;
 }
 
-.body-program .update {
+.update {
     margin-top: -20px;
     font-size: 11px;
     margin-bottom: 20px;
@@ -671,27 +640,41 @@ body {
     border-radius: 5px;
 }
 
-.body-program .head-rekening {
+.footer-program {
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-bottom: -130px;
+}
+
+.title-rekening {
     font-size: 16px;
     line-height: 24px;
 }
 
-.body-program .bank {
-    width: 120px;
+.bank {
+    width: 150px;
 }
 
-.body-program .btn-wa {
+.btn-wa {
     padding: 8px 17px;
-    font-weight: 500;
+    margin-top: 15px;
+    font-weight: 600;
     font-size: 12px;
+    color: #065286;
     line-height: 18px;
+    background-color: #fff;
 }
 
-.body-program .icons {
+.btn-wa:hover {
+    color: #065286;
+}
+
+.icons {
     margin-top: -10px;
 }
 
-.body-program .text-contact {
+.text-contact {
     font-weight: 600;
     font-size: 13px;
     line-height: 18px;
@@ -781,10 +764,6 @@ body {
         font-weight: 600;
         font-size: 16px;
         line-height: 20px;
-    }
-    .buttons,
-    .doa-pilihan {
-        width: 85%;
     }
     .buttons .btn-dzikir .btn {
         padding: 0;
