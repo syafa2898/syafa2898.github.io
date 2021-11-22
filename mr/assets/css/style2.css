@@ -160,8 +160,6 @@ body {
 
 /* Zakattt */
 
-
-/* 
 .banner-zakat {
     background: #FDE3C8;
     border-top: 1px solid #888888;
@@ -259,7 +257,7 @@ body {
 
 .kalkulator-zakat button:hover {
     color: #333;
-} */
+}
 
 
 /* Puasaaa */
@@ -509,6 +507,7 @@ body {
 
 .doa-pilihan {
     padding: 0 1%;
+    margin-bottom: 100px;
 }
 
 .card-doa {
@@ -524,6 +523,10 @@ body {
     font-size: 13px;
     line-height: 19px;
     color: #333;
+}
+
+.card-pilihan {
+    background: linear-gradient(90deg, #80CACA 0%, rgba(128, 202, 202, 0) 81.25%);
 }
 
 .card-ganjil {

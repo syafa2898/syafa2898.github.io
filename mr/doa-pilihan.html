@@ -22,16 +22,18 @@
             <p class="nav">Doa Pilihan</p>
         </div>
         <!-- navbar -->
-        <div class="banner banner-doa">
-            <div class="cta">
-                <h5>Berdoalah Kepada-Ku, <br> Kuperkenankan Bagimu</h5>
-                <a class="scrollto" href="#dzikir"><button class="btn btn-doa">Baca Sekarang</button></a>
-            </div>
-            <div class="row justify-content-end">
-                <img src="assets/img/doa.svg" alt="" class="vector-doa">
-            </div>
+    </div>
+    <div class="banner banner-doa">
+        <div class="cta">
+            <h5>Berdoalah Kepada-Ku, <br> Kuperkenankan Bagimu</h5>
+            <a class="scrollto" href="#dzikir"><button class="btn btn-doa">Baca Sekarang</button></a>
         </div>
-        <!-- div banner -->
+        <div class="row justify-content-end">
+            <img src="assets/img/doa.svg" alt="" class="vector-doa">
+        </div>
+    </div>
+    <!-- div banner -->
+    <div class="body">
         <div class="buttons mb-5">
             <!-- <div class="button-switch row">
                 <label class="form-check-label" class="col-3" for="flexSwitchCheckChecked"><img src="{{asset('mobile/assets/img/dzikir-pagi.svg')}}" alt=""></label>
@@ -59,61 +61,95 @@
             <div class="title mb-5 text-center">
                 <h6>Kumpulan Doa Dari Quran dan Hadist</h6>
             </div>
-            <div class="card-doa card-ganjil d-flex align-items-center row">
-                <div class="box-card box-ganjil text-center col-1">
-                    <h3>01</h3>
+            <div class="d-flex row card-doa card-pilihan">
+                <!-- Button trigger modal -->
+                <button class="btn text-start justify-content-between" type="button" data-bs-toggle="modal" data-bs-target="#doaSatu">
+                <div class="row g-0 align-content-center justify-content-around">
+                    <div class="body-card-doa col-8 align-self-center">
+                        <h6 class="mt-2">Doa Mohon Kebaikan Dunia Akhirat</h6>
+                    </div>
+                    <div class="col-2 me-2"><img src="assets/img/doa-pilihan/pilihan1.svg" alt=""></div>
                 </div>
-                <div class="body-card-doa col-8 align-self-center">
-                    <h6 class="mt-2">Doa Taubat Nabi Adam Menyesali Perbuatannya</h6>
-                </div>
-                <div class="col-1"><button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#doaSatu"><img src="assets/img/info-faedah.svg" alt=""></button></div>
-                <!-- Modal -->
+                </button>
                 <div class="modal-doa modal-custom modal fade" id="doaSatu" tabindex="-1" aria-labelledby="doaSatuLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h6 class="modal-title fw-bold" id="doaSatuLabel">Doa Taubat Nabi Adam Menyesali Perbuatannya</h6>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <h2>
-                                    رَبَّنَا ظَلَمْنَآ اَنْفُسَنَا وَاِنْ لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُوْنَنَّ مِنَ الْخٰسِرِيْنَ
-                                </h2>
-                                <p class="arti">"Ya Tuhan kami, kami telah menzalimi diri kami sendiri. Jika Engkau tidak mengampuni kami dan memberi rahmat kepada kami, niscaya kami termasuk orang-orang yang rugi."<br> <span class="dalil">(QS. Al - A'raf : 23)</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal -->
-            </div>
-            <div class="card-doa card-genap d-flex align-items-center row">
-                <div class="box-card box-genap  text-center col-1">
-                    <h3>02</h3>
-                </div>
-                <div class="body-card-doa col-8 align-self-center">
-                    <h6 class="mt-2">Doa Mohon Kebaikan Dunia Akhirat</h6>
-                </div>
-                <div class="col-1"><button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#doaDua"><img src="assets/img/info-faedah-genap.svg" alt=""></button></div>
-                <!-- Modal -->
-                <div class="modal-doa modal-custom modal fade" id="doaDua" tabindex="-1" aria-labelledby="doaDuaLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h6 class="modal-title fw-bold" id="doaDuaLabel">Doa Mohon Kebaikan Dunia Akhirat</h6>
+                                <h6 class="modal-title fw-bold" id="doaSatuLabel">Doa Mohon Kebaikan Dunia Akhirat</h6>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <h2>
                                     رَبَّنَآ اٰتِنَا فِى الدُّنْيَا حَسَنَةً وَّفِى الْاٰخِرَةِ حَسَنَةً وَّقِنَا عَذَابَ النَّارِ
                                 </h2>
-                                <p class="arti">“Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari azab neraka.” <br> <span class="dalil">(QS. Al - Baqarah : 201)</span></p>
+                                <p class="arti">“Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari azab neraka.”<br> <span class="dalil">(QS. Al - Baqarah : 201)</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Modal -->
             </div>
+            <!-- Card pilihan -->
+            <div class="d-flex row card-doa card-pilihan">
+                <!-- Button trigger modal -->
+                <button class="btn text-start justify-content-between" type="button" data-bs-toggle="modal" data-bs-target="#doaDua">
+                <div class="row g-0 align-content-center justify-content-around">
+                    <div class="body-card-doa col-8 align-self-center">
+                        <h6 class="mt-2">Doa Agar Diberi Keluarga Yang Baik</h6>
+                    </div>
+                    <div class="col-2 me-2"><img src="assets/img/doa-pilihan/pilihan2.svg" alt=""></div>
+                </div>
+                </button>
+                <div class="modal-doa modal-custom modal fade" id="doaDua" tabindex="-1" aria-labelledby="doaDuaLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fw-bold" id="doaDuaLabel">Doa Agar Diberi Keluarga Yang Baik</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>
+                                    رَبَّنَا هَبْ لَنَا مِنْ اَزْوَاجِنَا وَذُرِّيّٰتِنَا قُرَّةَ اَعْيُنٍ وَّاجْعَلْنَا لِلْمُتَّقِيْنَ اِمَامًا
+                                </h2>
+                                <p class="arti">“Ya Tuhan kami, anugerahkanlah kepada kami pasangan kami dan keturunan kami sebagai penyenang hati (kami), dan jadikanlah kami pemimpin bagi orang-orang yang bertakwa.”<br> <span class="dalil">(QS. Al - Furqan : 74)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+            </div>
+            <!-- Card pilihan -->
+            <div class="d-flex row card-doa card-pilihan">
+                <!-- Button trigger modal -->
+                <button class="btn text-start justify-content-between" type="button" data-bs-toggle="modal" data-bs-target="#doaTiga">
+                <div class="row g-0 align-content-center justify-content-around">
+                    <div class="body-card-doa col-8 align-self-center">
+                        <h6 class="mt-2">Doa Memohon Keturunan Yang Mendirikan Sholat</h6>
+                    </div>
+                    <div class="col-2 me-2"><img src="assets/img/doa-pilihan/pilihan3.svg" alt=""></div>
+                </div>
+                </button>
+                <div class="modal-doa modal-custom modal fade" id="doaTiga" tabindex="-1" aria-labelledby="doaTigaLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fw-bold" id="doaTigaLabel">Doa Memohon Keturunan Yang Mendirikan Sholat</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>
+                                    رَبِّ اجْعَلْنِيْ مُقِيْمَ الصَّلٰوةِ وَمِنْ ذُرِّيَّتِيْۖ رَبَّنَا وَتَقَبَّلْ دُعَاۤءِ
+                                </h2>
+                                <p class="arti">"Ya Tuhanku, jadikanlah aku dan anak cucuku orang yang tetap melaksanakan salat, ya Tuhan kami, perkenankanlah doaku."<br> <span class="dalil">(QS. Ibrahim : 40)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+            </div>
+            <!-- Card pilihan -->
         </div>
+        <!-- Doa Pilihan -->
     </div>
     <!-- body -->
     <div class="menu d-flex justify-content-between">
