@@ -76,6 +76,10 @@ body {
     margin-bottom: 100px;
 }
 
+.row-box {
+    margin: auto;
+}
+
 
 /* Sholattt */
 
@@ -162,11 +166,7 @@ body {
 
 .banner-zakat {
     background: #FDE3C8;
-    border-top: 1px solid #888888;
-    width: 100%;
-    margin: auto;
     color: #65564D;
-    padding: 50px 18px 20px 0;
 }
 
 .banner-zakat .cta h5 {
@@ -185,8 +185,9 @@ body {
 }
 
 .vector-zakat {
-    margin-top: -100px;
+    margin-top: -84px;
     width: 240px;
+    margin-right: -35px;
 }
 
 .box {
@@ -469,37 +470,16 @@ body {
 
 /* Doa Anakkk */
 
-.banner-doa-anak {
-    background: #80CACA;
-    border-top: 1px solid #888888;
-    width: 100%;
-    margin: auto;
-    color: #1F4B4B;
-    padding: 50px 18px 20px 0;
+.box-doa {
+    background-color: #83D0CD;
 }
 
-.banner-doa-anak .cta h5 {
+.box-doa h6 {
     font-weight: bold;
-    font-size: 20px;
-    line-height: 30px;
-}
-
-.banner-doa-anak .cta button {
-    background: #1F4B4B;
-    border-radius: 5px;
     font-size: 10px;
-    color: #fff;
-    margin-top: 6px;
-}
-
-.vector-doa-anak {
-    margin-top: -20px;
-    width: 220px;
-}
-
-.search {
-    margin-bottom: -20px;
-    margin-top: 50px;
+    line-height: 13px;
+    color: #333333;
+    margin-top: 10px;
 }
 
 
@@ -507,7 +487,6 @@ body {
 
 .doa-pilihan {
     padding: 0 1%;
-    margin-bottom: 100px;
 }
 
 .card-doa {
@@ -529,34 +508,6 @@ body {
     background: linear-gradient(90deg, #80CACA 0%, rgba(128, 202, 202, 0) 81.25%);
 }
 
-.card-ganjil {
-    background: #80CACA;
-}
-
-.box-card {
-    padding: 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 7px;
-    margin-left: 15px;
-    margin-right: 3px;
-}
-
-.box-card h3 {
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 30px;
-    margin: auto;
-}
-
-.box-ganjil {
-    background-color: #fff;
-}
-
-.box-genap {
-    background-color: #80CACA;
-}
-
 .modal-doa h2 {
     font-family: 'Scheherazade', serif;
     font-size: 40px;
@@ -566,7 +517,6 @@ body {
 
 .dalil {
     font-size: 12px;
-    font-weight: normal;
 }
 
 
