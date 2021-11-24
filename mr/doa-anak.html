@@ -65,6 +65,7 @@
         <div class="doa-anak" id="doa-anak">
             <div class="title mb-5 text-center">
                 <h6>Kumpulan Doa Harian Untuk Anak</h6>
+                <p>VERSI NEW TAB</p>
             </div>
             <div class="row-box row justify-content-between">
                 <div class="box box-doa text-center align-items-center">
@@ -122,6 +123,55 @@
     <!-- body -->
 
     <div class="footer"></div>
+
+    <div class="body">
+        <div class="doa-anak" id="doa-anak">
+            <div class="title mb-5 text-center">
+                <h6>Kumpulan Doa Harian Untuk Anak</h6>
+                <p>VERSI POPUP</p>
+            </div>
+            <div class="row-box row justify-content-between">
+                <!-- @foreach($data as $arr => $row) -->
+                <div class="box box-doa text-center align-items-center">
+                    <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#sebelumMakan">
+                        <img src="assets/img/doa-anak/sebelum-makan.svg" alt="">
+                        <h6>Doa Sebelum Makan</h6>
+                    </a>
+                    <!-- Modal -->
+                    <div class="modal-doa modal-custom modal fade" id="sebelumMakan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title fw-bold" id="exampleModalLabel">Doa Sebelum Makan</h6>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h2 class="text-end mb-3">
+                                        اَللّٰهُمَّ بَارِكْ لَنَا فِيْمَا رَزَقْتَنَا وَقِنَا عَذَابَ النَّارِ
+                                    </h2>
+                                    <!-- <p class="fst-italic mt-2" style="font-size: 13px;">Allahumma baarik lanaa fiimaa rozaqtanaa wa qinaa 'adzaa bannaar.</p> -->
+                                    <p class="arti text-start">
+                                        "Ya Allah, berkahilah kami dalam rezeki yang telah Engkau berikan kepada kami dan peliharalah kami dari siksa api neraka."
+                                        <span class="dalil"></span>
+                                    </p>
+                                </div>
+                                <!-- <div class="modal-footer text-start">
+                                </div> -->
+                            </div>
+                            <!-- modal-content -->
+                        </div>
+                        <!-- modal-dialog -->
+                    </div>
+                    <!-- modal-custom -->
+                </div>
+                <!-- box-doa -->
+                <!-- @endforeach -->
+            </div>
+            <!-- row box -->
+        </div>
+        <!-- Doa Anak -->
+    </div>
+    <!-- Body -->
 
     <div class="menu d-flex justify-content-between">
         <div class="ikon_sholat text-center">
