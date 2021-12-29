@@ -389,6 +389,10 @@ body {
     box-sizing: border-box;
 }
 
+.btn-dzikir:hover {
+    background-color: #80CACA;
+}
+
 .btn-active {
     background-color: #80CACA;
 }
