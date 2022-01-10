@@ -669,7 +669,7 @@ body {
 }
 
 .card-catalogue img {
-    max-width: 149px;
+    width: 100%;
     margin-bottom: 20px;
     border: 1px solid #4C456E;
     border-radius: 5px;
@@ -724,7 +724,7 @@ body {
     border-radius: 10px;
     margin-top: 80px;
     padding-bottom: 30px;
-    height: 250px;
+    min-height: 250px;
 }
 
 .testi-card2 {
@@ -732,6 +732,7 @@ body {
     border-radius: 10px;
     margin-top: 80px;
     padding-bottom: 30px;
+    min-height: 180px;
 }
 
 .testi-card2 p {
@@ -762,6 +763,19 @@ body {
 
 .btn-order:hover {
     color: white;
+}
+
+.image .row {
+    box-sizing: border-box;
+}
+
+.modal-img {
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+.modal-preview {
+    width: 100%;
 }
 
 
@@ -891,5 +905,19 @@ body {
     }
     .location-buttons .location-button button {
         font-size: 11px;
+    }
+    /* ybyd */
+    .vector-ybyd {
+        width: 200px;
+    }
+    .card-catalogue h5,
+    h6 {
+        font-size: smaller;
+    }
+    .testi-card p {
+        font-size: 12px;
+    }
+    .modal-img {
+        max-height: 110px;
     }
 }
