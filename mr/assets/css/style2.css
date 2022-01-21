@@ -10,16 +10,13 @@ body {
     box-sizing: border-box;
     box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.1);
     padding-bottom: 50px;
-    max-width: 480px;
 }
 
 .body {
     padding: 0 6%;
-    /* background-color: lightcyan; */
 }
 
 .navbar {
-    /* background-color: aqua; */
     padding: 20px 0;
 }
 
@@ -35,7 +32,6 @@ body {
 
 .menu {
     width: inherit;
-    max-width: inherit;
     padding: 18px 30px;
     background-color: #fff;
     position: fixed;
@@ -774,7 +770,6 @@ body {
 .thumbnail-ybyd img {
     max-width: 100%;
     border-radius: 10px;
-    border: 2px solid #116960;
 }
 
 .title-product {
@@ -825,6 +820,10 @@ body {
 @media only screen and (max-width: 1100px) {
     body {
         width: 53%;
+        max-width: 480px;
+    }
+    .menu {
+        max-width: inherit;
     }
 }
 
@@ -950,6 +949,7 @@ body {
     /* ybyd */
     .vector-ybyd {
         height: 85px;
+        background: black;
     }
     .banner-ybyd2 {
         height: 180px;
