@@ -825,10 +825,6 @@ body {
 @media only screen and (max-width: 1100px) {
     body {
         width: 53%;
-        max-width: 480px;
-    }
-    .menu {
-        max-width: inherit;
     }
 }
 
