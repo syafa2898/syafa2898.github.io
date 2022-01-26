@@ -19,15 +19,18 @@ body {
     background-color: #67BBEA;
 }
 
-.pink {
+.pink,
+.cancel {
     background-color: #FFA1C9;
 }
 
-.green {
+.green,
+.done {
     background-color: #88F49A;
 }
 
-.yellow {
+.yellow,
+.process {
     background-color: #FFE86C;
 }
 
@@ -38,6 +41,10 @@ body {
 .body {
     padding: 0 7%;
     min-height: 100%;
+}
+
+.login {
+    min-height: 100%
 }
 
 .nav-dashboard {
@@ -74,11 +81,12 @@ body {
 a.link-dashboard {
     text-decoration: none;
     color: #A83E6B;
+    font-size: 12px;
 }
 
 .card-order {
     border: 3px solid #720030;
-    border-radius: 15px;
+    border-radius: 10px;
     box-sizing: border-box;
     color: #333333;
 }
@@ -88,7 +96,7 @@ a.link-dashboard {
 }
 
 .tag-card {
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 8px 8px 0px;
 }
 
 .btn-outline-dashboard {
