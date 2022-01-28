@@ -134,6 +134,8 @@ a.link-dashboard {
 
 @media only screen and (max-width: 530px) {
     body {
+        background-color: #FFA1C9;
+        box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.1);
         width: 100%;
         min-height: 100%;
     }
