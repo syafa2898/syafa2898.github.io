@@ -9,29 +9,33 @@
 </head>
 
 <body>
-    <label for="">Input number</label>
-    <input type="number" min="1" value="1" id="counter">
-    <button onclick="counterPlus()">+</button>
-    <button onclick="counterMin()" id="min">-</button>
+    <label for="check-cireng">
+    <input type="checkbox" id="check-cireng" />
+    Do you have Passport?
+    </label>
+    <hr />
+    <div id="product-cireng" style="display: none">
+        Passport Number:
+        <input type="text" id="txtPassportNumber" />
+    </div>
+    <div id="AddPassport">
+        Add New Password
+    </div>
 </body>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script>
-    const counter = document.getElementById("counter");
-    min.counter = 1;
-    let counterValue = counter.value;
-
-    function counterPlus() {
-        counter.value = ++counter.value;
-    }
-
-    function counterMin() {
-        counter.value = --counter.value;
-    }
-
-    if (counter.value = 1) {
-        document.getElementById("min").className += "disabled";
-    }
+    $(function() {
+        $("#check-cireng").click(function() {
+            if ($(this).is(":checked")) {
+                $("#product-cireng").show();
+                $("#AddPassport").hide();
+            } else {
+                $("#product-cireng").hide();
+                $("#AddPassport").show();
+            }
+        });
+    });
 </script>
 
 </html>

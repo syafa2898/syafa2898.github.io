@@ -75,10 +75,7 @@ body {
     font-size: 36px;
 }
 
-.inbox-title,
-.delivery-title,
-.testimoni-title,
-.image-title {
+.inbox-title {
     border-bottom: 2px solid #A83E6B;
 }
 
@@ -112,6 +109,19 @@ a.link-dashboard {
 .btn-outline-dashboard:hover {
     background-color: #FFA1C9;
     color: #720030;
+}
+
+.form-order {
+    border-radius: 15px;
+    /* box-shadow: 1px 4px 20px 1px rgba(0, 0, 0, 0.25); */
+    /* padding-top: 50px;
+    padding: 50px 30px; */
+    border: 2px solid #333333;
+}
+
+.thumbnail-ybyd img {
+    max-width: 100%;
+    border-radius: 10%;
 }
 
 @media only screen and (max-width: 1100px) {
