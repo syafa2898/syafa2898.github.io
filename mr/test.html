@@ -3,39 +3,42 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 
 <body>
-    <label for="check-cireng">
-    <input type="checkbox" id="check-cireng" />
-    Do you have Passport?
-    </label>
-    <hr />
-    <div id="product-cireng" style="display: none">
-        Passport Number:
-        <input type="text" id="txtPassportNumber" />
+
+    <div>
+        <button id="subtract">-</button>
+        <input class="form-control w-25" type="number" min="1" value="1" oninput="price(this.value)" onchange="price(this.value)">
+        <button id="add">+</button>
+        <h2>
+            <span id="total">50000</span>
+        </h2>
     </div>
-    <div id="AddPassport">
-        Add New Password
-    </div>
+    <script>
+        let btnAdd = document.querySelector('#add');
+        let btnSubtract = document.querySelector('#subtract');
+        let input = document.querySelector('input');
+
+        btnAdd.addEventListener('click', () => {
+            input.value = parseInt(input.value) + 1;
+        });
+
+        btnSubtract.addEventListener('click', () => {
+            input.value = parseInt(input.value) - 1;
+        });
+
+        let total = document.getElementById("total");
+
+        function price(valNum) {
+            total.innerHTML = valNum * 50000;
+        }
+    </script>
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script>
-    $(function() {
-        $("#check-cireng").click(function() {
-            if ($(this).is(":checked")) {
-                $("#product-cireng").show();
-                $("#AddPassport").hide();
-            } else {
-                $("#product-cireng").hide();
-                $("#AddPassport").show();
-            }
-        });
-    });
-</script>
+
 
 </html>

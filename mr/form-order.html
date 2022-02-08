@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style2.css">
     <style>
-        webkit-outer-spin-button,
+        /* webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
             -webkit-appearance: none;
             margin: 0;
-        }
+        } */
     </style>
 
     <title>MR - You Buy You Donate</title>
@@ -143,65 +143,68 @@
                 <div class="col-6">
                     <input name="type" value="cireng" type="hidden" class="border-0 fw-bold bg-white mb-1" id="name" disabled>
                     <h6>Cireng Isi</h6>
-                    <h6>Rp. 99.000</h6>
-                    <button onclick="counterMin()" id="minus" class="btn btn-sm btn-primary">-</button>
-                    <input type="number" name="qty" value="1" min="1" max="100" class="border-0 w-25 text-center" id="counter">
-                    <button onclick="counterPlus()" class="btn btn-sm btn-primary">+</button>
+                    <h6>Rp. <span id="subtotalCireng">20000</span></h6>
+                    <!-- <button onclick="counterMin()" id="minus" class="btn btn-sm btn-primary">-</button> -->
+                    <input type="number" name="qty" value="1" min="1" max="100" class="border-0 w-25 text-center" id="counter" oninput="priceCireng(this.value)" onchange="priceCireng(this.value)">
+                    <!-- <button onclick="counterPlus()" class="btn btn-sm btn-primary">+</button> -->
                     <input type="text" name="notes" id="notes-cireng" placeholder="Catatan" class="form-control mt-2 form-control-sm">
-                </div>
-            </div>
-            <!-- product -->
-            <div class="product row g-0 mt-3 p-3 radius border" id="product-brownies-sekat" style="display: none">
-                <div class="col-3 me-3 align-self-center">
-                    <div class="thumbnail-ybyd">
-                        <img src="assets/img/ybyd2/foto1.jpg" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <input name="type" value="brownies-sekat" type="hidden" class="border-0 fw-bold bg-white mb-1" id="name" disabled>
-                    <h6>Brownies Sekat</h6>
-                    <h6>Rp. 99.000</h6>
-                    <button onclick="counterMin()" id="minus" class="btn btn-sm btn-primary">-</button>
-                    <input type="number" name="qty" value="1" min="1" max="100" class="border-0 w-25 text-center" id="counter">
-                    <button onclick="counterPlus()" class="btn btn-sm btn-primary">+</button>
-                    <input type="text" name="notes" id="notes-brownies-sekat" placeholder="Catatan" class="form-control mt-2 form-control-sm">
                 </div>
             </div>
             <!-- product -->
             <div class="product row g-0 mt-3 p-3 radius border" id="product-brownies-donat" style="display: none">
                 <div class="col-3 me-3 align-self-center">
                     <div class="thumbnail-ybyd">
-                        <img src="assets/img/ybyd2/foto1.jpg" class="img-fluid">
+                        <img src="assets/img/ybyd2/foto2.jpg" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-6">
-                    <input name="type" value="brownies-donat" type="hidden" class="border-0 fw-bold bg-white mb-1" id="name" disabled>
+                    <input name="type" value="Brownies Donat" type="hidden" class="border-0 fw-bold bg-white mb-1" id="name" disabled>
                     <h6>Brownies Donat</h6>
-                    <h6>Rp. 99.000</h6>
-                    <button onclick="counterMin()" id="minus" class="btn btn-sm btn-primary">-</button>
-                    <input type="number" name="qty" value="1" min="1" max="100" class="border-0 w-25 text-center" id="counter">
-                    <button onclick="counterPlus()" class="btn btn-sm btn-primary">+</button>
+                    <h6>Rp. <span id="subtotalBrowniesDonat">10000</span></h6>
+                    <!-- <button onclick="counterMin()" id="minus" class="btn btn-sm btn-primary">-</button> -->
+                    <input type="number" name="qty" value="1" min="1" max="100" class="border-0 w-25 text-center" id="counter" oninput="priceBrowniesDonat(this.value)" onchange="priceBrowniesDonat(this.value)">
+                    <!-- <button onclick="counterPlus()" class="btn btn-sm btn-primary">+</button> -->
                     <input type="text" name="notes" id="notes-brownies-donat" placeholder="Catatan" class="form-control mt-2 form-control-sm">
+                </div>
+            </div>
+            <!-- product -->
+            <div class="product row g-0 mt-3 p-3 radius border" id="product-brownies-sekat" style="display: none">
+                <div class="col-3 me-3 align-self-center">
+                    <div class="thumbnail-ybyd">
+                        <img src="assets/img/ybyd2/foto3.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <input name="type" value="Brownies Sekat" type="hidden" class="border-0 fw-bold bg-white mb-1" id="name" disabled>
+                    <h6>Brownies Sekat</h6>
+                    <h6>Rp. <span id="subtotalBrowniesSekat">65000</span></h6>
+                    <!-- <button onclick="counterMin()" id="minus" class="btn btn-sm btn-primary">-</button> -->
+                    <input type="number" name="qty" value="1" min="1" max="100" class="border-0 w-25 text-center" id="counter" oninput="priceBrowniesSekat(this.value)" onchange="priceBrowniesSekat(this.value)">
+                    <!-- <button onclick="counterPlus()" class="btn btn-sm btn-primary">+</button> -->
+                    <input type="text" name="notes" id="notes-brownies-sekat" placeholder="Catatan" class="form-control mt-2 form-control-sm">
                 </div>
             </div>
             <!-- product -->
             <div class="product row g-0 mt-3 p-3 radius border" id="product-kebab" style="display: none">
                 <div class="col-3 me-3 align-self-center">
                     <div class="thumbnail-ybyd">
-                        <img src="assets/img/ybyd2/foto1.jpg" class="img-fluid">
+                        <img src="assets/img/ybyd2/foto4.jpg" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-6">
-                    <input name="type" value="kebab" type="hidden" class="border-0 fw-bold bg-white mb-1" id="name" disabled>
+                    <input name="type" value="Kebab" type="hidden" class="border-0 fw-bold bg-white mb-1" id="name" disabled>
                     <h6>Kebab</h6>
-                    <h6>Rp. 99.000</h6>
-                    <button onclick="counterMin()" id="minus" class="btn btn-sm btn-primary">-</button>
-                    <input type="number" name="qty" value="1" min="1" max="100" class="border-0 w-25 text-center" id="counter">
-                    <button onclick="counterPlus()" class="btn btn-sm btn-primary">+</button>
+                    <h6>Rp. <span id="subtotalKebab">20000</span></h6>
+                    <!-- <button onclick="counterMin()" id="minus" class="btn btn-sm btn-primary">-</button> -->
+                    <input type="number" name="qty" value="1" min="1" max="100" class="border-0 w-25 text-center" id="counter" oninput="priceKebab(this.value)" onchange="priceKebab(this.value)">
+                    <!-- <button onclick="counterPlus()" class="btn btn-sm btn-primary">+</button> -->
                     <input type="text" name="notes" id="notes-kebab" placeholder="Catatan" class="form-control mt-2 form-control-sm">
                 </div>
             </div>
             <!-- product -->
+            <!-- <div class="total mt-5">
+                <h5>Total = Rp. <span id="total"></span></h5>
+            </div> -->
             <div class="form-order mt-5 p-4 pt-5">
                 <h4 class="text-center fw-bolder mb-5">Form Penerima</h4>
                 <div class="mb-3">
@@ -246,32 +249,73 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script>
-        const counter = document.getElementById("counter");
-        let counterValue = counter.value;
+        // let total = document.getElementById("total");
 
-        function counterPlus() {
-            counter.value = ++counter.value;
+        // function total() {
+        //     total.innerHTML = 2;
+        // }
+        // total = subtotalCireng + subtotalBrowniesDonat + subtotalBrowniesSekat + subtotalKebab;
+
+
+        let subtotalCireng = document.getElementById("subtotalCireng");
+
+        function priceCireng(valNum) {
+            subtotalCireng.innerHTML = valNum * 20000;
+            return subtotalCireng;
         }
 
-        function counterMin() {
-            counter.value = --counter.value;
+        let subtotalBrowniesDonat = document.getElementById("subtotalBrowniesDonat");
+
+        function priceBrowniesDonat(valNum) {
+            subtotalBrowniesDonat.innerHTML = valNum * 10000;
+            return subtotalBrowniesDonat;
         }
 
-        let product = document.getElementById("product");
-        let product2 = document.getElementById("product2");
-        let product3 = document.getElementById("product3");
+        let subtotalBrowniesSekat = document.getElementById("subtotalBrowniesSekat");
 
-        function remove() {
-            product.classList.add("d-none");
+        function priceBrowniesSekat(valNum) {
+            subtotalBrowniesSekat.innerHTML = valNum * 65000;
+            return subtotalBrowniesSekat;
         }
 
-        function remove2() {
-            product2.classList.add("d-none");
+        let subtotalKebab = document.getElementById("subtotalKebab");
+
+        function priceKebab(valNum) {
+            subtotalKebab.innerHTML = valNum * 20000;
+            return subtotalKebab;
         }
 
-        function remove3() {
-            product3.classList.add("d-none");
-        }
+        // let total = document.getElementById("total")
+
+        // function total {
+        //     total = subtotalCireng + subtotalBrowniesDonat + subtotalBrowniesSekat + subtotalKebab;
+        // }
+        // const counter = document.getElementById("counter");
+        // let counterValue = counter.value;
+
+        // function counterPlus() {
+        //     counter.value = ++counter.value;
+        // }
+
+        // function counterMin() {
+        //     counter.value = --counter.value;
+        // }
+
+        // let product = document.getElementById("product");
+        // let product2 = document.getElementById("product2");
+        // let product3 = document.getElementById("product3");
+
+        // function remove() {
+        //     product.classList.add("d-none");
+        // }
+
+        // function remove2() {
+        //     product2.classList.add("d-none");
+        // }
+
+        // function remove3() {
+        //     product3.classList.add("d-none");
+        // }
 
         $(function() {
             $("#input-cireng").click(function() {
@@ -321,6 +365,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
 </body>
+
+</html>
+
+</html>
 
 </html>
 
