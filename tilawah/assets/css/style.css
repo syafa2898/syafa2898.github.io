@@ -9,7 +9,7 @@ body {
     color: #333;
     width: 36%;
     margin: auto;
-    max-width: 420px;
+    max-width: 480px;
     box-shadow: 8px 8px 40px 8px rgba(0, 0, 0, 0.15);
     font-family: 'Poppins', sans-serif;
 }
@@ -133,8 +133,8 @@ p {
 /* Modal tilawah style */
 
 .modal-tilawah {
-    width: 75%;
-    max-width: 360px;
+    /* width: 75%; */
+    max-width: 400px;
     margin: auto;
 }
 
@@ -218,7 +218,8 @@ p {
 }
 
 .tilawah-card-header,
-.history-card-header {
+.history-card-header,
+.badal-card-header {
     border-radius: 10px 0px 0px 10px;
 }
 
@@ -254,9 +255,13 @@ p {
 
 /* Responsive */
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
     body {
-        width: 53%;
+        /* width: 53%; */
+        min-width: 480px;
+    }
+    .menu {
+        width: 100%;
     }
 }
 
@@ -275,7 +280,7 @@ p {
 @media only screen and (max-width: 530px) {
     body {
         width: 100%;
-        max-width: 480px;
+        max-width: 485px;
         box-shadow: 8px 8px 40px 8px rgba(0, 0, 0, 0.0);
     }
     .banner-tilawah p {
