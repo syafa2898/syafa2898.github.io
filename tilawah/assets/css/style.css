@@ -243,13 +243,31 @@ p {
 
 /* finished */
 
-.accordion-tilawah {
-    border: 2px solid #048D5C;
-    border-radius: 10px;
+.accordion-button {
+    background-color: #F1FFFA;
 }
 
-.accordion-button-tilawah {
-    border-radius: 10px;
+.accordion-button:not(.collapsed) {
+    color: #333;
+    background-color: #52D7A7;
+}
+
+.accordion-body {
+    background-color: white;
+    border-top: 2px solid #048D5C;
+}
+
+.accordion-item {
+    border: 2px solid #048D5C;
+    margin-bottom: 20px;
+}
+
+
+/* Forget Password */
+
+.input-otp {
+    background-color: #DDFFF3;
+    border: 1px solid #048d5c;
 }
 
 
