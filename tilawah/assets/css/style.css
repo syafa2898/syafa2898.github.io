@@ -275,12 +275,33 @@ p {
 }
 
 
+/* OTP */
+
+
+/* Hide arrow input */
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
 /* Responsive */
 
 @media only screen and (max-width: 1200px) {
     body {
-        /* width: 53%; */
-        min-width: 480px;
+        width: 53%;
+        /* min-width: 480px; */
     }
     .menu {
         width: 100%;
@@ -303,7 +324,6 @@ p {
     body {
         width: 100%;
         max-width: 480px;
-        box-shadow: 8px 8px 40px 8px rgba(0, 0, 0, 0.0);
     }
     .banner-tilawah p {
         font-size: 14px;
