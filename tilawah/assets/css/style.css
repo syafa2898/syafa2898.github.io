@@ -344,6 +344,17 @@ input[type=number] {
 }
 
 
+/* Edit profile */
+
+.edit-profile {
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+
 /* Responsive */
 
 @media only screen and (max-width: 1200px) {
