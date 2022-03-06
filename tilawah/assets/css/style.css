@@ -352,6 +352,9 @@ input[type=number] {
     width: 90%;
     margin: auto;
     padding-top: 50px;
+    margin-top: 50px;
+    background-color: #DDFFF3;
+    border: 2px solid #048D5C;
 }
 
 
