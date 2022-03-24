@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     padding: 0;
@@ -79,3 +80,398 @@ body {
     padding: 20px 0 0 20px;
     width: 82%;
 } */
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    color: #333;
+    width: 36%;
+    margin: auto;
+    max-width: 480px;
+    /* box-shadow: 8px 8px 40px 8px rgba(0, 0, 0, 0.15); */
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    padding: 0 20px 120px 20px;
+}
+
+
+/* Text Style */
+
+p {
+    font-size: 16px;
+}
+
+.title1 {
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.title2 {
+    font-size: 24px;
+    color: #048D5C;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.title3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.subtitle1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.subtitle2 {
+    font-size: 14px;
+}
+
+
+/* Background style */
+
+.bg-tilawah {
+    background-color: #52D7A7;
+}
+
+.bg-tilawah-dark {
+    background-color: #048D5C;
+}
+
+.bg-history {
+    background-color: #67BBEA;
+}
+
+.bg-badal {
+    background-color: #FFA1A1;
+}
+
+
+/* Button style */
+
+.btn-tilawah1 {
+    background-color: #048D5C;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    height: 40px;
+    padding: 8px 34px;
+}
+
+.btn-tilawah2 {
+    padding: 4px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #52D7A7;
+    text-align: center;
+}
+
+.btn-outline1 {
+    background-color: white;
+    border: 2px solid #048d5c;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #048D5C;
+}
+
+.btn-outline1:hover {
+    color: #048D5C;
+    background-color: #f3f3f3;
+}
+
+
+/* Menu style */
+
+.menu {
+    width: 36%;
+    margin: auto;
+    max-width: 480px;
+    padding: 15px 30px;
+    background-color: #fdfdfd;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #2E3349;
+}
+
+.menu a {
+    line-height: 13px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu p {
+    font-size: 12px;
+}
+
+
+/* Modal tilawah style */
+
+.modal-tilawah {
+    /* width: 75%; */
+    max-width: 400px;
+    margin: auto;
+}
+
+.modal-tilawah .modal-content {
+    border-radius: 15px;
+}
+
+
+/* Login Page */
+
+.login,
+.create {
+    border-radius: 30px 30px 0px 0px;
+    padding: 50px 40px;
+}
+
+.vector-thumbnail {
+    max-width: 150px;
+}
+
+
+/* dashboard page */
+
+.header {
+    height: 110px;
+    padding: 20px;
+    max-width: inherit;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    font-size: 18px;
+    padding: 3% 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+.banner-tilawah {
+    border: 2px solid #048D5C;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+}
+
+.banner-tilawah p {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.banner-tilawah,
+.progresss,
+.tilawah-list,
+.history-list {
+    margin-bottom: 30px;
+}
+
+.box-progress,
+.tilawah-card {
+    border: 2px solid #048D5C;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.bg-progress {
+    background-color: #048D5C;
+    border: 1px solid #333;
+    border-radius: 15px;
+}
+
+.tilawah-card,
+.history-card,
+.badal-card {
+    min-height: 90px;
+    margin-bottom: 20px;
+}
+
+.tilawah-card-header,
+.history-card-header,
+.badal-card-header {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.vector-quran {
+    max-width: 42px;
+}
+
+.history-card {
+    border: 2px solid #2D83B2;
+    border-radius: 10px;
+}
+
+
+/* Badal Page */
+
+.badal-card {
+    border: 2px solid #B12C2C;
+    border-radius: 10px;
+}
+
+
+/* finished */
+
+.accordion-button {
+    background-color: #F1FFFA;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #333;
+    background-color: #52D7A7;
+}
+
+.accordion-item {
+    border: 2px solid #048D5C;
+    margin-bottom: 20px;
+}
+
+.accordion-body {
+    background-color: white;
+    border-top: 2px solid #048D5C;
+}
+
+.accordion-header {
+    border-top: 2px solid #048D5C;
+}
+
+
+/* Forget Password */
+
+.input-otp {
+    background-color: #DDFFF3;
+    border: 1px solid #048d5c;
+}
+
+
+/* OTP
+Hide arrow input
+Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/* Profile */
+
+.profile-avatar {
+    height: 150px;
+    width: 150px;
+    border: 4px solid #333;
+}
+
+.profile-avatar p {
+    font-size: 56px;
+}
+
+.profile-name {
+    font-size: 24px;
+}
+
+.profile-email {
+    font-size: 16px;
+}
+
+.box-profile {
+    background-color: #F1FFFA;
+    border: 2px solid #048D5C;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.box-profile h3 {
+    font-size: 20px;
+}
+
+.line {
+    border: 1px solid #048d5c;
+    width: 94%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.link-profile {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+}
+
+.link-profile:hover {
+    color: #333;
+}
+
+
+/* Edit profile */
+
+.edit-profile {
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    margin-top: 50px;
+    background-color: #DDFFF3;
+    border: 2px solid #048D5C;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1200px) {
+    body {
+        width: 53%;
+        /* min-width: 480px; */
+    }
+    /* .menu {
+        width: 100%;
+    } */
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    body {
+        width: 100%;
+        max-width: 480px;
+    }
+    /* .banner-tilawah p {
+        font-size: 14px;
+    } */
+}
+>>>>>>> 3a33743363aeb72006a464b94c92e2936df63bbb
