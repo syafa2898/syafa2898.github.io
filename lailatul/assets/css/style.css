@@ -43,7 +43,7 @@ p {
 .containerr {
     margin: auto;
     width: 340px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     /* background-color: aliceblue; */
 }
 
@@ -74,4 +74,12 @@ p {
 
 .contact {
     margin-top: 100px;
+}
+
+.donate {
+    box-shadow: -4px 4px 20px 5px rgba(255, 255, 255, 0.25);
+    padding: 15px;
+    margin: auto;
+    max-width: 480px;
+    min-width: 360px;
 }
