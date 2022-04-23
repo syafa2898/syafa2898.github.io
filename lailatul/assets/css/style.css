@@ -8,7 +8,6 @@
 body {
     background-color: #ffffff;
     color: #333;
-    /* width: 36%; */
     margin: auto;
     max-width: 480px;
     min-width: 360px;
@@ -44,7 +43,6 @@ p {
     margin: auto;
     width: 320px;
     margin-bottom: 100px;
-    /* background-color: aliceblue; */
 }
 
 .header1 {
@@ -111,21 +109,13 @@ p {
     border-radius: 5px;
 }
 
-.violet {
+.bg-violet {
     background-color: #E5DBE2;
 }
 
 .pb-100 {
     padding-bottom: 100px;
 }
-
-
-/* .wa-float {
-    position: fixed;
-    background-color: #E5DBE2;
-    width: 50px;
-    height: 50px;
-} */
 
 .btn-float {
     position: fixed;
