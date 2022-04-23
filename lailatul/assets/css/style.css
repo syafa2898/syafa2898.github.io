@@ -89,7 +89,6 @@ p {
 
 .body-report {
     padding: 30px;
-    padding-bottom: 100px;
 }
 
 .avatar {
@@ -116,10 +115,35 @@ p {
     background-color: #E5DBE2;
 }
 
+.pb-100 {
+    padding-bottom: 100px;
+}
 
-/* .table-report {
-    border: 1px solid #514871;
+
+/* .wa-float {
+    position: fixed;
+    background-color: #E5DBE2;
+    width: 50px;
+    height: 50px;
 } */
+
+.btn-float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 2px 2px 3px #999;
+    padding-top: 6px;
+}
+
+.wa-float a:hover {
+    color: #fff;
+}
 
 @media only screen and (max-width: 500px) {
     .logo2 {
