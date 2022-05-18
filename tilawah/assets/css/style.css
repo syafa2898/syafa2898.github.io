@@ -1,3 +1,86 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: auto;
+    max-width: 420px;
+    background-color: white;
+    box-shadow: 8px 8px 40px 8px rgba(0, 0, 0, 0.15);
+    color: #333;
+    font-family: 'poppins';
+}
+
+.body {
+    padding: 0 20px;
+}
+
+.bg-tilawah {
+    background-color: #52d7a7;
+}
+
+.vector-thumbnail img {
+    margin-top: 50px;
+    max-width: 150px;
+}
+
+.login,
+.create {
+    background-color: white;
+    padding: 50px 40px;
+    border-radius: 30px 30px 0 0;
+}
+
+.header {
+    margin: auto;
+    padding: 30px 0;
+    max-width: 420px;
+    margin-bottom: 50px;
+}
+
+.avatar-thumbnail {
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.banner-tilawah,
+.progresss,
+.finished {
+    border: 2px solid #048d5c;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px 0 30px 0;
+}
+
+.banner-tilawah h6 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.banner-image {
+    max-width: 100px;
+}
+
+.tilawah-card {
+    border: 2px solid #048d5c;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+/* .tilawah-card-header {
+    padding: 15px;
+    width: 18%;
+}
+
+.tilawah-card-body {
+    padding: 20px 0 0 20px;
+    width: 82%;
+} */
+=======
 * {
     margin: 0;
     padding: 0;
@@ -391,3 +474,4 @@ input[type=number] {
         font-size: 14px;
     } */
 }
+>>>>>>> 3a33743363aeb72006a464b94c92e2936df63bbb
