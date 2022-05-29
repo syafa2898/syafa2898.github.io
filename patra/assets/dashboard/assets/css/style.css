@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    color: #5E5873;
+}
+
+.font-color1 {
+    color: #5E5873;
+}
+
+.font-color2 {
+    color: #17BEBB;
+}
+
+.p-70 {
+    padding: 70px;
+}
+
+.bg-gray {
+    background-color: #F8F8F8;
+}
+
+.bg-cyan {
+    background-color: #17BEBB;
+}
+
+.btn-cyan {
+    background-color: #17BEBB;
+}
+
+.btn-cyan:hover {
+    background-color: #17BEBB;
+}
+
+.btn-small {
+    font-size: 12px;
+}
+
+
+/* login */
+
+.side-login {
+    padding: 125px 0;
+}
+
+.vector-login.vector-login {
+    max-width: 50%;
+}
+
+
+/* Side-bar */
+
+.icon-side {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+aside a {
+    font-size: 12px;
+}
+
+
+/* Dashboard */
+
+.navbar-breadcrumb,
+.navbar-breadcrumb a,
+table,
+label {
+    font-size: 12px;
+}
+
+.navbar-breadcrumb a {
+    color: #17BEBB;
+}
+
+.icon-tambah {
+    margin-right: 10px;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate,
+input:placeholder-shown,
+.modal {
+    font-size: 12px;
+}
+
+.btn-save {
+    margin-right: 20px;
+}
+
+.box-shadow {
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 400px) {
+    p,
+    .navbar-breadcrumb,
+    .navbar-breadcrumb a,
+    table,
+    label {
+        font-size: 11px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+}
