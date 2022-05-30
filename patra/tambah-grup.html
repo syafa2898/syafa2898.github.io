@@ -232,7 +232,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="grup-akses.html" class="nav-link">
+                            <a href="#" class="nav-link active">
                                 <img src="assets/dashboard/assets/img/icon/pengguna-icon.svg" alt="" class="icon-side">
                                 <p class="text-white">Grup Akses</p>
                             </a>
@@ -264,8 +264,8 @@
         <!-- Main Sidebar Container -->
 
         <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper bg-white d-none">
-            <section class="content d-none daftar-grup p-3">
+        <div class="content-wrapper bg-white">
+            <section class="content daftar-grup p-3 d-none">
                 <div class="d-flex align-items-center">
                     <h6>e-Trade |</h6>
                     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="pt-2 navbar-breadcrumb">
@@ -282,12 +282,12 @@
 
                 <div class="row p-2 d-flex justify-content-between align-item-center mb-3">
                     <h6 class="align-center">Daftar Grup Akses</h6>
-                    <a href="#" class="btn btn-small btn-primary d-flex align-item-center px-lg-4 py-lg-2">
+                    <a href="tambah-grup.html" class="btn btn-small btn-primary d-flex align-item-center px-lg-4 py-lg-2">
                         <img src="assets/dashboard/assets/img/icon/tambah-icon.svg" alt="" class="align-center icon-tambah">Tambah
                     </a>
                 </div>
 
-                <table class="table mt-3" id="documentTable">
+                <table class="table mt-3" id="grupAksesTable">
                     <thead class="bg-white">
                         <tr>
                             <th scope="col" class="col-1 align-top">No</th>
@@ -309,10 +309,34 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Administrasi</td>
+                            <td>Grup Akses Admin</td>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <a href="#" class="btn p-0 m-0 border-0"><img src="assets/dashboard/assets/img/icon/left-icon.svg" alt=""></a>
+                                    <a href="#" class="btn p-0 m-0 border-0"><img src="assets/dashboard/assets/img/icon/middle-icon.svg" alt=""></a>
+                                    <a href="#" class="btn p-0 m-0 border-0"><img src="assets/dashboard/assets/img/icon/right-icon.svg" alt=""></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Administrasi</td>
+                            <td>Grup Akses Admin</td>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <a href="#" class="btn p-0 m-0 border-0"><img src="assets/dashboard/assets/img/icon/left-icon.svg" alt=""></a>
+                                    <a href="#" class="btn p-0 m-0 border-0"><img src="assets/dashboard/assets/img/icon/middle-icon.svg" alt=""></a>
+                                    <a href="#" class="btn p-0 m-0 border-0"><img src="assets/dashboard/assets/img/icon/right-icon.svg" alt=""></a>
+                                </div>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </section>
-            <section class="content d-none tambah-grup p-3">
+            <section class="content tambah-grup p-3">
                 <div class="d-flex align-items-center">
                     <h6>e-Trade |</h6>
                     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="pt-2 navbar-breadcrumb">
@@ -600,7 +624,7 @@
                     </div>
                 </form>
             </section>
-            <section class="content daftar-pengguna p-3">
+            <section class="content daftar-pengguna p-3 d-none">
                 <div class="d-flex align-items-center">
                     <h6>e-Funder |</h6>
                     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="pt-2 navbar-breadcrumb">
@@ -727,7 +751,7 @@
                         <p>Anda tidak akan dapat mengembalikan data yang telah terhapus</p>
                         <div class="row justify-content-center">
                             <button type="submit" class="btn btn-small btn-danger px-4">Ya, Hapuskan</button>
-                            <button type="submit" class="btn btn-small btn-outline-primary px-4">Batal</button>
+                            <button type="submit" class="btn btn-small btn-outline-primary px-4 ml-4">Batal</button>
                         </div>
                     </div>
                 </div>
@@ -784,11 +808,6 @@
     <script src="assets/dashboard/dist/js/pages/dashboard.js"></script>
     <!-- data-tables -->
     <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-    <!-- <script>
-        $(document).ready(function() {
-            $('#documentTable').DataTable();
-        });
-    </script> -->
 </body>
 
 </html>
