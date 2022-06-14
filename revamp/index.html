@@ -13,60 +13,97 @@
 </head>
 
 <body>
-    <div class="containerr d-block">
+    <div class="container d-block" id="navbar">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo-icon/logo-mr.svg" height="57" alt="" class="">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo-icon/logo-mr.svg" alt="" class="logo-nav">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-auto" style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Program</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Event</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Report</a>
-                        </li>
-                        <a class="nav-link btn btn-navy px-4 text-white btn-md" href="#">Donasi Sekarang</a>
-                    </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img src="assets/img/logo-icon/logo-gmi.svg" alt="">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Program</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Pendidikan</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Sosial</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Ekonomi</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Dakwah</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Event</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Mission</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Chapter</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Qurban</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">ILC</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Report</a>
+                            </li>
+                            <a class="nav-link btn btn-navy px-4 text-white btn-md btn-donasi" href="#">Donasi Sekarang</a>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </div>
-    <!-- containerr -->
+    <!-- container -->
 
-    <div class="slider bg-navy d-block" style="padding: 110px 0" id="slider">
-        <div class="containerr">
+    <div class="slider bg-navy d-none" style="padding: 110px 0" id="slider">
+        <div class="container">
             <div class="p-5 col-6 m-auto">
                 <h1 class="title-style1 mb-4">Bantuan Sarana dan Prasarana Pendidikan</h1>
                 <p class="subtitle1 mb-50">Pendidikan Yang Kuat Menciptakan Generasi Yang Hebat</p>
@@ -78,36 +115,36 @@
 
     <section class="bg-lightblue d-block" id="fokusKami">
         <h2 class="title-style1 text-navy text-center mb-80">Fokus <span class="text-orange">Kami</span></h2>
-        <div class="row w-100 text-white">
-            <div class="card col-lg-3 col-sm-6 border-0 bg-transparent p-0">
-                <div class="card">
-                    <img src="assets/img/home/fokus-pendidikan.jpg" class="card-img" alt="">
-                    <div class="card-img-overlay bg-danger">
-                        <h5 class="title-style1 text-center">Pendidikan</h5>
+        <div class="row p-0 w-100 text-white">
+            <div class="card col-lg-3 col-6 border-0 bg-transparent p-0">
+                <div class="card text-center">
+                    <img src="assets/img/home/fokus-pendidikan.jpg" class="card-img img-fokus" alt="">
+                    <div class="card-img-overlay d-flex justify-content-center mb-4">
+                        <h5 class="title-style1 text-center align-self-end">Pendidikan</h5>
                     </div>
                 </div>
             </div>
-            <div class="card col-lg-3 col-sm-6 border-0 bg-transparent p-0">
-                <div class="card">
-                    <img src="assets/img/home/fokus-sosial.jpg" class="card-img" alt="">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title title-style1 text-center">Sosial</h5>
+            <div class="card col-lg-3 col-6 border-0 bg-transparent p-0">
+                <div class="card text-center">
+                    <img src="assets/img/home/fokus-sosial.jpg" class="card-img img-fokus" alt="">
+                    <div class="card-img-overlay d-flex justify-content-center mb-4">
+                        <h5 class="title-style1 text-center align-self-end">Sosial</h5>
                     </div>
                 </div>
             </div>
-            <div class="card col-lg-3 col-sm-6 border-0 bg-transparent p-0">
-                <div class="card">
-                    <img src="assets/img/home/fokus-ekonomi.jpg" class="card-img" alt="">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title title-style1 text-center">Ekonomi</h5>
+            <div class="card col-lg-3 col-6 border-0 bg-transparent p-0">
+                <div class="card text-center">
+                    <img src="assets/img/home/fokus-ekonomi.jpg" class="card-img img-fokus" alt="">
+                    <div class="card-img-overlay d-flex justify-content-center mb-4">
+                        <h5 class="title-style1 text-center align-self-end">Ekonomi</h5>
                     </div>
                 </div>
             </div>
-            <div class="card col-lg-3 col-sm-6 border-0 bg-transparent p-0">
-                <div class="card">
-                    <img src="assets/img/home/fokus-dakwah.jpg" class="card-img" alt="">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title title-style1 text-center">Dakwah</h5>
+            <div class="card col-lg-3 col-6 border-0 bg-transparent p-0">
+                <div class="card text-center">
+                    <img src="assets/img/home/fokus-dakwah.jpg" class="card-img img-fokus" alt="">
+                    <div class="card-img-overlay d-flex justify-content-center mb-4">
+                        <h5 class="title-style1 text-center align-self-end">Dakwah</h5>
                     </div>
                 </div>
             </div>
@@ -116,81 +153,81 @@
     <!-- section -->
 
     <section class="text-center d-block" id="mrApps">
-        <h2 class="title-style1 text-navy text-center mb-80">Mosque Ranger <span class="text-orange">Apps</span></h2>
-        <img src="assets/img/home/mr-apps.png" alt="" class="mb-50">
-        <a href="#" class="btn btn-lg btn-navy">Visit Apps</a>
+        <div class="col-12">
+            <h2 class="title-style1 text-navy text-center mb-80">Mosque Ranger <br> <span class="text-orange">Apps</span></h2>
+            <img src="assets/img/home/mr-apps.png" alt="" class="mb-50 w-100">
+            <a href="#" class="btn btn-lg btn-navy">Visit Apps</a>
+        </div>
     </section>
     <!-- section -->
 
     <section class="bg-navy d-block" id="history">
         <h2 class="title-style1 text-center mb-80">Perjalanan Kami</h2>
-        <div class="containerr">
+        <div class="container">
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
+                <div class="col mb-4">
                     <div class="card h-100 border-0 p-4 rounded-10">
                         <img src="assets/img/home/card-history1.jpg" class="card-img-top" alt="...">
                         <div class="card-body p-0 mt-4">
-                            <h3 class="card-title text-navy fw-bold">Chapter #4</h3>
+                            <h4 class="card-title text-navy fw-bold">Chapter #4</h4>
                             <p class="card-text text-gray mt-3">Potret Kondisi Taman Pendidikan Quran Hidayatussa'dah</p>
                             <a href="#" class="btn btn-navy w-100 mt-50">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mb-4">
                     <div class="card h-100 border-0 p-4 rounded-10">
                         <img src="assets/img/home/card-history2.jpg" class="card-img-top" alt="...">
                         <div class="card-body p-0 mt-4">
-                            <h3 class="card-title text-navy fw-bold">Mission #7</h3>
+                            <h4 class="card-title text-navy fw-bold">Mission #7</h4>
                             <p class="card-text text-gray mt-3">Renovasi Madrasah dan Renovasi Perpustakaan</p>
                             <a href="#" class="btn btn-navy w-100 mt-50">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mb-4">
                     <div class="card h-100 border-0 p-4 rounded-10">
                         <img src="assets/img/home/card-history3.jpg" class="card-img-top" alt="...">
                         <div class="card-body p-0 mt-4">
-                            <h3 class="card-title text-navy fw-bold">MR Qurban 1442 H</h3>
+                            <h4 class="card-title text-navy fw-bold">MR Qurban 1442 H</h4>
                             <p class="card-text text-gray mt-3">Rayakan Indahnya Qurban Bersama Warga di Pelosok Desa</p>
                             <a href="#" class="btn btn-navy w-100 mt-50">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row text-center d-flex justify-content-center">
-                <div class="col-2">
-                    <a href="#" class="btn btn-outline-white btn-md mt-50">Selengkapnya</a>
-                </div>
+            <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-outline-white btn-md mt-50">Selengkapnya</a>
             </div>
         </div>
     </section>
     <!-- section -->
 
     <section class="d-block" id="partner">
-        <div class="containerr">
-            <div class="row d-flex justify-content-center">
-                <div class="col-2">
-                    <img src="assets/img/home/logo-partner.png" alt="">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-3 text-center">
+                    <img src="assets/img/home/logo-partner.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-2">
-                    <img src="assets/img/home/logo-partner.png" alt="">
+                <div class="col-lg-2 col-3 text-center">
+                    <img src="assets/img/home/logo-partner.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-2">
-                    <img src="assets/img/home/logo-partner.png" alt="">
+                <div class="col-lg-2 col-3 text-center">
+                    <img src="assets/img/home/logo-partner.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-2">
-                    <img src="assets/img/home/logo-partner.png" alt="">
+                <div class="col-lg-2 col-3 text-center">
+                    <img src="assets/img/home/logo-partner.png" alt="" class="img-fluid">
                 </div>
             </div>
-            <div class="row d-flex justify-content-center mt-50">
-                <div class="col-2">
-                    <img src="assets/img/home/logo-partner.png" alt="">
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-2 col-3 text-center">
+                    <img src="assets/img/home/logo-partner.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-2">
-                    <img src="assets/img/home/logo-partner.png" alt="">
+                <div class="col-lg-2 col-3 text-center">
+                    <img src="assets/img/home/logo-partner.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-2">
-                    <img src="assets/img/home/logo-partner.png" alt="">
+                <div class="col-lg-2 col-3 text-center">
+                    <img src="assets/img/home/logo-partner.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -198,52 +235,60 @@
     <!-- section -->
 
     <section class="bg-lightblue d-block" id="footer">
-        <div class="containerr">
-            <div class="row d-flex justify-content-between">
-                <div class="col-5">
-                    <div class="row justify-content-between">
-                        <div class="col-4">
-                            <img src="assets/img/logo-icon/logo-mr.svg" alt="" height="80" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mt-3 mb-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="assets/img/logo-icon/logo-mr.svg" alt="" class="logo-icon">
                         </div>
                         <div class="col-6">
-                            <img src="assets/img/logo-icon/logo-gmi.svg" alt="" height="80" class="">
+                            <img src="assets/img/logo-icon/logo-gmi.svg" alt="" class="logo-icon">
                         </div>
                     </div>
                     <div class="row mt-50">
                         <p class="subtitle1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus et cras aliquet velit et diam. Facilisi id egestas vulputate duis commodo tellus mi ut.</p>
                     </div>
-                    <div class="row mt-50">
-                        <div class="col-3">
+                    <div class="row mt-50 d-flex justify-content-between">
+                        <div class="col-2">
                             <a href="#">
-                                <img src="assets/img/logo-icon/wa-icon.svg" alt="">
+                                <img src="assets/img/logo-icon/wa-icon.svg" alt="" class="logo-sosmed">
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-2">
                             <a href="#">
-                                <img src="assets/img/logo-icon/ig-icon.svg" alt="">
+                                <img src="assets/img/logo-icon/ig-icon.svg" alt="" class="logo-sosmed">
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-2">
                             <a href="#">
-                                <img src="assets/img/logo-icon/yt-icon.svg" alt="">
+                                <img src="assets/img/logo-icon/yt-icon.svg" alt="" class="logo-sosmed">
                             </a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-2">
                             <a href="#">
-                                <img src="assets/img/logo-icon/email-icon.svg" alt="">
+                                <img src="assets/img/logo-icon/email-icon.svg" alt="" class="logo-sosmed">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 row">
-                    <div class="col-6">
+                <div class="col-lg-2"></div>
+                <div class="row col-lg-5">
+                    <div class="col-lg-5 col-sm-12 mb-5">
                         <h6 class="subtitle1 text-dark-navy fw-semi-bold mb-50">Program</h6>
                         <h6 class="subtitle1 mb-50">Dakwah</h6>
                         <h6 class="subtitle1 mb-50">Pendidikan</h6>
                         <h6 class="subtitle1 mb-50">Sosial</h6>
                         <h6 class="subtitle1 mb-50">Ekonomi</h6>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-4 col-sm-12 mb-5">
+                        <h6 class="subtitle1 text-dark-navy fw-semi-bold mb-50">Event</h6>
+                        <h6 class="subtitle1 mb-50">Mission</h6>
+                        <h6 class="subtitle1 mb-50">Chapter</h6>
+                        <h6 class="subtitle1 mb-50">Qurban</h6>
+                        <h6 class="subtitle1 mb-50">ILC</h6>
+                    </div>
+                    <div class="col-lg-3 col-sm-12">
                         <h6 class="subtitle1 text-dark-navy fw-semi-bold mb-50">Link</h6>
                         <h6 class="subtitle1 mb-50">Home</h6>
                         <h6 class="subtitle1 mb-50">About</h6>
@@ -252,7 +297,7 @@
                     </div>
                 </div>
             </div>
-            <hr class="line mb-50">
+            <hr class="line mb-50 mt-3">
             <p class="text-center subtitle1 fw-semi-bold text-dark-navy">© Mosque Ranger 2022, All Rights Reserved</p>
         </div>
     </section>

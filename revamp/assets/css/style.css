@@ -43,12 +43,14 @@ body {
   padding: 10px 30px;
   border-radius: 5px;
   font-weight: 500;
+  font-size: 14px;
 }
 
 .btn-lg {
-  padding: 15px 100px;
-  border-radius: 10px;
+  padding: 10px 100px;
+  border-radius: 5px;
   font-weight: 600;
+  font-size: 20px;
 }
 
 .text-navy {
@@ -85,12 +87,19 @@ body {
   font-weight: 500;
 }
 
-section {
-  padding: 150px 0;
+.banner-title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 72px;
 }
 
 .containerr {
   padding: 0 100px;
+}
+
+.line {
+  margin-top: 100px;
+  border: 3px solid #065286;
 }
 
 .mb-50 {
@@ -119,8 +128,75 @@ section {
   border-radius: 10px;
 }
 
-.line {
-  margin-top: 100px;
-  border: 3px solid #065286;
+section {
+  padding: 150px 0;
+}
+
+.logo-icon {
+  height: 80px;
+}
+
+.logo-nav {
+  height: 57px;
+}
+
+.logo-sosmed {
+  height: 60px;
+}
+
+@media only screen and (max-width: 500px) {
+  .btn-donasi {
+    margin-top: 20px;
+  }
+  .btn-md {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  .btn-lg {
+    padding: 10px 70px;
+    font-size: 14px;
+  }
+  .img-fokus {
+    height: auto;
+  }
+  .logo-icon {
+    height: 50px;
+  }
+  .logo-nav {
+    height: 40px;
+  }
+  .logo-sosmed {
+    height: 50px;
+  }
+  .mb-50 {
+    margin-bottom: 30px;
+  }
+  .mb-80 {
+    margin-bottom: 50px;
+  }
+  .mb-100 {
+    margin-bottom: 70px;
+  }
+  .mt-50 {
+    margin-top: 30px;
+  }
+  .nav-link {
+    margin-bottom: 10px;
+  }
+  section {
+    padding: 70px 0;
+  }
+  .subtitle1 {
+    font-size: 14px;
+  }
+  .title-style1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .logo-sosmed {
+    height: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
