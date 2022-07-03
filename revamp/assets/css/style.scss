@@ -33,6 +33,15 @@ body {
     color: white;
 }
 
+.btn-orange {
+    background-color: $orange;
+    color: white;
+}
+
+.btn-orange:hover {
+    color: white;
+}
+
 .btn-white {
     background-color: white;
     color: $navy;
@@ -225,6 +234,13 @@ section {
     }
     section {
         padding: 70px 0;
+    }
+    .sm-mb-5 {
+        margin-bottom: 50px;
+    }
+    .sm-fixed-top {
+        position: fixed;
+        z-index: 100;
     }
     .subtitle1 {
         font-size: 14px;
