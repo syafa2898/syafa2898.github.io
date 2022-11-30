@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Revamp Mosque Ranger</title>
+</head>
+
+<body>
+    <div class="container d-block bg-white sm-fixed-top" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-whi">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo-icon/logo-mr.svg" alt="" class="logo-nav">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img src="assets/img/logo-icon/logo-gmi.svg" alt="">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Program</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="pendidikan.html">Pendidikan</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Sosial</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Ekonomi</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Dakwah</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Event</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="event.html">Mission</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Chapter</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Qurban</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">ILC</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="team.html">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="report.html">Report</a>
+                            </li>
+                            <a class="nav-link btn btn-navy px-4 text-white btn-md btn-donasi" href="#">Donasi Sekarang</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar -->
+
+    <div class="banner text-white text-center d-flex justify-content-center" id="banner" style="background-image: url(assets/img/banner/top-banner.jpg); height: 563px;">
+        <div class="align-self-center col-md-7 col-12">
+            <h1 class="banner-title">Pendidikan</h1>
+            <h2 class="title-style1 fw-semi-bold" id="subtitle"></h2>
+            <!-- <div class="col-md-8 col-8 m-auto">
+                <h2 class="title-style1 fw-semi-bold" id="subtitle">Meraih Mimpi Wujudkan Generasi Qurani</h2>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="slider bg-navy d-none" style="padding: 110px 0" id="slider">
+        <div class="container">
+            <div class="p-5 col-6 m-auto">
+                <h1 class="title-style1 mb-4">Bantuan Sarana dan Prasarana Pendidikan</h1>
+                <p class="subtitle1 mb-50">Pendidikan Yang Kuat Menciptakan Generasi Yang Hebat</p>
+                <a href="#" class="btn btn-white btn-md">Read More</a>
+            </div>
+        </div>
+    </div>
+    <!-- slider -->
+
+    <section class="bg-lightblue d-block" id="fokusKami" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2000">
+        <h2 class="title-style1 text-navy text-center mb-80" data-aos-offset="300" data-aos-delay="300">Fokus <span class="text-orange">Kami</span></h2>
+        <div class="p-0 w-100 text-white d-flex row px-0">
+            <div class="card col-lg-3 col-6 border-0 bg-transparent p-0 overflow-hidden" data-aos-offset="800" data-aos-delay="300">
+                <div class="card text-center img-fokus">
+                    <img src="assets/img/home/fokus-pendidikan.jpg" class="card-img" alt="">
+                    <div class="card-img-overlay d-flex justify-content-center mb-4">
+                        <h5 class="title-style1 text-center align-self-end">Pendidikan</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-6 border-0 bg-transparent p-0 overflow-hidden" data-aos-offset="800" data-aos-delay="300">
+                <div class="card text-center img-fokus">
+                    <img src="assets/img/home/fokus-sosial.jpg" class="card-img" alt="">
+                    <div class="card-img-overlay d-flex justify-content-center mb-4">
+                        <h5 class="title-style1 text-center align-self-end">Sosial</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-6 border-0 bg-transparent p-0 overflow-hidden" data-aos-offset="800" data-aos-delay="300">
+                <div class="card text-center img-fokus">
+                    <img src="assets/img/home/fokus-ekonomi.jpg" class="card-img" alt="">
+                    <div class="card-img-overlay d-flex justify-content-center mb-4">
+                        <h5 class="title-style1 text-center align-self-end">Ekonomi</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-6 border-0 bg-transparent p-0 overflow-hidden" data-aos-offset="800" data-aos-delay="300">
+                <div class="card text-center img-fokus">
+                    <img src="assets/img/home/fokus-dakwah.jpg" class="card-img" alt="">
+                    <div class="card-img-overlay d-flex justify-content-center mb-4">
+                        <h5 class="title-style1 text-center align-self-end">Dakwah</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section -->
+
+    <section class="text-center d-block" id="mrApps" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="2000">
+        <div class="col-12">
+            <h2 class="title-style1 text-navy text-center mb-80" data-aos-offset="400" data-aos-delay="300">Mosque Ranger <br> <span class="text-orange">Apps</span></h2>
+            <img src="assets/img/home/mr-apps.png" alt="" class="mb-50 w-100" data-aos-offset="800" data-aos-delay="300">
+            <a href="#" class="btn btn-lg btn-navy">Visit Apps</a>
+        </div>
+    </section>
+    <!-- section -->
+
+    <section class="bg-navy d-block">
+        <div class="container" id="history" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1500">
+            <h2 class="title-style1 text-center mb-80" data-aos-offset="300">Perjalanan Kami</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col mb-4" data-aos-offset="300" data-aos-delay="600">
+                    <div class="card h-100 border-0 p-4 rounded-10">
+                        <img src="assets/img/home/card-history1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-0 mt-4">
+                            <h4 class="card-title text-navy fw-bold">Chapter #4</h4>
+                            <p class="card-text text-gray mt-3">Potret Kondisi Taman Pendidikan Quran Hidayatussa'dah</p>
+                            <a href="#" class="btn btn-navy w-100 mt-50">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4" data-aos-offset="300" data-aos-delay="600">
+                    <div class="card h-100 border-0 p-4 rounded-10">
+                        <img src="assets/img/home/card-history2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-0 mt-4">
+                            <h4 class="card-title text-navy fw-bold">Mission #7</h4>
+                            <p class="card-text text-gray mt-3">Renovasi Madrasah dan Renovasi Perpustakaan</p>
+                            <a href="#" class="btn btn-navy w-100 mt-50">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4" data-aos-offset="300" data-aos-delay="600">
+                    <div class="card h-100 border-0 p-4 rounded-10">
+                        <img src="assets/img/home/card-history3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-0 mt-4">
+                            <h4 class="card-title text-navy fw-bold">MR Qurban 1442 H</h4>
+                            <p class="card-text text-gray mt-3">Rayakan Indahnya Qurban Bersama Warga di Pelosok Desa</p>
+                            <a href="#" class="btn btn-navy w-100 mt-50">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-outline-white btn-md mt-50">Selengkapnya</a>
+            </div>
+        </div>
+    </section>
+    <!-- section -->
+
+    <section class="d-block" id="partner" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-duration="1000">
+        <div class="container">
+            <div class="row justify-content-center" data-aos="fade-right" data-aos-offset="300">
+                <div class="col-lg-2 col-3 text-center">
+                    <img src="assets/img/home/logo-partner.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-2 col-3 text-center">
+                    <img src="assets/img/home/logo-partner.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-2 col-3 text-center">
+                    <img src="assets/img/home/logo-partner.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-2 col-3 text-center">
+                    <img src="assets/img/home/logo-partner.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5" data-aos="fade-right" data-aos-offset="300">
+                <div class="col-lg-2 col-3 text-center">
+                    <img src="assets/img/home/logo-partner.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-2 col-3 text-center">
+                    <img src="assets/img/home/logo-partner.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-2 col-3 text-center">
+                    <img src="assets/img/home/logo-partner.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section -->
+
+    <section class="bg-lightblue d-block" id="footer">
+        <div class="container" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="300">
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-5 col-12 mt-3 mb-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="assets/img/logo-icon/logo-mr.svg" alt="" class="logo-icon">
+                        </div>
+                        <div class="col-6">
+                            <img src="assets/img/logo-icon/logo-gmi.svg" alt="" class="logo-icon">
+                        </div>
+                    </div>
+                    <div class="row mt-50">
+                        <p class="subtitle1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus et cras aliquet velit et diam. Facilisi id egestas vulputate duis commodo tellus mi ut.</p>
+                    </div>
+                    <div class="row mt-50 d-flex justify-content-between">
+                        <div class="col-2">
+                            <a href="#">
+                                <img src="assets/img/logo-icon/wa-icon.svg" alt="" class="logo-sosmed">
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="#">
+                                <img src="assets/img/logo-icon/ig-icon.svg" alt="" class="logo-sosmed">
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="#">
+                                <img src="assets/img/logo-icon/yt-icon.svg" alt="" class="logo-sosmed">
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="#">
+                                <img src="assets/img/logo-icon/email-icon.svg" alt="" class="logo-sosmed">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex col-lg-5 col-12 justify-content-between">
+                    <div class="col-lg-5 col-3 mb-5">
+                        <h6 class="subtitle1 text-dark-navy fw-semi-bold mb-50">Program</h6>
+                        <h6 class="subtitle1 mb-50">Dakwah</h6>
+                        <h6 class="subtitle1 mb-50">Pendidikan</h6>
+                        <h6 class="subtitle1 mb-50">Sosial</h6>
+                        <h6 class="subtitle1 mb-50">Ekonomi</h6>
+                    </div>
+                    <div class="col-lg-4 col-3 mb-5">
+                        <h6 class="subtitle1 text-dark-navy fw-semi-bold mb-50">Event</h6>
+                        <h6 class="subtitle1 mb-50">Mission</h6>
+                        <h6 class="subtitle1 mb-50">Chapter</h6>
+                        <h6 class="subtitle1 mb-50">Qurban</h6>
+                        <h6 class="subtitle1 mb-50">ILC</h6>
+                    </div>
+                    <div class="col-lg-3 col-3">
+                        <h6 class="subtitle1 text-dark-navy fw-semi-bold mb-50">Link</h6>
+                        <h6 class="subtitle1 mb-50">Home</h6>
+                        <h6 class="subtitle1 mb-50">About</h6>
+                        <h6 class="subtitle1 mb-50">Team</h6>
+                        <h6 class="subtitle1 mb-50">Report</h6>
+                    </div>
+                </div>
+            </div>
+            <hr class="line mb-50 mt-3">
+            <p class="text-center subtitle1 fw-semi-bold text-dark-navy">© Mosque Ranger 2022, All Rights Reserved</p>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- TYPED -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Typed -->
+    <script>
+        // AOS
+        AOS.init();
+
+        // Typed
+        var typed = new Typed('#subtitle', {
+            strings: ['Meraih Mimpi <br> Wujudkan <br> Generasi Qurani'],
+            typeSpeed: 200,
+            showCursor: false,
+        });
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>
