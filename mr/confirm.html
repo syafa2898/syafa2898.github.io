@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+
+    <title>MR - You Buy You Donate</title>
+</head>
+
+<body>
+    <div class="nav-ybyd nav-catalogue bg-ybyd">
+        <div class="body">
+            <div class="row justify-content-between d-flex">
+                <div class="col-3">
+                    <a href="#"><button class="btn btn-back"><img src="assets/img/ybyd2/back.svg" class="m-auto"></button></a>
+                </div>
+                <div class="col-8 title-detail text-end">
+                    <p class="mt-2">Konfirmasi Pesanan</p>
+                </div>
+            </div>
+        </div>
+        <!-- Body -->
+    </div>
+    <!-- Nav-catalogue -->
+
+    <div class="body">
+        <div class="confirm">
+            <h4 class="text-center fw-bold mb-5">Konfirmasi Pesanan</h4>
+        </div>
+
+        <div class="row justify-content-center">
+            <img src="assets/img/ybyd2/confirm.svg" class="w-75">
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h5 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed btn-outline-light btn-confirm" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Detail Pesanan</button>
+                </h5>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="form-order p-4">
+                            <div class="row">
+                                <div class="col-5">No Pesanan</div>
+                                <div class="col-7">: #123456</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-5">Type</div>
+                                <div class="col-7">: Cireng Isi</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-5">Varian</div>
+                                <div class="col-7">: Keju</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-5">Jumlah</div>
+                                <div class="col-7">: 2</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-5">Nama</div>
+                                <div class="col-7">: Syafa</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-5">No Telp</div>
+                                <div class="col-7">: 08999-9999-9999</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-5">Alamat</div>
+                                <div class="col-7">: Jalan Jankes AD RT 08 RW 01 No. 04 Munjul Cipayung Jakarta Timur</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-5">Ekspedisi</div>
+                                <div class="col-7">: Sameday</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-5">Catatan</div>
+                                <div class="col-7">: -</div>
+                            </div>
+                        </div>
+                        <!-- Form-order -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-order mt-5 p-4 d-none">
+            <div class="row">
+                <div class="col-5">No Pesanan</div>
+                <div class="col-7">: #123456</div>
+            </div>
+            <div class="row">
+                <div class="col-5">Type</div>
+                <div class="col-7">: Cireng Isi</div>
+            </div>
+            <div class="row">
+                <div class="col-5">Varian</div>
+                <div class="col-7">: Keju</div>
+            </div>
+            <div class="row">
+                <div class="col-5">Jumlah</div>
+                <div class="col-7">: 2</div>
+            </div>
+            <div class="row">
+                <div class="col-5">Nama</div>
+                <div class="col-7">: Syafa</div>
+            </div>
+            <div class="row">
+                <div class="col-5">No Telp</div>
+                <div class="col-7">: 08999-9999-9999</div>
+            </div>
+            <div class="row">
+                <div class="col-5">Alamat</div>
+                <div class="col-7">: Jalan Jankes AD RT 08 RW 01 No. 04 Munjul Cipayung Jakarta Timur</div>
+            </div>
+            <div class="row">
+                <div class="col-5">Ekspedisi</div>
+                <div class="col-7">: Sameday</div>
+            </div>
+            <div class="row">
+                <div class="col-5">Catatan</div>
+                <div class="col-7">: -</div>
+            </div>
+        </div>
+        <!-- Form-order -->
+
+        <div class="mt-3 p-2">
+            <!-- <div class="col-5">
+                    <h6 class="fw-bold fs-5">No Pesanan :</h6>
+                </div>
+                <div class="col-5 text-end" id="order-id">
+                    <h6 class="fw-bold fs-5">#123456</h6>
+                </div> -->
+            <div class="row fs-5">
+                <div class="col-5">No Pesanan :</div>
+                <div class="col-7 fw-bold text-end" id="order-id">#123456</div>
+                <!-- <div class="col-2">
+                    <button type="button" data-clipboard-target="#order-id" class="btn btn-sm btn-outline-secondary"><i class="bi bi-clipboard"></i></button>
+                </div> -->
+            </div>
+            <div class="row fs-5">
+                <div class="col-5">Total Tagihan :</div>
+                <div class="col-7 fw-bold text-end">Rp. 100.000</div>
+            </div>
+            <div class="row">
+                <div style="font-size: 12px;">(Belum termasuk ongkir)</div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-3 text-end">
+                    <button type="button" onclick="copied()" data-clipboard-target="#order-id" class="btn btn-sm btn-outline-secondary w-75">Salin</i></button>
+                </div>
+            </div>
+
+            <a href="https://api.whatsapp.com/send/?phone=6287875039335&text=Saya%20ingin%20konfirmas%20pesanan%20saya%20%0ADengan%20no%20pesanan%20:%20">
+                <button class="btn btn-ybyd w-100 mb-3 mt-5 fw-bolder">Konfirmasi</button>
+            </a>
+
+            <ul style="font-size: 12px;" class="fw-bold">
+                <li>Salin no pesanan</li>
+                <li>Konfirmasi pesanan via Whatsapp</li>
+                <li>Kirim bukti transfer</li>
+                <li>Pesanan diproses</li>
+            </ul>
+        </div>
+        <!-- Body -->
+        <div class="footer"></div>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+        <script>
+            new ClipboardJS(".btn");
+
+            function copied() {
+
+            }
+        </script>
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
+
+</html>

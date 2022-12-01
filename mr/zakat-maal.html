@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins&display=swap" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style2.css">
+
+    <title>MR - Kalkulator Zakat</title>
+</head>
+
+<body>
+    <div class="body">
+        <div class="navbar align-content-center">
+            <a class="navbar-brand" href="https://mosqueranger.org/">
+                <img src="assets/img/back.svg" alt="" class="back">
+            </a>
+            <p class="nav">Kalkulator Zakat</p>
+        </div>
+    </div>
+    <!-- Body -->
+
+    <div class="banner banner-zakat">
+        <div class="cta">
+            <h5>Yuk Hitung <br> Zakatmu Sekarang</h5>
+            <a href="#"><button class="btn btn-hitung">Hitung Zakat</button></a>
+        </div>
+        <div class="row justify-content-end">
+            <img src="assets/img/zakat.svg" alt="" class="vector-zakat">
+        </div>
+    </div>
+    <!-- banner-zakat -->
+
+    <div class="body">
+        <div class="row-box row justify-content-between">
+            <div class="box box-zakat text-center align-items-center">
+                <a href="kalkulator-zakat.html" class="text-decoration-none">
+                    <img src="assets/img/penghasilan.svg" alt="">
+                    <h6>Zakat Penghasilan</h6>
+                </a>
+            </div>
+            <div class="box box-zakat text-center align-items-center">
+                <a href="zakat-maal.html" class="text-decoration-none">
+                    <img class="mt-1" src="assets/img/maal.svg" alt="">
+                    <h6>Zakat Maal</h6>
+                </a>
+            </div>
+            <div class="box box-zakat text-center align-items-center">
+                <a href="zakat-fidyah.html" class="text-decoration-none">
+                    <img class="mt-1" src="assets/img/fidyah.svg" alt="">
+                    <h6>Zakat Fidyah</h6>
+                </a>
+            </div>
+        </div>
+        <!-- row -->
+
+        <div class="kalkulator-zakat">
+            <h5>Kalkulator Zakat</h5>
+            <div class="form-zakat">
+                <h6>Jenis Zakat</h6>
+                <select style="background: #FDE3C8;" class="form-kalkulator form-select form-select-sm" aria-label=".form-select-sm example Disabled" disabled>
+                    <option value="penghasilan">Zakat Penghasilan</option>
+                    <option value="maal" selected>Zakat Maal</option>
+                    <option value="fidyah">Zakat Fidyah</option>
+                </select>
+            </div>
+            <div class="form-zakat">
+                <label for="perhiasan" class="form-label"><h6>Nilai Perhiasan (emas, perak, permata)</h6></label>
+                <input type="text" class="form-control input-form" id="perhiasan">
+            </div>
+            <div class="form-zakat">
+                <label for="tabungan" class="form-label"><h6>Uang tunai, tabungan, deposito</h6></label>
+                <input type="text" class="form-control input-form" id="tabungan">
+            </div>
+            <div class="form-zakat">
+                <label for="aset" class="form-label"><h6>Kendaraan, rumah, aset lain</h6></label>
+                <input type="text" class="form-control input-form" id="aset">
+            </div>
+            <div class="form-zakat">
+                <label for="hutang" class="form-label"><h6>Jumlah hutang/cicilan (optional)</h6></label>
+                <input type="text" class="form-control input-form" id="hutang">
+            </div>
+            <div class="row justify-content-center">
+                <button type="submit" class="btn btn-hitung">Hitung</button>
+            </div>
+        </div>
+        <!-- kalkulator-zakat -->
+    </div>
+    <!-- body -->
+
+    <div class="footer"></div>
+
+    <div class="menu d-flex justify-content-between">
+        <div class="ikon_sholat text-center">
+            <a href="jadwal-sholat.html"><img width="24" class="mb-2" src="assets/img/ikon-jam.svg" alt="">
+                <p class="text-black-50">Waktu Sholat</p>
+            </a>
+        </div>
+        <div class="ikon_puasa text-center">
+            <a href="kalender-puasa.html"><img width="24" class="mb-2" src="assets/img/ikon-kalender.svg" alt="">
+                <p class="text-black-50">Kalender Puasa</p>
+            </a>
+        </div>
+        <div class="ikon_zakat text-center">
+            <a href="kalkulator-zakat.html"><img width="24" class="mb-2" src="assets/img/ikon-kalkulator-aktif.svg" alt="">
+                <p>Kalkulator Zakat</p>
+            </a>
+        </div>
+        <div class="ikon_doa text-center">
+            <a href="doa-dzikir.html"><img height="24" class="mb-2" src="assets/img/ikon-doa.svg" alt="">
+                <p class="text-black-50">Doa dan Dzikir</p>
+            </a>
+        </div>
+    </div>
+    <!-- menu -->
+</body>

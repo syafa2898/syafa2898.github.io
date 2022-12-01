@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins&display=swap" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <!-- css untuk select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- jika menggunakan bootstrap4 gunakan css ini  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@x.x.x/dist/select2-bootstrap4.min.css">
+    <!-- cdn bootstrap4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>MR - Search Location</title>
+</head>
+
+<body>
+    <div class="body">
+        <div class="navbar align-content-center">
+            <a class="navbar-brand" href="https://mosqueranger.org/">
+                <img src="assets/img/back.svg" alt="" class="back">
+            </a>
+            <p class="nav">Search Location</p>
+        </div>
+        <hr class="line">
+        <!-- navbar -->
+        <div class="form-group" style="margin: 30px; margin-top: 0;">
+            <select id="kota" name="kota" class="form-control">
+                <option selected value="jakarta">Jakarta</option>
+                <option value="bogor">Bogor</option>
+                <option value="depok">Depok</option>
+                <option value="tangerang">Tangerang</option>
+                <option value="bekasi">Bekasi</option>
+                <option value="bandung">Bandung</option>
+                <option value="semarang">Semarang</option>
+                <option value="yogyakarta">Yogyakarta</option>
+                <option value="surabaya">Surabaya</option>
+            </select>
+        </div>
+        <!-- form-group -->
+    </div>
+    <!-- body -->
+    <div class="menu d-flex justify-content-between">
+        <div class="ikon_sholat text-center">
+            <a href="jadwal-sholat.html"><img width="24" class="mb-2" src="assets/img/ikon-jam-aktif.svg" alt="">
+                <p>Waktu Sholat</p>
+            </a>
+        </div>
+        <div class="ikon_puasa text-center">
+            <a href="kalender-puasa.html"><img width="24" class="mb-2" src="assets/img/ikon-kalender.svg" alt="">
+                <p class="text-black-50">Kalender Puasa</p>
+            </a>
+        </div>
+        <div class="ikon_zakat text-center">
+            <a href="kalkulator-zakat.html"><img width="24" class="mb-2" src="assets/img/ikon-kalkulator.svg" alt="">
+                <p class="text-black-50">Kalkulator Zakat</p>
+            </a>
+        </div>
+        <div class="ikon_doa text-center">
+            <a href="doa-dzikir.html"><img height="24" class="mb-2" src="assets/img/ikon-doa.svg" alt="">
+                <p class="text-black-50">Doa dan Dzikir</p>
+            </a>
+        </div>
+    </div>
+    <!-- menu -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+    <!-- wajib jquery  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- js untuk bootstrap4  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- js untuk select2  -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#kota").select2({
+                placeholder: "Please Select"
+            });
+        });
+    </script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+
+</html>

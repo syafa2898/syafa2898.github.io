@@ -1,0 +1,1117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade:wght@400;700&display=swap');
+body {
+    background-color: white;
+    width: 36%;
+    margin: auto;
+    margin-top: -10px;
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.1);
+    padding-bottom: 50px;
+    max-width: 480px;
+}
+
+.body {
+    padding: 0 6%;
+    /* background-color: lightcyan; */
+}
+
+.navbar {
+    /* background-color: aqua; */
+    padding: 20px 0;
+}
+
+.back {
+    width: 15px;
+}
+
+.navbar .nav {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.menu {
+    width: inherit;
+    height: 80px;
+    padding: 18px 30px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #2E3349;
+}
+
+.menu a {
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 13px;
+    color: #333;
+    text-decoration: none;
+}
+
+.banner {
+    border-top: 1px solid #888888;
+    padding: 50px 35px 20px 50px;
+    margin-bottom: 50px;
+    height: 270px;
+}
+
+.banner .cta h5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.modal-custom .modal-header h6 {
+    font-size: 16px;
+}
+
+.modal-custom .modal-body p {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.footer {
+    margin-bottom: 100px;
+}
+
+.row-box {
+    margin: auto;
+}
+
+
+/* Sholattt */
+
+.banner-sholat {
+    background: #9CC2F7;
+    color: #403965;
+}
+
+.btn-location {
+    background: #403965;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.btn-location:hover {
+    color: #fff
+}
+
+.vector-sholat {
+    margin-top: -18px;
+    width: 220px;
+}
+
+.date h5 {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 0;
+}
+
+.date h6 {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 21px;
+}
+
+.schedule .row {
+    margin-bottom: 5px;
+}
+
+.schedule h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.schedule h6 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #403965;
+}
+
+.schedule hr {
+    margin: auto;
+    width: 96%;
+    border: 1px solid #959595;
+}
+
+.modal-sholat .modal-header {
+    background-color: #9CC2F7;
+}
+
+.location-buttons {
+    width: 80%;
+    margin: auto;
+}
+
+.location-buttons .location-button button {
+    height: 50px;
+    background: #9CC2F7;
+    border: 2px solid #403965;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+}
+
+
+/* Zakattt */
+
+.banner-zakat {
+    background: #FDE3C8;
+    color: #65564D;
+}
+
+.banner-zakat .cta h5 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.banner-zakat .cta button {
+    background: #65564D;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 10px;
+    color: #fff;
+    margin-top: 6px;
+}
+
+.vector-zakat {
+    margin-top: -84px;
+    width: 240px;
+    margin-right: -35px;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    padding: 18px 0;
+    margin-bottom: 30px;
+}
+
+.box-zakat {
+    background: #FDE3C8;
+}
+
+.box-zakat h6 {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 13px;
+    color: #333333;
+    margin-top: 10px;
+}
+
+.kalkulator-zakat {
+    border: 2px solid #2E3349;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 10px 30px 50px 30px;
+}
+
+.kalkulator-zakat h5 {
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.form-zakat h6 {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    margin: 20px 0 20px 20px;
+    margin-bottom: 10px;
+}
+
+.form-kalkulator,
+.input-form {
+    width: 90%;
+    margin: auto;
+    font-size: 10px;
+}
+
+.input-form {
+    margin-top: -10px;
+}
+
+.kalkulator-zakat .row button {
+    background: #FDE3C8;
+    border: 1px solid #2E3349;
+    border-radius: 5px;
+    font-weight: 500;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.kalkulator-zakat button:hover {
+    color: #333;
+}
+
+
+/* Puasaaa */
+
+.banner-puasa {
+    background: #FFC7C0;
+    color: #7B3A3A;
+}
+
+.banner .cta .btn-puasa {
+    background: #7B3A3A;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.vector-puasa {
+    margin-top: -28px;
+    width: 240px;
+}
+
+.date h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.day {
+    width: 40px;
+    height: 50px;
+    background: #FFD4CE;
+    border: 2px solid #7B3A3A;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.day h6 {
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 12px;
+    margin-bottom: 4px;
+    margin-top: 5px;
+}
+
+.day h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.card-puasa {
+    margin-bottom: 30px;
+    border: 2px solid #7B3A3A;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.tag {
+    width: 10px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 15px 10px 15px 20px;
+}
+
+.card-puasa h6 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 7px;
+}
+
+.card-puasa p {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.ayyamul-bidh {
+    background-color: #FFC7C0;
+}
+
+.senin-kamis {
+    background-color: #84B5FF;
+}
+
+.puasa-asyura {
+    background-color: #ABA4FF;
+}
+
+.puasa-tasua {
+    background-color: #49DFD6;
+}
+
+.modal-puasa .modal-header {
+    background-color: #FFC7C0;
+}
+
+
+/* Doaaa */
+
+.banner-doa {
+    color: #1F4B4B;
+    background-color: #80CACA;
+}
+
+.banner-doa .cta .btn-doa {
+    background: #1F4B4B;
+    color: white;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.vector-doa {
+    margin-top: -20px;
+    width: 220px;
+}
+
+.buttons {
+    padding: 0 1%;
+    box-sizing: border-box;
+}
+
+.btn-dzikir {
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid #80CACA;
+    box-sizing: border-box;
+}
+
+.btn-dzikir:hover {
+    background-color: #80CACA;
+}
+
+.btn-active {
+    background-color: #80CACA;
+}
+
+.buttons .btn-dzikir .btn {
+    font-size: 12px;
+    color: #333;
+    font-weight: 600;
+    padding: 0;
+}
+
+.btn-dzikir .btn img {
+    height: 25px;
+    margin-right: 15px;
+}
+
+.modal-doa .modal-header {
+    background-color: #80CACA;
+}
+
+
+/* Dzikir Pagiii */
+
+.title h6 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #3b8686;
+}
+
+.title p {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.intro p {
+    font-size: 13px;
+}
+
+.ayat {
+    background: #FFFFFF;
+    border: 3px solid #83D0CD;
+    box-sizing: border-box;
+    border-radius: 13px;
+    margin-bottom: 50px;
+}
+
+.head-ayat {
+    margin: 0;
+    background: #83D0CD;
+    border: 3px solid #83D0CD;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0px 0px;
+    color: #333;
+    padding: 10px 20px 10px 10px;
+}
+
+.body-ayat {
+    margin-top: 30px;
+    padding: 0 25px 15px 25px;
+}
+
+.body-ayat h2 {
+    font-family: 'Scheherazade', serif;
+    font-size: 35px;
+    color: #333;
+}
+
+.body-ayat p {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.modal-dialog .modal-header .faedah {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* Doa Anakkk */
+
+.box-doa {
+    background-color: #83D0CD;
+}
+
+.box-doa h6 {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 13px;
+    color: #333333;
+    margin-top: 10px;
+}
+
+
+/* Doa Pilihannn */
+
+.doa-pilihan {
+    padding: 0 1%;
+}
+
+.card-doa {
+    border: 3px solid #80CACA;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.card-doa h6 {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    color: #333;
+}
+
+.card-pilihan {
+    background: linear-gradient(90deg, #80CACA 0%, rgba(128, 202, 202, 0) 81.25%);
+}
+
+.modal-doa h2 {
+    font-family: 'Scheherazade', serif;
+    font-size: 40px;
+    text-align: right;
+    margin: 5px 0 10px 0;
+}
+
+.dalil {
+    font-size: 12px;
+}
+
+
+/* Detail Program */
+
+.bg-program {
+    background: #065286;
+    color: white;
+}
+
+.bg-program:hover {
+    color: white;
+}
+
+
+/* .navbar-program {
+    background-color: white;
+    margin: auto;
+    position: fixed;
+} */
+
+.banner-program {
+    background-image: url(../img/detail-program/banner-program.jpg);
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.title-program {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.btn-donasi {
+    margin-top: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.subtitle-program {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.content-program {
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.btn-selengkapnya {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.show-all {
+    font-size: 12px;
+    line-height: 18px;
+    color: #1959B3;
+    text-decoration: none;
+}
+
+.update {
+    margin-top: -20px;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.kondisi-awal img {
+    width: 43%;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.footer-program {
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-bottom: -130px;
+}
+
+.title-rekening {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.bank {
+    width: 150px;
+}
+
+.btn-wa {
+    padding: 8px 17px;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #065286;
+    line-height: 18px;
+    background-color: #fff;
+}
+
+.btn-wa:hover {
+    color: #065286;
+}
+
+.icons {
+    margin-top: -10px;
+}
+
+.text-contact {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+
+/* You Buy You Donate */
+
+
+/* .banner-ybyd {
+    color: white;
+    background-color: #9686C3;
+}
+
+.text-ybyd {
+    color: #4C456E;
+}
+
+.banner-ybyd .cta .btn-ybyd {
+    background: white;
+    color: #4C456E;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.vector-ybyd {
+    margin-top: -30px;
+    width: 240px;
+} */
+
+
+/* .card-catalogue {
+    width: 46%;
+    padding: 20px;
+    border: 1px solid #4C456E;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+}
+
+.card-catalogue img {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #4C456E;
+    border-radius: 5px;
+}
+
+.btn-buy {
+    height: 30px;
+    font-size: 12px;
+    color: white;
+    width: 100%;
+    background-color: #4C456E;
+    margin-top: 30px;
+} */
+
+
+/* .btn-buy:hover {
+    color: white;
+} */
+
+
+/* Detail Product */
+
+
+/* .cover {width: 100%;
+height: 300px;
+background-size: cover;
+}
+
+.title-product {
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: -40px;
+}
+
+.desc-title,
+.delivery-title,
+.testimoni-title,
+.image-title {
+    border-bottom: 2px solid #d2d2d2;
+}
+
+.info-ybyd {
+    margin-top: -5px;
+}
+
+.desc-content {
+    font-size: 14px;
+}
+
+.testi-card {
+    background-color: #4C456E;
+    border-radius: 10px;
+    margin-top: 80px;
+    padding-bottom: 30px;
+    min-height: 250px;
+}
+
+.testi-card2 {
+    background-color: #4C456E;
+    border-radius: 10px;
+    margin-top: 80px;
+    padding-bottom: 30px;
+    min-height: 180px;
+}
+
+.testi-card2 p {
+    margin: auto;
+    width: 92%;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.img-testi {
+    margin-top: -60px;
+    max-width: 100px;
+}
+
+.testi-card p {
+    margin: auto;
+    width: 92%;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.btn-order {
+    height: 95%;
+    color: white;
+    width: 100%;
+    background-color: #4C456E;
+}
+
+.btn-order:hover {
+    color: white;
+}
+
+.image .row,
+.catalogue .row {
+    box-sizing: border-box;
+}
+
+.modal-img {
+    border-radius: 10px;
+}
+
+.modal-preview {
+    width: 100%;
+} */
+
+
+/* Ybyd2 */
+
+.bg-ybyd {
+    background-color: #116960;
+}
+
+.font-ybyd {
+    color: #116960;
+}
+
+.nav-ybyd {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    height: 100px;
+}
+
+.nav-catalogue h5 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-catalogue p {
+    font-size: 14px;
+}
+
+.logo {
+    border-radius: 50%;
+    max-width: 45px;
+}
+
+.banner-ybyd2 {
+    margin: auto;
+    width: 100%;
+    height: 180px;
+    background-color: #E9C354;
+    padding: 0 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.vector-ybyd {
+    height: 110px;
+}
+
+.banner-ybyd2 h5,
+.category h5,
+.catalogue h5 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.banner-ybyd2 h5 {
+    margin-top: 15px;
+}
+
+.btn-ybyd2 {
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.btn-ybyd2:hover {
+    color: white;
+}
+
+.category h5 {
+    color: #333;
+}
+
+.category a.link,
+.catalogue a.link {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn-ybyd3 {
+    background-color: #E9C354;
+    font-size: 1rem;
+    padding: 2% 3%;
+    border-radius: 7px;
+    border: 2px solid #116960;
+}
+
+.btn-ybyd3:hover {
+    color: #116960;
+}
+
+.card-catalogue {
+    background-color: #E9C354;
+    padding: 0;
+    width: 46%;
+    border: 2px solid #116960;
+    border-radius: 10px;
+}
+
+.card-catalogue img {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-catalogue a {
+    text-decoration: none;
+    color: #333;
+}
+
+.btn-back {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.catalogue-content {
+    padding: 15px 20px;
+}
+
+.btn-back img {
+    width: 80%;
+}
+
+.title-detail {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.img-preview img {
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.thumbnail-ybyd img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #116960;
+}
+
+.title-product {
+    margin-top: 30px;
+}
+
+.title-product h4 {
+    font-weight: bold;
+}
+
+.desc-title,
+.delivery-title,
+.testimoni-title,
+.image-title {
+    border-bottom: 2px solid #E9C354;
+}
+
+.box-testimoni {
+    padding: 20px;
+    background-color: #E9C354;
+    border: 2px solid #116960;
+    border-radius: 10px;
+}
+
+.box-testimoni img {
+    max-width: 40px;
+    border-radius: 50%;
+}
+
+.box-testimoni .row h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+.form-order {
+    background-color: #E9C354;
+    border: 2px solid #116960;
+    border-radius: 20px;
+}
+
+
+/* Media */
+
+@media only screen and (max-width: 1100px) {
+    body {
+        width: 53%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .banner {
+        padding: 30px 25px 15px 30px;
+    }
+    .menu p {
+        font-size: 8px;
+    }
+    .vector-sholat,
+    .vector-puasa {
+        width: 200px;
+    }
+    .schedule h6,
+    .schedule h5,
+    .date h5 {
+        font-size: 14px;
+    }
+    .vector-doa {
+        width: 180px;
+    }
+    .banner {
+        height: 220px;
+    }
+    .banner .cta h5 {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 25px;
+        margin-bottom: 8px;
+    }
+    .banner .cta button {
+        font-size: 9px;
+    }
+    .banner .cta .btn-doa,
+    .banner .cta .btn-puasa {
+        font-size: 9px;
+    }
+    .box {
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        padding: 12px 0;
+        margin-bottom: 30px;
+    }
+    .box img {
+        height: 40px;
+    }
+    .day {
+        width: 35px;
+        height: 45px;
+    }
+    .day h6 {
+        font-weight: 500;
+        font-size: 7px;
+        line-height: 10px;
+        margin-bottom: 3px;
+        margin-top: 6px;
+    }
+    .day h4 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .buttons .btn-dzikir .btn {
+        padding: 0;
+        font-size: 10px;
+    }
+    .btn-dzikir .btn img {
+        height: 20px;
+        margin-right: 10px;
+    }
+    .title h6 {
+        font-size: 18px;
+    }
+    .card-doa {
+        height: 60px;
+    }
+    .box-card {
+        padding: 5px;
+        width: 40px;
+        height: 40px;
+        border-radius: 7px;
+        margin-left: 10px;
+    }
+    .box-card h3 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .card-doa h6 {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .card-doa button img {
+        width: 25px;
+    }
+    .card-doa button {
+        margin-left: -17px;
+    }
+    .location-buttons .location-button button {
+        font-size: 11px;
+    }
+    /* ybyd */
+    .vector-ybyd {
+        height: 85px;
+    }
+    .banner-ybyd2 {
+        height: 180px;
+        background-color: #E9C354;
+        padding: 0 10px;
+    }
+    .banner-ybyd2 h5 {
+        font-size: 14px;
+    }
+    .btn-ybyd3 {
+        font-size: smaller;
+    }
+    .btn-ybyd3 img {
+        width: 20px;
+    }
+    .nav-detail {
+        height: 280px;
+    }
+    p {
+        font-size: 14px;
+    }
+}

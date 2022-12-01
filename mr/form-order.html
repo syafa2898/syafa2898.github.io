@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <style>
+        /* webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        } */
+    </style>
+
+    <title>MR - You Buy You Donate</title>
+</head>
+
+<body>
+    <div class="nav-ybyd nav-catalogue bg-ybyd">
+        <div class="body">
+            <div class="row justify-content-between">
+                <div class="col-3">
+                    <a href="#"><button class="btn btn-back"><img src="assets/img/ybyd2/back.svg" class="m-auto"></button></a>
+                </div>
+                <div class="col-8 title-detail text-end">
+                    <p class="mt-3">Form Order</p>
+                </div>
+            </div>
+        </div>
+        <!-- Body -->
+    </div>
+    <!-- Nav-catalogue -->
+
+    <div class="body">
+        <!-- <div class="form-order">
+            <div class="product m-4" id="product">
+                <div class="row g-0">
+                    <div class="col-3 me-4">
+                        <div class="thumbnail-ybyd">
+                            <img src="assets/img/ybyd2/foto1.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <input name="type" value="Brownies Donat" type="text" class="border-0 bg-white fw-bold" id="name" disabled>
+                        <h6>Rp. 99.000</h6>
+                        <button onclick="counterMin()" id="minus" class="btn btn-ybyd2">-</button>
+                        <input type="number" name="qty" value="1" min="1" max="100" class="border-0 w-25 text-center" id="counter">
+                        <button onclick="counterPlus()" class="btn btn-ybyd2">+</button>
+                    </div>
+                    <div class="col-2 text-end">
+                        <button class="btn btn-outline-secondary" onclick="remove()"><i class="bi bi-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product m-4" id="product2">
+                <div class="row g-0">
+                    <div class="col-3 me-4">
+                        <div class="thumbnail-ybyd">
+                            <img src="assets/img/ybyd2/foto2.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <input name="type" value="Brownies Donat" type="text" class="border-0 bg-white fw-bold" id="name" disabled>
+                        <h6>Rp. 99.000</h6>
+                        <button onclick="counterMin()" id="minus" class="btn btn-ybyd2">-</button>
+                        <input type="number" name="qty" value="1" min="1" max="100" class="border-0 w-25 text-center" id="counter">
+                        <button onclick="counterPlus()" class="btn btn-ybyd2">+</button>
+                    </div>
+                    <div class="col-2 text-end">
+                        <button class="btn btn-outline-secondary" onclick="remove2()"><i class="bi bi-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product m-4" id="product3">
+                <div class="row g-0">
+                    <div class="col-3 me-4">
+                        <div class="thumbnail-ybyd">
+                            <img src="assets/img/ybyd2/foto3.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <input name="type" value="Brownies Donat" type="text" class="border-0 bg-white fw-bold" id="name" disabled>
+                        <h6>Rp. 99.000</h6>
+                        <button onclick="counterMin()" id="minus" class="btn btn-ybyd2">-</button>
+                        <input type="number" name="qty" value="1" min="1" max="100" class="border-0 w-25 text-center" id="counter">
+                        <button onclick="counterPlus()" class="btn btn-ybyd2">+</button>
+                    </div>
+                    <div class="col-2 text-end">
+                        <button class="btn btn-outline-secondary" onclick="remove3()"><i class="bi bi-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- From-order -->
+
+        <!-- Cara2 -->
+        <div class="type mb-3">
+            <!-- <h6>Keranjang Belanja</h6> -->
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="input-cireng">
+                        <label class="form-check-label" for="input-cireng">Cireng</label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="input-brownies-sekat">
+                        <label class="form-check-label" for="input-brownies-sekat">Brownies Sekat</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="input-brownies-donat">
+                        <label class="form-check-label" for="input-brownies-donat">Brownies Donat</label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="input-kebab">
+                        <label class="form-check-label" for="input-kebab">Kebab</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="mt-3" method="post" action="form-order2.html">
+            <div class="product row g-0 mt-3 p-3 radius border" id="product-cireng" style="display: none">
+                <div class="col-3 me-3 align-self-center">
+                    <div class="thumbnail-ybyd">
+                        <img src="assets/img/ybyd2/foto1.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <input name="type" value="cireng" type="hidden" class="border-0 fw-bold bg-white mb-1" id="name" disabled>
+                    <h6>Cireng Isi</h6>
+                    <h6>Rp. <span id="subtotalCireng">20000</span></h6>
+                    <!-- <button onclick="counterMin()" id="minus" class="btn btn-sm btn-primary">-</button> -->
+                    <input type="number" name="qty" value="1" min="1" max="100" class="border-0 w-25 text-center" id="counter" oninput="priceCireng(this.value)" onchange="priceCireng(this.value)">
+                    <!-- <button onclick="counterPlus()" class="btn btn-sm btn-primary">+</button> -->
+                    <input type="text" name="notes" id="notes-cireng" placeholder="Catatan" class="form-control mt-2 form-control-sm">
+                </div>
+            </div>
+            <!-- product -->
+            <div class="product row g-0 mt-3 p-3 radius border" id="product-brownies-donat" style="display: none">
+                <div class="col-3 me-3 align-self-center">
+                    <div class="thumbnail-ybyd">
+                        <img src="assets/img/ybyd2/foto2.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <input name="type" value="Brownies Donat" type="hidden" class="border-0 fw-bold bg-white mb-1" id="name" disabled>
+                    <h6>Brownies Donat</h6>
+                    <h6>Rp. <span id="subtotalBrowniesDonat">10000</span></h6>
+                    <!-- <button onclick="counterMin()" id="minus" class="btn btn-sm btn-primary">-</button> -->
+                    <input type="number" name="qty" value="1" min="1" max="100" class="border-0 w-25 text-center" id="counter" oninput="priceBrowniesDonat(this.value)" onchange="priceBrowniesDonat(this.value)">
+                    <!-- <button onclick="counterPlus()" class="btn btn-sm btn-primary">+</button> -->
+                    <input type="text" name="notes" id="notes-brownies-donat" placeholder="Catatan" class="form-control mt-2 form-control-sm">
+                </div>
+            </div>
+            <!-- product -->
+            <div class="product row g-0 mt-3 p-3 radius border" id="product-brownies-sekat" style="display: none">
+                <div class="col-3 me-3 align-self-center">
+                    <div class="thumbnail-ybyd">
+                        <img src="assets/img/ybyd2/foto3.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <input name="type" value="Brownies Sekat" type="hidden" class="border-0 fw-bold bg-white mb-1" id="name" disabled>
+                    <h6>Brownies Sekat</h6>
+                    <h6>Rp. <span id="subtotalBrowniesSekat">65000</span></h6>
+                    <!-- <button onclick="counterMin()" id="minus" class="btn btn-sm btn-primary">-</button> -->
+                    <input type="number" name="qty" value="1" min="1" max="100" class="border-0 w-25 text-center" id="counter" oninput="priceBrowniesSekat(this.value)" onchange="priceBrowniesSekat(this.value)">
+                    <!-- <button onclick="counterPlus()" class="btn btn-sm btn-primary">+</button> -->
+                    <input type="text" name="notes" id="notes-brownies-sekat" placeholder="Catatan" class="form-control mt-2 form-control-sm">
+                </div>
+            </div>
+            <!-- product -->
+            <div class="product row g-0 mt-3 p-3 radius border" id="product-kebab" style="display: none">
+                <div class="col-3 me-3 align-self-center">
+                    <div class="thumbnail-ybyd">
+                        <img src="assets/img/ybyd2/foto4.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <input name="type" value="Kebab" type="hidden" class="border-0 fw-bold bg-white mb-1" id="name" disabled>
+                    <h6>Kebab</h6>
+                    <h6>Rp. <span id="subtotalKebab">20000</span></h6>
+                    <!-- <button onclick="counterMin()" id="minus" class="btn btn-sm btn-primary">-</button> -->
+                    <input type="number" name="qty" value="1" min="1" max="100" class="border-0 w-25 text-center" id="counter" oninput="priceKebab(this.value)" onchange="priceKebab(this.value)">
+                    <!-- <button onclick="counterPlus()" class="btn btn-sm btn-primary">+</button> -->
+                    <input type="text" name="notes" id="notes-kebab" placeholder="Catatan" class="form-control mt-2 form-control-sm">
+                </div>
+            </div>
+            <!-- product -->
+            <!-- <div class="total mt-5">
+                <h5>Total = Rp. <span id="total"></span></h5>
+            </div> -->
+            <div class="form-order mt-5 p-4 pt-5">
+                <h4 class="text-center fw-bolder mb-5">Form Penerima</h4>
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input name="name" type="text" class="form-control" id="nama" placeholder="Masukkan Nama">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">No Telp</label>
+                    <input name="phone" type="number" class="form-control" id="phone" placeholder="Masukkan No Telepon">
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Alamat</label>
+                    <textarea name="address" type="text" class="form-control" id="address" placeholder="Masukkan Alamat" rows="4"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="kurir" class="form-label">Opsi Pengiriman</label>
+                    <select name="delivery" class="form-select" aria-label="Default select example" id="kurir">
+                    <option value="gosend">Gosend</option>
+                    <option value="grab">Grab</option>
+                    <option value="paxel">Paxel</option>
+                    <option value="jne">Jne</option>
+                    <option value="cod">Cod</option>
+                </select>
+                </div>
+                <div class="mb-3">
+                    <label for="note" class="form-label">Catatan</label>
+                    <textarea name="note" type="text" class="form-control" rows="3" id="note" placeholder="Masukkan Catatan"></textarea>
+                </div>
+                <!-- <button type="submit" class="btn btn-ybyd3 w-100 mb-5 fw-bolder">Submit</button> -->
+                <a href="confirm.html">
+                    <button class="btn btn-ybyd w-100 mb-5 mt-3 fw-bolder">Submit</button>
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer"></div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+        // let total = document.getElementById("total");
+
+        // function total() {
+        //     total.innerHTML = 2;
+        // }
+        // total = subtotalCireng + subtotalBrowniesDonat + subtotalBrowniesSekat + subtotalKebab;
+
+
+        let subtotalCireng = document.getElementById("subtotalCireng");
+
+        function priceCireng(valNum) {
+            subtotalCireng.innerHTML = valNum * 20000;
+            return subtotalCireng;
+        }
+
+        let subtotalBrowniesDonat = document.getElementById("subtotalBrowniesDonat");
+
+        function priceBrowniesDonat(valNum) {
+            subtotalBrowniesDonat.innerHTML = valNum * 10000;
+            return subtotalBrowniesDonat;
+        }
+
+        let subtotalBrowniesSekat = document.getElementById("subtotalBrowniesSekat");
+
+        function priceBrowniesSekat(valNum) {
+            subtotalBrowniesSekat.innerHTML = valNum * 65000;
+            return subtotalBrowniesSekat;
+        }
+
+        let subtotalKebab = document.getElementById("subtotalKebab");
+
+        function priceKebab(valNum) {
+            subtotalKebab.innerHTML = valNum * 20000;
+            return subtotalKebab;
+        }
+
+        // let total = document.getElementById("total")
+
+        // function total {
+        //     total = subtotalCireng + subtotalBrowniesDonat + subtotalBrowniesSekat + subtotalKebab;
+        // }
+        // const counter = document.getElementById("counter");
+        // let counterValue = counter.value;
+
+        // function counterPlus() {
+        //     counter.value = ++counter.value;
+        // }
+
+        // function counterMin() {
+        //     counter.value = --counter.value;
+        // }
+
+        // let product = document.getElementById("product");
+        // let product2 = document.getElementById("product2");
+        // let product3 = document.getElementById("product3");
+
+        // function remove() {
+        //     product.classList.add("d-none");
+        // }
+
+        // function remove2() {
+        //     product2.classList.add("d-none");
+        // }
+
+        // function remove3() {
+        //     product3.classList.add("d-none");
+        // }
+
+        $(function() {
+            $("#input-cireng").click(function() {
+                if ($(this).is(":checked")) {
+                    $("#product-cireng").show();
+                } else {
+                    $("#product-cireng").hide();
+                }
+            });
+        });
+
+        $(function() {
+            $("#input-brownies-sekat").click(function() {
+                if ($(this).is(":checked")) {
+                    $("#product-brownies-sekat").show();
+                } else {
+                    $("#product-brownies-sekat").hide();
+                }
+            });
+        });
+
+        $(function() {
+            $("#input-brownies-donat").click(function() {
+                if ($(this).is(":checked")) {
+                    $("#product-brownies-donat").show();
+                } else {
+                    $("#product-brownies-donat").hide();
+                }
+            });
+        });
+
+        $(function() {
+            $("#input-kebab").click(function() {
+                if ($(this).is(":checked")) {
+                    $("#product-kebab").show();
+                } else {
+                    $("#product-kebab").hide();
+                }
+            });
+        });
+    </script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+
+</html>
+
+</html>
+
+</html>

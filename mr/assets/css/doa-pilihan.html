@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+
+    <title>MR - Doa Pilihan</title>
+</head>
+
+<body>
+    <div class="body">
+        <div class="navbar">
+            <a class="navbar-brand" href="https://mosqueranger.org/">
+                <img src="../img/back.svg" alt="" class="back">
+            </a>
+            <p class="nav">Doa Pilihan</p>
+        </div>
+        <!-- navbar -->
+        <div class="banner banner-doa">
+            <div class="cta">
+                <h5>Berdoalah Kepada-Ku, <br> Kuperkenankan Bagimu</h5>
+                <a class="scrollto" href="#dzikir"><button class="btn btn-doa">Baca Sekarang</button></a>
+            </div>
+            <div class="row justify-content-end">
+                <img src="../img/doa.svg" alt="" class="vector-doa">
+            </div>
+        </div>
+        <!-- div banner -->
+        <div class="buttons mb-5">
+            <!-- <div class="button-switch row">
+                <label class="form-check-label" class="col-3" for="flexSwitchCheckChecked"><img src="{{asset('mobile/../img/dzikir-pagi.svg')}}" alt=""></label>
+                <div class="form-check form-switch col-3">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                </div>
+            </div> -->
+            <div class="row justify-content-between">
+                <div class="btn-dzikir-pagi btn-dzikir col-5 d-flex align-items-center justify-content-center">
+                    <a href="#"><button class="btn"><img src="../img/dzikir-pagi.svg" alt="" class="me-3">Dzikir Pagi</button></a></a>
+                </div>
+                <div class="btn-dzikir-petang btn-dzikir col-5 d-flex align-items-center justify-content-center">
+                    <a href="#"><button class="btn"><img src="../img/dzikir-petang.svg" alt="" class="me-3">Dzikir Petang</button></a></a>
+                </div>
+            </div>
+            <div class="row justify-content-between mt-3">
+                <div class="btn-dzikir-pagi btn-dzikir col-5 d-flex align-items-center justify-content-center btn-active">
+                    <a href="doa-pilihan.html"><button class="btn"><img src="../img/doa-pilihan-aktif.svg" alt="" class="me-3">Doa Pilihan</button></a></a>
+                </div>
+            </div>
+            <hr class="mt-5">
+        </div>
+        <!-- buttons -->
+        <div class="doa-pilihan" id="dzikir">
+            <div class="title mb-5 text-center">
+                <h6>Kumpulan Doa Dari Quran dan Hadist</h6>
+            </div>
+            <div class="card-doa card-ganjil d-flex align-items-center row">
+                <div class="box-card box-ganjil text-center col-1">
+                    <h3>01</h3>
+                </div>
+                <div class="body-card-doa col-8 align-self-center">
+                    <h6 class="mt-2">Doa Taubat Nabi Adam Menyesali Perbuatannya</h6>
+                </div>
+                <div class="col-1"><button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#doaSatu"><img src="../img/info-faedah.svg" alt=""></button></div>
+                <!-- Modal -->
+                <div class="modal-doa modal-custom modal fade" id="doaSatu" tabindex="-1" aria-labelledby="doaSatuLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fw-bold" id="doaSatuLabel">Doa Taubat Nabi Adam Menyesali Perbuatannya</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>
+                                    رَبَّنَا ظَلَمْنَآ اَنْفُسَنَا وَاِنْ لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُوْنَنَّ مِنَ الْخٰسِرِيْنَ
+                                </h2>
+                                <p class="arti">"Ya Tuhan kami, kami telah menzalimi diri kami sendiri. Jika Engkau tidak mengampuni kami dan memberi rahmat kepada kami, niscaya kami termasuk orang-orang yang rugi."<br> <span class="dalil">(QS. Al - A'raf : 23)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+            </div>
+            <div class="card-doa card-genap d-flex align-items-center row">
+                <div class="box-card box-genap  text-center col-1">
+                    <h3>02</h3>
+                </div>
+                <div class="body-card-doa col-8 align-self-center">
+                    <h6 class="mt-2">Doa Mohon Kebaikan Dunia Akhirat</h6>
+                </div>
+                <div class="col-1"><button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#doaDua"><img src="../img/info-faedah-genap.svg" alt=""></button></div>
+                <!-- Modal -->
+                <div class="modal-doa modal-custom modal fade" id="doaDua" tabindex="-1" aria-labelledby="doaDuaLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fw-bold" id="doaDuaLabel">Doa Mohon Kebaikan Dunia Akhirat</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>
+                                    رَبَّنَآ اٰتِنَا فِى الدُّنْيَا حَسَنَةً وَّفِى الْاٰخِرَةِ حَسَنَةً وَّقِنَا عَذَابَ النَّارِ
+                                </h2>
+                                <p class="arti">“Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari azab neraka.” <br> <span class="dalil">(QS. Al - Baqarah : 201)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+            </div>
+        </div>
+    </div>
+    <!-- body -->
+    <div class="menu d-flex justify-content-between">
+        <div class="ikon-sholat text-center">
+            <a href="#"><img width="24" class="mb-2" src="../img/ikon-jam.svg" alt="">
+                <p class="text-black-50">Waktu Sholat</p>
+            </a>
+        </div>
+        <div class="ikon-puasa text-center">
+            <a href="#"><img width="24" class="mb-2" src="../img/ikon-kalender.svg" alt="">
+                <p class="text-black-50">Kalender Puasa</p>
+            </a>
+        </div>
+        <div class="ikon-zakat text-center d-none">
+            <a href="#"><img width="24" class="mb-2" src="../img/ikon-kalkulator.svg" alt="">
+                <p class="text-black-50">Kalkulator Zakat</p>
+            </a>
+        </div>
+        <div class="ikon-doa text-center">
+            <a href="#"><img height="24" class="mb-2" src="../img/ikon-doa-aktif.svg" alt="">
+                <p class="">Doa dan Dzikir</p>
+            </a>
+        </div>
+    </div>
+    <!-- menu -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+
+</html>

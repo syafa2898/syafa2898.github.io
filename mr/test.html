@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <button id="subtract">-</button>
+        <input class="form-control w-25" type="number" min="1" value="1" oninput="price(this.value)" onchange="price(this.value)">
+        <button id="add">+</button>
+        <h2>
+            <span id="total">50000</span>
+        </h2>
+    </div>
+    <script>
+        let btnAdd = document.querySelector('#add');
+        let btnSubtract = document.querySelector('#subtract');
+        let input = document.querySelector('input');
+
+        btnAdd.addEventListener('click', () => {
+            input.value = parseInt(input.value) + 1;
+        });
+
+        btnSubtract.addEventListener('click', () => {
+            input.value = parseInt(input.value) - 1;
+        });
+
+        let total = document.getElementById("total");
+
+        function price(valNum) {
+            total.innerHTML = valNum * 50000;
+        }
+    </script>
+</body>
+
+
+
+</html>
