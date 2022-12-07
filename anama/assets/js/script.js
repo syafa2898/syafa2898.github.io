@@ -137,3 +137,14 @@ $('a#popup').magnificPopup({
         }
     }
 });
+
+
+
+// Our work
+
+function showClients() {
+    var x = document.getElementById("clients");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    }
+}
