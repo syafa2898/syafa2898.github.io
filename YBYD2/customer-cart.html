@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YBYD - Order</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main m-auto pb-5">
+        <div class="row d-flex justify-content-between pt-30 mb-30">
+            <div class="col">
+                <h6 class="mb-0">Halo kak,</h6>
+                <h5 class="text-uppercase text-primary">winda komala</h5>
+            </div>
+            <div class="col-2 d-flex">
+                <img src="assets/img/avatar.jpg" alt="" class="w-100 avatar align-self-center">
+            </div>
+        </div>
+
+        <form class="">
+            <div class="pb-100">
+                <div class="mb-40">
+                    <label for="name" class="form-label">Nama</label>
+                    <input type="text" class="form-control form-control-sm" id="name">
+                </div>
+                <div class="mb-30">
+                    <div class="form-check d-flex mb-2">
+                        <div class="col-3">
+                            <input class="form-check-input me-3 checkbox" type="checkbox" value="" id="product1">
+                            <label class="form-check-label" for="product1">
+                                <img src="assets/img/cart-product.jpg" alt="" class="w-100">
+                            </label>
+                        </div>
+                        <div class="col align-content-center">
+                            <h5 class="">Cireng Isi</h5>
+                            <h5 class="text-primary fw-bold">Rp. 20.000</h5>
+                        </div>
+                        <div class="col-3">
+                            <div class="input-group input-group-sm mb-3 d-flex">
+                                <button class="btn btn-secondary" type="button" onclick="decrement()">-</button>
+                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty"
+                                    min="0">
+                                <button class="btn btn-primary" type="button" onclick="increment()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ps-4">
+                        <input type="text" class="form-control form-control-sm" id="notes" placeholder="Catatan">
+                    </div>
+                </div>
+                <div class="mb-30">
+                    <div class="form-check d-flex mb-2">
+                        <div class="col-3">
+                            <input class="form-check-input me-3 checkbox" type="checkbox" value="" id="product1">
+                            <label class="form-check-label" for="product1">
+                                <img src="assets/img/cart-product.jpg" alt="" class="w-100">
+                            </label>
+                        </div>
+                        <div class="col align-content-center">
+                            <h5 class="">Kebab</h5>
+                            <h5 class="text-primary fw-bold">Rp. 20.000</h5>
+                        </div>
+                        <div class="col-3">
+                            <div class="input-group input-group-sm mb-3 d-flex">
+                                <button class="btn btn-secondary" type="button" onclick="decrement()">-</button>
+                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty"
+                                    min="0">
+                                <button class="btn btn-primary" type="button" onclick="increment()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ps-4">
+                        <input type="text" class="form-control form-control-sm" id="notes" placeholder="Catatan">
+                    </div>
+                </div>
+                <div class="mb-30">
+                    <div class="form-check d-flex mb-2">
+                        <div class="col-3">
+                            <input class="form-check-input me-3 checkbox" type="checkbox" value="" id="product1">
+                            <label class="form-check-label" for="product1">
+                                <img src="assets/img/cart-product.jpg" alt="" class="w-100">
+                            </label>
+                        </div>
+                        <div class="col align-content-center">
+                            <h5 class="">Dimsum</h5>
+                            <h5 class="text-primary fw-bold">Rp. 20.000</h5>
+                        </div>
+                        <div class="col-3">
+                            <div class="input-group input-group-sm mb-3 d-flex">
+                                <button class="btn btn-secondary" type="button" onclick="decrement()">-</button>
+                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty"
+                                    min="0">
+                                <button class="btn btn-primary" type="button" onclick="increment()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ps-4">
+                        <input type="text" class="form-control form-control-sm" id="notes" placeholder="Catatan">
+                    </div>
+                </div>
+            </div>
+            <div class="total w-100 fixed-bottom">
+                <div class="d-flex justify-content-between">
+                    <h5>Total</h5>
+                    <h5 class="text-primary fw-bold">Rp. 120.000</h5>
+                </div>
+                <div class="row d-flex mt-2">
+                    <div class="col-3">
+                        <a href="#!" class="btn btn-sm btn-secondary w-100 py-8">Back</a>
+                    </div>
+                    <div class="col-9">
+                        <a href="customer-index.html" class="btn btn-sm btn-primary w-100 py-8">Save</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        function increment() {
+            document.getElementById('qty').stepUp();
+        }
+
+        function decrement() {
+            document.getElementById('qty').stepDown();
+        }
+    </script>
+</body>
+
+</html>

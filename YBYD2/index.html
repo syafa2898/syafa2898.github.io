@@ -4,14 +4,37 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>YBYD - Login</title>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <div class="main m-auto">
+        <div class="text-center pt-5 mb-30">
+            <h2 class="mb-2">Selamat Datang di <br> YBYD APPS</h2>
+            <p>Assalamualaikum, Orang baik</p>
+        </div>
+        <form>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control form-control-sm" id="username">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control form-control-sm" id="password">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="reminder">
+                <label class="form-check-label" for="reminder">Ingat Saya</label>
+            </div>
+            <!-- <button type="submit" class="btn btn-primary btn-sm w-100 mt-5">Submit</button> -->
+            <a href="customer-index.html" class="btn btn-primary btn-sm w-100 mt-5 py-8">Submit</a>
+            <a href="#!" class="btn btn-whatsapp btn-sm w-100 mt-3 py-8">Belum punya kode ? Minta dulu yuk</a>
+        </form>
+    </div>
+
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
