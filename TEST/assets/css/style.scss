@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// variable
+$navy: #065286;
+$dark-navy:#002D4B;
+$gray: #333;
+$orange: #E86110;
+$lightblue:#F6F8FD;
+// 
+body {
+    background-color: white;
+    color: $gray;
+    font-family: 'Poppins';
+}
+
+// bg-style
+.bg-navy {
+    background-color: $navy;
+    color: white;
+}
+
+.bg-lightblue {
+    background-color: $lightblue;
+}
+
+// button-style
+.btn-navy {
+    background-color: $navy;
+    color: white;
+}
+
+.btn-navy:hover {
+    color: white;
+    background-color: darken($color: $navy, $amount: .3);
+}
+
+.btn-orange {
+    background-color: $orange;
+    color: white;
+}
+
+.btn-orange:hover {
+    color: white;
+}
+
+.btn-white {
+    background-color: white;
+    color: $navy;
+}
+
+.btn-outline-white {
+    background-color: none;
+    color: white;
+    border: 3px solid white;
+}
+
+.btn-outline-white:hover {
+    color: white;
+}
+
+.btn-md {
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-lg {
+    padding: 10px 100px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+// text-style
+.text-navy {
+    color: $navy;
+}
+
+.text-dark-navy {
+    color: $dark-navy;
+}
+
+.text-orange {
+    color: $orange;
+}
+
+.text-gray {
+    color: $gray;
+}
+
+.text-content {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.title-card {
+    font-size: 26px;
+}
+
+.title-style1 {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.subtitle1 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-semi-bold {
+    font-weight: 600;
+}
+
+// Other
+.banner-title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.card-shadow {
+    transition: .5s;
+}
+
+.card-shadow:hover {
+    box-shadow: 0px 4px 30px 2px rgba(0, 0, 0, 0.25);
+}
+
+.line {
+    margin-top: 100px;
+    border: 3px solid #065286;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.nav-item {
+    margin-right: 35px;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.rounded-10 {
+    border-radius: 10px;
+}
+
+.rounded-top-10 {
+    border-radius: 10px 10px 0 0;
+}
+
+section {
+    padding: 150px 0;
+}
+
+// Home
+.img-fokus {
+    filter: grayscale(100%);
+    transition: transform .4s;
+    overflow: hidden;
+}
+
+.img-fokus:hover {
+    filter: grayscale(0);
+    transform: scale(1.05);
+    color: white;
+}
+
+.logo-icon {
+    height: 80px;
+}
+
+.logo-nav {
+    height: 57px;
+}
+
+.logo-sosmed {
+    height: 60px;
+}
+
+// Program
+.side-image {
+    box-shadow: 4px 4px 20px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+// event
+// Responsive
+@media only screen and (max-width: 500px) {
+    .btn-donasi {
+        margin-top: 20px;
+    }
+    .btn-md {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    .btn-lg {
+        padding: 10px 70px;
+        font-size: 14px;
+    }
+    .img-fokus {
+        height: auto;
+    }
+    .logo-icon {
+        height: 50px;
+    }
+    .logo-nav {
+        height: 40px;
+    }
+    .logo-sosmed {
+        height: 50px;
+    }
+    .mb-50 {
+        margin-bottom: 30px;
+    }
+    .mb-80 {
+        margin-bottom: 50px;
+    }
+    .mb-100 {
+        margin-bottom: 70px;
+    }
+    .mt-50 {
+        margin-top: 30px;
+    }
+    .nav-link {
+        margin-bottom: 10px;
+    }
+    .p-30 {
+        padding: 20px;
+    }
+    section {
+        padding: 70px 0;
+    }
+    .sm-mb-5 {
+        margin-bottom: 50px;
+    }
+    .sm-fixed-top {
+        position: fixed;
+        z-index: 100;
+    }
+    .subtitle1 {
+        font-size: 14px;
+    }
+    .text-content {
+        font-size: 14px;
+    }
+    .title-card {
+        font-size: 16px;
+    }
+    .title-style1 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    // .btn-md {
+    //     padding: 10px 20px;
+    //     font-size: 12px;
+    // }
+    // .btn-lg {
+    //     padding: 10px 70px;
+    //     font-size: 14px;
+    // }
+    // .img-fokus {
+    //     height: auto;
+    // }
+    // .logo-icon {
+    //     height: 50px;
+    // }
+    // .logo-nav {
+    //     height: 40px;
+    // }
+    .logo-sosmed {
+        height: 40px;
+    }
+    // .mb-50 {
+    //     margin-bottom: 30px;
+    // }
+    // .mb-80 {
+    //     margin-bottom: 50px;
+    // }
+    // .mb-100 {
+    //     margin-bottom: 70px;
+    // }
+    // .mt-50 {
+    //     margin-top: 30px;
+    // }
+    // section {
+    //     padding: 70px 0;
+    // }
+    // .subtitle1 {
+    //     font-size: 14px;
+    // }
+    // .title-style1 {
+    //     font-size: 24px;
+    // }
+} // }
