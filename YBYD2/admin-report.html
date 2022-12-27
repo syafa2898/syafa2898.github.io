@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YBYD - Home</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="main m-auto">
+        <div class="row d-flex justify-content-between pt-30 mb-30">
+            <div class="col">
+                <h6 class="mb-0">Halo kak,</h6>
+                <h5 class="text-uppercase text-primary">winda komala</h5>
+            </div>
+            <div class="col-2 d-flex">
+                <a href="index.html">
+                    <img src="assets/img/avatar.jpg" alt="" class="w-100 avatar align-self-center">
+                </a>
+            </div>
+        </div>
+        <div class="bg-white rounded-2 p-3 mb-30">
+            <h4 class="text-primary text-center">Products</h4>
+            <canvas id="productsChart"></canvas>
+        </div>
+        <div class="bg-white rounded-2 p-3 mb-30">
+            <h4 class="text-primary text-center">Orders</h4>
+            <canvas id="ordersChart"></canvas>
+        </div>
+        <div class="bg-white rounded-2 p-3 mb-30">
+            <h4 class="text-primary text-center">Status</h4>
+            <canvas id="statuesChart"></canvas>
+        </div>
+
+        <a href="#!" class="btn btn-primary w-100 mb-5">Download Report</a>
+    </div>
+
+    <div class="menu d-flex justify-content-around text-center fixed-bottom m-auto">
+        <div class="col">
+            <a href="#!" class="menu-bottom">
+                <div class="">
+                    <img src="assets/img/icon/home-icon.svg" alt="" class="">
+                    <p>Home</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-2">
+            <a href="customer-cart.html" class="menu-bottom menu-order text-primary">
+                <img src="assets/img/icon/order-icon.svg" alt="" class="">
+                <p>Order</p>
+            </a>
+        </div>
+        <div class="col">
+            <a href="customer-catalog-index.html" class="menu-bottom">
+                <div class="">
+                    <img src="assets/img/icon/menu-icon.svg" alt="" class="">
+                    <p>Menu</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <script src=" assets/bootstrap/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const order = document.getElementById('ordersChart');
+        new Chart(order, {
+            type: 'line',
+            data: {
+                labels: ['1', '2', '3', '4', '5'],
+                datasets: [{
+                        label: 'Orders',
+                        data: [12, 19, 3, 5, 7],
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Omset',
+                        data: [9, 1, 13, 15, 17],
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        const status = document.getElementById('statuesChart');
+        new Chart(status, {
+            type: 'doughnut',
+            data: {
+                labels: ['Success', 'Pending', 'Cancel'],
+                datasets: [{
+                    label: 'Orders',
+                    data: [12, 19, 3],
+                    borderWidth: 1
+                }]
+            }
+        });
+
+        const product = document.getElementById('productsChart');
+        new Chart(product, {
+            type: 'pie',
+            data: {
+                labels: ['Success', 'Pending', 'Cancel'],
+                datasets: [{
+                    label: 'Orders',
+                    data: [12, 19, 3],
+                    borderWidth: 1
+                }]
+            }
+        });
+    </script>
+</body>
+
+</html>

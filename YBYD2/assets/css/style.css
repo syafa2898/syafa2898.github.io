@@ -71,13 +71,16 @@ h1 {
 }
 
 h2 {
-  font-weight: 600;
   font-size: 22px;
   line-height: 33px;
 }
 
+h4 {
+  font-size: 18px;
+  line-height: 27px;
+}
+
 h5 {
-  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
@@ -175,6 +178,16 @@ a.menu-order p {
 .catalog-img {
   border: 1px solid #000000;
   border-radius: 5px;
+}
+
+.card-admin {
+  background: #B4C8FF;
+  border-radius: 10px;
+}
+
+.ck-editor__editable[role=textbox] {
+  /* editing area */
+  min-height: 150px;
 }
 
 @media only screen and (max-width: 500px) {
