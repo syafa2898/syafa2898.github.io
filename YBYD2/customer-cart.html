@@ -9,10 +9,10 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css" /> -->
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <div class="row d-flex justify-content-between pt-30 mb-30">
             <div class="col">
                 <h6 class="mb-0">Halo kak,</h6>
-                <h5 class="text-uppercase text-primary">winda komala</h5>
+                <h5 class="text-uppercase text-primary">dewi handayani</h5>
             </div>
             <div class="col-2 d-flex">
                 <img src="assets/img/avatar.jpg" alt="" class="w-100 avatar align-self-center" />
@@ -31,7 +31,7 @@
             <div class="pb-100">
                 <div class="mb-40">
                     <label for="name" class="form-label">Nama</label>
-                    <input type="text" class="form-control form-control-sm" id="name" />
+                    <input type="text" class="form-control" id="name" />
                 </div>
                 <div class="mb-30">
                     <div class="form-check d-flex mb-2">
@@ -45,79 +45,79 @@
                             <h5 class="">Cireng Isi</h5>
                             <h5 class="text-primary fw-bold">Rp. 20.000</h5>
                         </div>
-                        <div class="col-3">
-                            <div class="input-group input-group-sm mb-3 d-flex">
-                                <button class="btn btn-secondary" type="button" onclick="decrement()">
+                        <div class="col-4">
+                            <div class="input-group mb-3 d-flex">
+                                <button class="btn btn-secondary" type="button" onclick="decrement1()">
                                     -
                                 </button>
-                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty"
-                                    min="0" />
-                                <button class="btn btn-primary" type="button" onclick="increment()">
+                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty1"
+                                    min="0" value="0" />
+                                <button class="btn btn-primary" type="button" onclick="increment1()">
                                     +
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div class="ps-4">
-                        <input type="text" class="form-control form-control-sm" id="notes" placeholder="Catatan" />
+                        <input type="text" class="form-control" id="notes" placeholder="Catatan" />
                     </div>
                 </div>
                 <div class="mb-30">
                     <div class="form-check d-flex mb-2">
                         <div class="col-3">
-                            <input class="form-check-input me-3 checkbox" type="checkbox" value="" id="product1" />
-                            <label class="form-check-label" for="product1">
+                            <input class="form-check-input me-3 checkbox" type="checkbox" value="" id="product2" />
+                            <label class="form-check-label" for="product2">
                                 <img src="assets/img/cart-product.jpg" alt="" class="w-100" />
                             </label>
                         </div>
                         <div class="col align-content-center">
-                            <h5 class="">Kebab</h5>
+                            <h5 class="">Cireng Isi</h5>
                             <h5 class="text-primary fw-bold">Rp. 20.000</h5>
                         </div>
-                        <div class="col-3">
-                            <div class="input-group input-group-sm mb-3 d-flex">
-                                <button class="btn btn-secondary" type="button" onclick="decrement()">
+                        <div class="col-4">
+                            <div class="input-group mb-3 d-flex">
+                                <button class="btn btn-secondary" type="button" onclick="decrement2()">
                                     -
                                 </button>
-                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty"
-                                    min="0" />
-                                <button class="btn btn-primary" type="button" onclick="increment()">
+                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty2"
+                                    min="0" value="0" />
+                                <button class="btn btn-primary" type="button" onclick="increment2()">
                                     +
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div class="ps-4">
-                        <input type="text" class="form-control form-control-sm" id="notes" placeholder="Catatan" />
+                        <input type="text" class="form-control" id="notes" placeholder="Catatan" />
                     </div>
                 </div>
                 <div class="mb-30">
                     <div class="form-check d-flex mb-2">
                         <div class="col-3">
-                            <input class="form-check-input me-3 checkbox" type="checkbox" value="" id="product1" />
-                            <label class="form-check-label" for="product1">
+                            <input class="form-check-input me-3 checkbox" type="checkbox" value="" id="product3" />
+                            <label class="form-check-label" for="product3">
                                 <img src="assets/img/cart-product.jpg" alt="" class="w-100" />
                             </label>
                         </div>
                         <div class="col align-content-center">
-                            <h5 class="">Dimsum</h5>
+                            <h5 class="">Cireng Isi</h5>
                             <h5 class="text-primary fw-bold">Rp. 20.000</h5>
                         </div>
-                        <div class="col-3">
-                            <div class="input-group input-group-sm mb-3 d-flex">
-                                <button class="btn btn-secondary" type="button" onclick="decrement()">
+                        <div class="col-4">
+                            <div class="input-group mb-3 d-flex">
+                                <button class="btn btn-secondary" type="button" onclick="decrement3()">
                                     -
                                 </button>
-                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty"
-                                    min="0" />
-                                <button class="btn btn-primary" type="button" onclick="increment()">
+                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty3"
+                                    min="0" value="0" />
+                                <button class="btn btn-primary" type="button" onclick="increment3()">
                                     +
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div class="ps-4">
-                        <input type="text" class="form-control form-control-sm" id="notes" placeholder="Catatan" />
+                        <input type="text" class="form-control" id="notes" placeholder="Catatan" />
                     </div>
                 </div>
             </div>
@@ -128,10 +128,10 @@
                 </div>
                 <div class="row d-flex mt-2">
                     <div class="col-3">
-                        <a href="#!" class="btn btn-sm btn-secondary w-100 py-8">Back</a>
+                        <a href="customer-index1.html" class="btn btn-secondary w-100 py-8">Back</a>
                     </div>
                     <div class="col-9">
-                        <a href="customer-index.html" class="btn btn-sm btn-primary w-100 py-8">Save</a>
+                        <a href="customer-index2.html" class="btn btn-primary w-100 py-8">Save</a>
                     </div>
                 </div>
             </div>
@@ -143,12 +143,28 @@
     </script>
     <script src="assets/js/script.js"></script>
     <script>
-        function increment() {
-            document.getElementById("qty").stepUp();
+        function increment1() {
+            document.getElementById("qty1").stepUp();
         }
 
-        function decrement() {
-            document.getElementById("qty").stepDown();
+        function decrement1() {
+            document.getElementById("qty1").stepDown();
+        }
+
+        function increment2() {
+            document.getElementById("qty2").stepUp();
+        }
+
+        function decrement2() {
+            document.getElementById("qty2").stepDown();
+        }
+
+        function increment3() {
+            document.getElementById("qty3").stepUp();
+        }
+
+        function decrement3() {
+            document.getElementById("qty3").stepDown();
         }
     </script>
 </body>

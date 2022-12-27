@@ -18,7 +18,7 @@
         <form action="#!">
             <div class="mb-30">
                 <label for="name" class="form-label">Nama</label>
-                <input type="text" class="form-control form-control-sm" id="name" value="Dewi Handayani" disabled>
+                <input type="text" class="form-control" id="name" value="Dewi Handayani" disabled>
             </div>
             <table class="table table-striped table-bordered">
                 <thead class="bg-primary text-white">
@@ -62,7 +62,7 @@
             </table>
             <div class="mb-3">
                 <label for="donate" class="form-label">Donasi</label>
-                <input type="number" class="form-control form-control-sm" id="donate">
+                <input type="number" class="form-control" id="donate">
             </div>
             <div class="number mb-3">
                 <p>Silahkan Transfer Melalui :</p>
@@ -72,16 +72,17 @@
                         <p id="bca">023109312</p>
                     </div>
                     <div class="col-2">
-                        <button class="btn btn-sm btn-outline-primary" onclick="copied()" data-clipboard-target="#bca"
+                        <button class="btn btn-outline-primary" onclick="copied()" data-clipboard-target="#bca"
                             id="btnCopy">Copy</button>
                     </div>
                 </div>
             </div>
             <div class="mb-5">
                 <label for="bukti" class="form-label">Bukti Transfer</label>
-                <input class="form-control form-control-sm" type="file" id="bukti">
+                <input class="form-control" type="file" id="bukti">
             </div>
-            <button type="submit" class="btn btn-sm btn-primary w-100 py-8">Submit</button>
+            <!-- <button type="submit" class="btn btn-primary w-100 py-8">Submit</button> -->
+            <a href="customer-index2.html" class="btn btn-primary w-100 py-8">Submit</a>
         </form>
     </div>
 
