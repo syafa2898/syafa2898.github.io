@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>YBYD - Login</title>
+    <title>Transaction Details - You Buy You Donate</title>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -13,7 +13,7 @@
 <body>
     <div class="main m-auto">
         <div class="text-center pt-5 mb-30">
-            <h2 class="">Transaction Details</h2>
+            <h2 class="fw-bold">Transaction Details</h2>
         </div>
         <form action="#!">
             <div class="mb-30">
@@ -70,30 +70,33 @@
                 <input type="number" class="form-control" id="shipping">
             </div>
             <div class="mb-3">
+                <div class="col-6">
+                    <a href="assets/img/transfer.jpg">
+                        <img src="assets/img/transfer.jpg" alt="" class="w-100">
+                    </a>
+                </div>
+            </div>
+            <div class="mb-5">
                 <label for="notes" class="form-label">Notes</label>
                 <input type="number" class="form-control" id="notes">
             </div>
-            <div class="mb-5">
-                <p class="form-label">Transfer</p>
-                <img src="assets/img/transfer.jpg" alt="">
-            </div>
             <div class="d-flex row mb-3">
                 <div class="col-6">
-                    <button type="button" class="btn btn-danger w-100 py-8">Delete</button>
+                    <button type="button" class="btn btn-danger w-100 py-8">Pending</button>
                 </div>
                 <div class="col-6">
-                    <button type="button" class="btn btn-warning w-100 py-8">Pending</button>
+                    <!-- <button type="button" class="btn btn-warning w-100 py-8">Process</button> -->
+                    <a href="admin-index2.html" class="btn btn-warning w-100 py-8">Process</a>
                 </div>
             </div>
             <!-- <button type="submit" class="btn btn-primary w-100 py-8">Submit</button> -->
-            <a href="admin-index.html" class="btn btn-primary w-100 py-8">Process</a>
+            <!-- <a href="admin-index.html" class="btn btn-primary w-100 py-8">Process</a> -->
         </form>
     </div>
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

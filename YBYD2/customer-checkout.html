@@ -66,70 +66,89 @@
                 <label for="donate" class="form-label">Donasi</label>
                 <input type="number" class="form-control" id="donate">
             </div>
-            <div class="number mb-3">
+            <div class="mb-3">
+                <label for="ongkir" class="form-label">Ongkir</label>
+                <input type="number" class="form-control" id="ongkir" disabled value="15.000">
+            </div>
+            <div class="mb-3">
                 <p>Silahkan Transfer Melalui :</p>
-                <div class="row pe-2 mb-0">
-                    <div class="col">
-                        <p class="mb-0">BCA</p>
-                        <p id="bca">023109312</p>
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="col align-self-center">
+                        <p class="mb-0">BCA : <span class="ms-5">1231312321</span></p>
                     </div>
-                    <div class="col-3 d-flex justify-content-end">
-                        <button id="kt_clipboard_3" class="btn btn-outline-primary btn-sm"
-                            data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">
+                    <div class="col text-end">
+                        <button id="bca" class="btn btn-outline-primary btn-sm" data-clipboard-text="bca">
                             Copy</button>
-                        <!-- <button class="btn btn-outline-primary" onclick="copied()" data-clipboard-target="#bca"
-                            id="btnCopy">Copy</button> -->
                     </div>
                 </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <div class="col align-self-center">
+                        <p class="mb-0">BSI : <span class="ms-5">1231312321</span></p>
+                    </div>
+                    <div class="col text-end">
+                        <button id="bsi" class="btn btn-outline-primary btn-sm" data-clipboard-text="bsi">
+                            Copy</button>
+                    </div>
+                </div>
+                <p>A.n Muhammad Zulfikar</p>
             </div>
-            <div class="mb-5">
+            <div class="mb-5 mt-30">
                 <label for="bukti" class="form-label">Bukti Transfer</label>
                 <input class="form-control" type="file" id="bukti">
             </div>
             <!-- <button type="submit" class="btn btn-primary w-100 py-8">Submit</button> -->
-            <a href="customer-index2.html" class="btn btn-primary w-100 py-8">Submit</a>
+            <a href="customer-index3.html" class="btn btn-warning w-100 py-8">Submit</a>
         </form>
     </div>
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script> -->
     <script src="assets/js/script.js"></script>
     <script src="assets/clipboard/dist/clipboard.js"></script>
     <script>
         // Select element
-        const target = document.getElementById('kt_clipboard_3');
+        const bca = document.getElementById('bca');
+        const bsi = document.getElementById('bsi');
 
         // Init clipboard -- for more info, please read the offical documentation: https://clipboardjs.com/
-        clipboard = new ClipboardJS(target);
+        clipboardBca = new ClipboardJS(bca);
+        clipboardBsi = new ClipboardJS(bsi);
 
         // Success action handler
-        clipboard.on('success', function (e) {
-            const currentLabel = target.innerHTML;
+        clipboardBca.on('success', function (e) {
+            const currentLabel = bca.innerHTML;
 
             // Exit label update when already in progress
-            if (target.innerHTML === 'Copied!') {
+            if (bca.innerHTML === 'Copied!') {
                 return;
             }
 
             // Update button label
-            target.innerHTML = 'Copied!';
+            bca.innerHTML = 'Copied!';
 
             // Revert button label after 3 seconds
             setTimeout(function () {
-                target.innerHTML = currentLabel;
+                bca.innerHTML = currentLabel;
+            }, 3000)
+        });
+        clipboardBsi.on('success', function (e) {
+            const currentLabel = bsi.innerHTML;
+
+            // Exit label update when already in progress
+            if (bsi.innerHTML === 'Copied!') {
+                return;
+            }
+
+            // Update button label
+            bsi.innerHTML = 'Copied!';
+
+            // Revert button label after 3 seconds
+            setTimeout(function () {
+                bsi.innerHTML = currentLabel;
             }, 3000)
         });
     </script>
-    <!-- <script>
-        new ClipboardJS(".btn");
-        const copy = document.getElementById('btnCopy');
-
-        function copied() {
-            copy.textContent = 'Copied';
-        }
-    </script> -->
 </body>
 
 </html>
