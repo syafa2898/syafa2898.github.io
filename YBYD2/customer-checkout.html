@@ -4,16 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>YBYD - Login</title>
+    <title>Checkout - You Buy You Donate</title>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <div class="main m-auto">
         <div class="text-center pt-5 mb-30">
-            <h2 class="">Checkout</h2>
+            <h2 class="fw-bold">Checkout</h2>
         </div>
         <form action="#!">
             <div class="mb-30">
@@ -71,9 +73,12 @@
                         <p class="mb-0">BCA</p>
                         <p id="bca">023109312</p>
                     </div>
-                    <div class="col-2">
-                        <button class="btn btn-outline-primary" onclick="copied()" data-clipboard-target="#bca"
-                            id="btnCopy">Copy</button>
+                    <div class="col-3 d-flex justify-content-end">
+                        <button id="kt_clipboard_3" class="btn btn-outline-primary btn-sm"
+                            data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">
+                            Copy</button>
+                        <!-- <button class="btn btn-outline-primary" onclick="copied()" data-clipboard-target="#bca"
+                            id="btnCopy">Copy</button> -->
                     </div>
                 </div>
             </div>
@@ -89,16 +94,42 @@
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script> -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/clipboard/dist/clipboard.js"></script>
     <script>
+        // Select element
+        const target = document.getElementById('kt_clipboard_3');
+
+        // Init clipboard -- for more info, please read the offical documentation: https://clipboardjs.com/
+        clipboard = new ClipboardJS(target);
+
+        // Success action handler
+        clipboard.on('success', function (e) {
+            const currentLabel = target.innerHTML;
+
+            // Exit label update when already in progress
+            if (target.innerHTML === 'Copied!') {
+                return;
+            }
+
+            // Update button label
+            target.innerHTML = 'Copied!';
+
+            // Revert button label after 3 seconds
+            setTimeout(function () {
+                target.innerHTML = currentLabel;
+            }, 3000)
+        });
+    </script>
+    <!-- <script>
         new ClipboardJS(".btn");
         const copy = document.getElementById('btnCopy');
 
         function copied() {
             copy.textContent = 'Copied';
         }
-    </script>
+    </script> -->
 </body>
 
 </html>
