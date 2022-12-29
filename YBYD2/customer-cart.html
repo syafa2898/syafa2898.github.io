@@ -5,9 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Order - You Buy You Donate</title>
-    <link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Custom bootstrap -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -80,12 +81,12 @@
                         </div>
                         <div class="col-4 transiton-1" id="infoProduct2" style="display: none;">
                             <div class="input-group mb-3 d-flex">
-                                <button class="btn btn-secondary" type="button" onclick="decrement1()">
+                                <button class="btn btn-secondary" type="button" onclick="decrement2()">
                                     -
                                 </button>
-                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty1"
+                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty2"
                                     min="0" value="0" />
-                                <button class="btn btn-primary" type="button" onclick="increment1()">
+                                <button class="btn btn-primary" type="button" onclick="increment2()">
                                     +
                                 </button>
                             </div>
@@ -113,12 +114,12 @@
                         </div>
                         <div class="col-4 transiton-1" id="infoProduct3" style="display: none;">
                             <div class="input-group mb-3 d-flex">
-                                <button class="btn btn-secondary" type="button" onclick="decrement1()">
+                                <button class="btn btn-secondary" type="button" onclick="decrement3()">
                                     -
                                 </button>
-                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty1"
+                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty3"
                                     min="0" value="0" />
-                                <button class="btn btn-primary" type="button" onclick="increment1()">
+                                <button class="btn btn-primary" type="button" onclick="increment3()">
                                     +
                                 </button>
                             </div>
@@ -147,8 +148,7 @@
         </form>
     </div>
 
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    <script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>

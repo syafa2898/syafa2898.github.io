@@ -101,9 +101,17 @@ label {
   color: #888;
 }
 
+.text-sage {
+  color: #525E4D;
+}
+
 .btn {
   border-radius: 4px;
   font-size: 12px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:target {
+  color: white;
 }
 
 .btn-whatsapp {
@@ -164,7 +172,7 @@ a.menu-order p {
 }
 
 .active {
-  background-color: #355BC0;
+  background-color: #6B7D63;
   color: white;
 }
 
@@ -186,7 +194,7 @@ a.menu-order p {
 }
 
 .card-admin {
-  background: #B4C8FF;
+  background: #B1C1A9;
   border-radius: 10px;
 }
 
