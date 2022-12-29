@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Order - You Buy You Donate</title>
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
@@ -28,7 +28,7 @@
             <div class="pb-100">
                 <div class="mb-40">
                     <label for="name" class="form-label">Nama</label>
-                    <input type="text" class="form-control" id="name" />
+                    <input type="text" class="form-control" id="name" value="Kiki Dinul" />
                 </div>
                 <div class="mb-30">
                     <div class="form-check d-flex mb-2">
@@ -38,11 +38,14 @@
                                 <img src="assets/img/cart-product.jpg" alt="" class="w-100" />
                             </label>
                         </div>
-                        <div class="col align-content-center">
+                        <div class="col" id="title1" style="display: flex;">
+                            <h5 class="align-self-center">Cireng Isi</h5>
+                        </div>
+                        <div class="col" id="price1" style="display:none">
                             <h5 class="">Cireng Isi</h5>
                             <h5 class="text-primary fw-bold">Rp. 20.000</h5>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 transiton-1" id="infoProduct1" style="display: none;">
                             <div class="input-group mb-3 d-flex">
                                 <button class="btn btn-secondary" type="button" onclick="decrement1()">
                                     -
@@ -56,7 +59,8 @@
                         </div>
                     </div>
                     <div class="ps-4">
-                        <input type="text" class="form-control" id="notes" placeholder="Catatan" />
+                        <input type="text" class="form-control" id="notes1" style="display:none"
+                            placeholder="Catatan" />
                     </div>
                 </div>
                 <div class="mb-30">
@@ -67,25 +71,29 @@
                                 <img src="assets/img/cart-product.jpg" alt="" class="w-100" />
                             </label>
                         </div>
-                        <div class="col align-content-center">
-                            <h5 class="">Cireng Isi</h5>
+                        <div class="col" id="title2" style="display: flex;">
+                            <h5 class="align-self-center">Kebab</h5>
+                        </div>
+                        <div class="col" id="price2" style="display:none">
+                            <h5 class="">Kebab</h5>
                             <h5 class="text-primary fw-bold">Rp. 20.000</h5>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 transiton-1" id="infoProduct2" style="display: none;">
                             <div class="input-group mb-3 d-flex">
-                                <button class="btn btn-secondary" type="button" onclick="decrement2()">
+                                <button class="btn btn-secondary" type="button" onclick="decrement1()">
                                     -
                                 </button>
-                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty2"
+                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty1"
                                     min="0" value="0" />
-                                <button class="btn btn-primary" type="button" onclick="increment2()">
+                                <button class="btn btn-primary" type="button" onclick="increment1()">
                                     +
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div class="ps-4">
-                        <input type="text" class="form-control" id="notes" placeholder="Catatan" />
+                        <input type="text" class="form-control" id="notes2" style="display:none"
+                            placeholder="Catatan" />
                     </div>
                 </div>
                 <div class="mb-30">
@@ -96,25 +104,29 @@
                                 <img src="assets/img/cart-product.jpg" alt="" class="w-100" />
                             </label>
                         </div>
-                        <div class="col align-content-center">
-                            <h5 class="">Cireng Isi</h5>
+                        <div class="col" id="title3" style="display: flex;">
+                            <h5 class="align-self-center">Dimsum</h5>
+                        </div>
+                        <div class="col" id="price3" style="display:none">
+                            <h5 class="">Dimsum</h5>
                             <h5 class="text-primary fw-bold">Rp. 20.000</h5>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 transiton-1" id="infoProduct3" style="display: none;">
                             <div class="input-group mb-3 d-flex">
-                                <button class="btn btn-secondary" type="button" onclick="decrement3()">
+                                <button class="btn btn-secondary" type="button" onclick="decrement1()">
                                     -
                                 </button>
-                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty3"
+                                <input type="number" class="form-control text-center fw-bold text-primary" id="qty1"
                                     min="0" value="0" />
-                                <button class="btn btn-primary" type="button" onclick="increment3()">
+                                <button class="btn btn-primary" type="button" onclick="increment1()">
                                     +
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div class="ps-4">
-                        <input type="text" class="form-control" id="notes" placeholder="Catatan" />
+                        <input type="text" class="form-control" id="notes3" style="display:none"
+                            placeholder="Catatan" />
                     </div>
                 </div>
             </div>
@@ -138,8 +150,10 @@
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
+        // ===== increment value ===========
         function increment1() {
             document.getElementById("qty1").stepUp();
         }
@@ -163,6 +177,50 @@
         function decrement3() {
             document.getElementById("qty3").stepDown();
         }
+
+
+        // =========== Show btn qty =============
+        $(function () {
+            $("#product1").click(function () {
+                if ($(this).is(":checked")) {
+                    $("#infoProduct1").show();
+                    $("#price1").show();
+                    $("#notes1").show();
+                    $("#title1").hide();
+                } else {
+                    $("#infoProduct1").hide();
+                    $("#price1").hide();
+                    $("#notes1").hide();
+                    $("#title1").show();
+                }
+            });
+            $("#product2").click(function () {
+                if ($(this).is(":checked")) {
+                    $("#infoProduct2").show();
+                    $("#price2").show();
+                    $("#notes2").show();
+                    $("#title2").hide();
+                } else {
+                    $("#infoProduct2").hide();
+                    $("#price2").hide();
+                    $("#notes2").hide();
+                    $("#title2").show();
+                }
+            });
+            $("#product3").click(function () {
+                if ($(this).is(":checked")) {
+                    $("#infoProduct3").show();
+                    $("#price3").show();
+                    $("#notes3").show();
+                    $("#title3").hide();
+                } else {
+                    $("#infoProduct3").hide();
+                    $("#price3").hide();
+                    $("#notes3").hide();
+                    $("#title3").show();
+                }
+            });
+        });
     </script>
 </body>
 

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home - You Buy You Donate</title>
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+    <link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -49,14 +49,18 @@
                         <td class="text-primary fw-semibold">
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">
-                                Vladimir Putin
+                                Kiki Dinul
                             </button></td>
                         <td><a href="customer-cart.html" class="btn btn-secondary">Edit</a></td>
                         <td class="fw-semibold text-end"><span class="">200.000</span></td>
                     </tr>
                     <tr>
                         <td class="text-center">2</td>
-                        <td class="text-primary fw-semibold">Vladimir Putin</td>
+                        <td class="text-primary fw-semibold">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Deli
+                            </button></td>
                         <td><a href="customer-cart.html" class="btn btn-secondary">Edit</a></td>
                         <td class="fw-semibold text-end"><span class="">200.000</span></td>
                     </tr>
@@ -76,7 +80,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header bg-primary text-white">
-                        <h6 class="modal-title" id="exampleModalLabel">Vladimir Putin</h6>
+                        <h6 class="modal-title" id="exampleModalLabel">Kiki Dinul</h6>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -146,11 +150,11 @@
     </div>
 
     <div class="menu d-flex justify-content-around text-center fixed-bottom m-auto">
-        <div class="col-">
+        <div class="col-3">
             <a href="#!" class="menu-bottom">
-                <div class="">
-                    <img src="assets/img/icon/home-icon.svg" alt="" class="">
-                    <p>Home</p>
+                <img src="assets/img/icon/home-icon.svg" alt="" class="">
+                <div class="active w-50 m-auto mt-2 rounded-2">
+                    <p class="">Home</p>
                 </div>
             </a>
         </div>
@@ -160,10 +164,10 @@
                 <p>Order</p>
             </a>
         </div>
-        <div class="col-">
+        <div class="col-3">
             <a href="customer-catalog-index.html" class="menu-bottom">
-                <div class="">
-                    <img src="assets/img/icon/menu-icon.svg" alt="" class="">
+                <img src="assets/img/icon/menu-icon.svg" alt="" class="">
+                <div class="w-50 m-auto mt-2 rounded-2">
                     <p>Menu</p>
                 </div>
             </a>

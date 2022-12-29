@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>YBYD - Login</title>
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+    <title>Create Catalog - You Buy You Donate</title>
+    <link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://cdn.ckeditor.com/ckeditor5/35.4.0/classic/ckeditor.js"></script>
@@ -14,7 +14,7 @@
 <body>
     <div class="main m-auto">
         <div class="text-center pt-5 mb-30">
-            <h2 class="">Create Product</h2>
+            <h2 class="fw-bold">Create Product</h2>
         </div>
         <form action="#!">
             <div class="mb-3">
@@ -23,7 +23,17 @@
             </div>
             <div class="mb-3">
                 <label for="price" class="form-label">Price</label>
-                <input type="text" class="form-control" id="price">
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-primary text-white" id="basic-addon1">Rp.</span>
+                    <input type="number" class="form-control" id="price">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="profit" class="form-label">Profit</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-primary text-white" id="basic-addon1">Rp.</span>
+                    <input type="number" class="form-control" id="profit">
+                </div>
             </div>
             <div class="mb-3">
                 <label for="images" class="form-label">Images</label>

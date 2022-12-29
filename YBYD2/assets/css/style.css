@@ -139,7 +139,7 @@ input[type=number] {
 
 .menu {
   max-width: inherit;
-  padding: 15px 0;
+  padding: 15px 0 10px 0;
   background-color: white;
   box-shadow: 0px -4px 30px 1px rgba(0, 0, 0, 0.05);
 }
@@ -150,7 +150,7 @@ a.menu-bottom {
 }
 
 a.menu-bottom p {
-  font-size: 9px;
+  font-size: 10px;
   margin-bottom: 0;
 }
 
@@ -161,6 +161,11 @@ a.menu-bottom p {
 a.menu-order p {
   font-size: 14px;
   margin-top: -10%;
+}
+
+.active {
+  background-color: #355BC0;
+  color: white;
 }
 
 .avatar {

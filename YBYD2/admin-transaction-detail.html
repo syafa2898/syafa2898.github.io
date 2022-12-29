@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Transaction Details - You Buy You Donate</title>
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+    <link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -16,58 +16,97 @@
             <h2 class="fw-bold">Transaction Details</h2>
         </div>
         <form action="#!">
-            <div class="mb-30">
+            <div class="mb-3">
                 <label for="name" class="form-label">Nama</label>
                 <input type="text" class="form-control" id="name" value="Dewi Handayani" disabled>
             </div>
-            <table class="table table-striped table-bordered">
-                <thead class="bg-primary text-white">
-                    <tr>
-                        <th class="fw-normal col-8">Nama</th>
-                        <th class="fw-normal">Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="text-primary fw-semibold">
-                            Kiki Dinul
-                        </td>
-                        <td class="fw-semibold text-end"><span class="">2.000.000</span></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="fw-semibold"> Cireng Isi</span> <span
-                                class="fw-semibold text-primary ms-5">x2</span>
-                            <br>
-                            Catatan : Lorem ipsum dolor sit ame
-                        </td>
-                        <td class="fw-semibold text-end"><span class="">200.000</span></td>
-                    </tr>
-                    <tr>
-                        <td class="text-primary fw-semibold">Deli</td>
-                        <td class="fw-semibold text-end"><span class="">2.000.000</span></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Cireng Isi <span class="fw-semibold text-primary ms-5">x2</span>
-                            <br>
-                            Catatan : Lorem ipsum dolor sit ame
-                        </td>
-                        <td class="fw-semibold text-end"><span class="">200.000</span></td>
-                    </tr>
-                    <tr>
-                        <td class="bg-primary text-white">Total</td>
-                        <td class="fw-semibold text-end bg-primary text-white">Rp.<span class="">200.000</span></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="mb-30">
+                <label for="name" class="form-label">No Hp</label>
+                <input type="number" class="form-control" id="name" value="0899123123123" disabled>
+            </div>
+            <div class="accordion accordion-flush mb-30" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed py-1 border border-1 bg-secondary text-white"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#detail" aria-expanded="false"
+                            aria-controls="detail">
+                            Detail Pesanan
+                        </button>
+                    </h2>
+                    <div id="detail" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body px-1">
+                            <table class="table table-striped table-bordered">
+                                <thead class="bg-primary text-white">
+                                    <tr>
+                                        <th class="fw-normal col-8">Nama</th>
+                                        <th class="fw-normal">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-primary fw-semibold">
+                                            Kiki Dinul
+                                        </td>
+                                        <td class="fw-semibold text-end"><span class="">2.000.000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="fw-semibold"> Cireng Isi</span>
+                                            <span class="fw-semibold text-primary ms-5">x2</span>
+                                            <br>
+                                            Catatan : Lorem ipsum dolor sit ame
+                                        </td>
+                                        <td class="fw-semibold text-end"><span class="">200.000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-primary fw-semibold">Deli</td>
+                                        <td class="fw-semibold text-end"><span class="">2.000.000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="fw-semibold"> Cireng Isi</span>
+                                            <span class="fw-semibold text-primary ms-5">x2</span>
+                                            <br>
+                                            Catatan : Lorem ipsum dolor sit ame
+                                        </td>
+                                        <td class="fw-semibold text-end"><span class="">200.000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-primary text-white">Total</td>
+                                        <td class="fw-semibold text-end bg-primary text-white">Rp.<span
+                                                class="">200.000</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="mb-3">
                 <label for="donate" class="form-label">Donate</label>
                 <input type="number" class="form-control" id="donate">
             </div>
             <div class="mb-3">
+                <label for="delivery" class="form-label">Delivery</label>
+                <input type="text" class="form-control" id="delivery" disabled value="MR Express">
+            </div>
+            <div class="mb-3">
                 <label for="shipping" class="form-label">Shipping</label>
-                <input type="number" class="form-control" id="shipping">
+                <input type="number" class="form-control" id="shipping" disabled value="15000">
+            </div>
+            <div class="mb-30">
+                <label class="form-label">Alamat Penerima</label>
+                <div class="bg-white px-4 py-3">
+                    <p class="small mb-0">
+                        <span>Dewi Handayani </span>
+                        <br>
+                        0899-12121221
+                        <br>
+                        <span>Jalan Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas,
+                            distinctio aliquam? Voluptas.</span>
+                    </p>
+                </div>
             </div>
             <div class="mb-3">
                 <div class="col-6">
