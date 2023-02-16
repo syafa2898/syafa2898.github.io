@@ -1,0 +1,14 @@
+table,
+label,
+h6 {
+    font-size: 14px;
+}
+
+.title-topBar {
+    font-size: 14px;
+}
+
+.btn {
+    border-radius: 7px;
+    padding: 8px 12px;
+}
