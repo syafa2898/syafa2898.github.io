@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPID</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="">
+        <div class="header-top">
+            <div class="header-top-left">
+                <img width="56px" height="56px" src="assets/images/logo.png" alt="logo">
+                <div class="title-box">
+                    <p class="title">PPID PEJABATAN PENGELOLA INFORMASI DAN DOKUMENTASI</p>
+                    <P class="title-desc">KEMENTERIAN PARIWISATA DAN EKONOMI KREATIF/BADAN PARIWISATA DAN EKONOMI
+                        KREATIF</P>
+                </div>
+            </div>
+            <div class="header-top-right">
+                <img width="162px" height="auto" src="assets/images/search.png" alt="search">
+            </div>
+        </div>
+        <div class="header-bottom d-flex py-3 justify-content-between">
+            <div class="d-flex justify-content-center col-md-10">
+                <a href="index.html">
+                    <p class="menu"><i class="fa fa-house"></i> Beranda</p>
+                </a>
+                <a href="laporan.html">
+                    <p class="menu"><i class="fa-solid fa-file"></i> Laporan</p>
+                </a>
+                <a href="regulasi.html">
+                    <p class="menu"><i class="fa-solid fa-hotel"></i></i> Regulasi</p>
+                </a>
+                <a href="informasi.html">
+                    <p class="menu"><i class="fa-solid fa-bullhorn"></i> Daftar Informasi Publik DIP</p>
+                </a>
+                <a href="profil.html">
+                    <p class="menu"><i class="fa fa-user"></i> Profil</p>
+                </a>
+                <a href="rumah.html">
+                    <p class="menu"><i class="fa fa-users"></i> Rumah Difabel</p>
+                </a>
+            </div>
+
+            <div class="col-md-2">
+                <button class="login-button">Login</button>
+            </div>
+        </div>
+    </header>
+    <section class="d-flex flex-column align-items-center justify-content-center">
+        <h5 class="color-primary my-4">Data Informasi Publik</h5>
+        <div class="d-flex container">
+            <div class="box-umum m-3 d-flex flex-column justify-content-center align-items-center">
+                <img src="assets/images/document.png" alt="">
+                Informasi Berkala
+            </div>
+            <div class="box-umum m-3 d-flex flex-column justify-content-center align-items-center">
+                <img src="assets/images/document.png" alt="">
+                Informasi Serta Merta
+            </div>
+            <div class="box-umum m-3 d-flex flex-column justify-content-center align-items-center">
+                <img src="assets/images/document.png" alt="">
+                Informasi Tersedia Setiap Saat
+            </div>
+        </div>
+    </section>
+    <section class="p-5 container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nama (Sesuai KTP)</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">No KTP/NIK</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Kontak</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Password (Jika belum terdaftar)</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Alamat</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Permintaan Informasi</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div>
+                    <button class="btn btn-primary" style="background: #132B50;;">Kirim</button>
+                    <button class="btn btn-secondary">Unduh Formulir Keberatan Informasi Publik</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Tujuan</label>
+                    <input type="text" class="form-control" id="editor">
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Upload KTP</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="m-0 mb-2">Tanda Tangan</p>
+                        <button type="button" class="btn btn-light w-100">Klik Untuk Tanda Tangan</button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <p>Cara Mendapatkan</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Lihat/Baca/Dengar/Catat</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Mendapatkan salinan informasi</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <p>Cara Memberikan</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Mengambil langsung</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Email</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Mengambil langsung</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Email</label>
+                    </div>
+                </div>
+                <p>* Apakah Anda terkendala dengan pengisian formulir? Silahkan unduh dan unggah formulir permohonan
+                    Rumah Difabel dibawah ini.</p>
+                <button class="btn btn-secondary">Unduh Formulir</button>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Unggah Formulir</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="mb-3">
+                    <p>Jenis Informasi</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            PPID
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Umum
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="permohonan d-flex align-items-center justify-content-center my-5">
+        <div class="m-3 d-flex justify-content-center align-items-center">
+            <img src="assets/images/document.png" alt="">
+            <P>94 <small>Permohonan</small></P>
+        </div>
+    </div>
+    <section class="">
+        <h5 class="text-center color-primary mb-5">PPID Kementerian</h5>
+        <div class="d-flex justify-content-center">
+            <div class="m-3">
+                <img src="assets/images/div.png" alt="">
+                <p>Visit Indonesia Tourism Office</p>
+            </div>
+            <div class="m-3">
+                <img src="assets/images/div.png" alt="">
+                <p>Visit Indonesia Tourism Office</p>
+            </div>
+            <div class="m-3">
+                <img src="assets/images/div.png" alt="">
+                <p>Visit Indonesia Tourism Office</p>
+            </div>
+            <div class="m-3">
+                <img src="assets/images/div.png" alt="">
+                <p>Visit Indonesia Tourism Office</p>
+            </div>
+            <div class="m-3">
+                <img src="assets/images/div.png" alt="">
+                <p>Visit Indonesia Tourism Office</p>
+            </div>
+        </div>
+    </section>
+    <section class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center m-3">
+            <div class="card">
+                <img src="assets/images/thumb_5841_270_130_0_0_auto.webp.png" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <h5>Pelatihan Pariwisata dan Ekonomi Kreatif</h5>
+                    <p class="card-text">SDM Parekraf yang profesional dan berdaya saing global merupakan salah satu
+                        syarat fundamental dalam mewujudkan sektor pariwisata dan ekonomi kreatif yang berkualitas.</p>
+                    <button class="button-pelatihan px-5 my-4">Selengkapnya</button>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center m-3">
+            <div class="card">
+                <img src="assets/images/thumb_5841_270_130_0_0_auto.webp.png" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <h5>Pelatihan Pariwisata dan Ekonomi Kreatif</h5>
+                    <p class="card-text">SDM Parekraf yang profesional dan berdaya saing global merupakan salah satu
+                        syarat fundamental dalam mewujudkan sektor pariwisata dan ekonomi kreatif yang berkualitas.</p>
+                    <button class="button-pelatihan px-5 my-4">Selengkapnya</button>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center m-3">
+            <div class="card">
+                <img src="assets/images/thumb_5841_270_130_0_0_auto.webp.png" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <h5>Pelatihan Pariwisata dan Ekonomi Kreatif</h5>
+                    <p class="card-text">SDM Parekraf yang profesional dan berdaya saing global merupakan salah satu
+                        syarat fundamental dalam mewujudkan sektor pariwisata dan ekonomi kreatif yang berkualitas.</p>
+                    <button class="button-pelatihan px-5 my-4">Selengkapnya</button>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center m-3">
+            <div class="card">
+                <img src="assets/images/thumb_5841_270_130_0_0_auto.webp.png" class="card-img-top" alt="...">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <h5>Pelatihan Pariwisata dan Ekonomi Kreatif</h5>
+                    <p class="card-text">SDM Parekraf yang profesional dan berdaya saing global merupakan salah satu
+                        syarat fundamental dalam mewujudkan sektor pariwisata dan ekonomi kreatif yang berkualitas.</p>
+                    <button class="button-pelatihan px-5 my-4">Selengkapnya</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="d-flex justify-content-between align-items-center w-100 p-5">
+        <img src="assets/images/Aksesibilitas.png" alt="">
+        <img src="assets/images/tiwi.png" alt="">
+    </div>
+    <footer class="d-flex flex-column align-items-center">
+        <div class="d-flex justify-content-around w-100 footer-top pt-4 pb-4">
+            <div>
+                <img class="mb-2" src="assets/images/kemenparekraf-logo.png (1).png" alt="">
+                <p class="text-footer">Jl. Medan Merdeka Barat No. 17, RT/RW 02/03, <br> Gambir, Daerah Khusus Ibukota
+                    Jakarta 10110, <br> Indonesia.</p>
+                <p class="text-footer">Whatsapp Contact Center : 0811-895-6767</p>
+                <p class="text-footer">Email : info@kemenparekraf.go.id</p>
+            </div>
+            <div>
+                <h5>Menu</h5>
+                <p>Tentang Kemenparekraf</p>
+                <p>Hubungi Kami</p>
+                <p>FAQ</p>
+                <p>Fitur</p>
+                <p>Berita</p>
+                <p>Pengumuman</p>
+                <p>Link Direktori</p>
+            </div>
+            <div>
+                <h5>Layanan SPBE</h5>
+                <p>JDIH</p>
+                <P>LPSE</P>
+                <P>Simpati</P>
+                <p>PPID</p>
+                <p>Lapor</p>
+                <p>E-Performance</p>
+                <p>E-Mail</p>
+                <p>SBMPTNP</p>
+                <p>SIMPEG</p>
+            </div>
+            <div>
+                <h5>Website Kemenparekraf lainnya</h5>
+                <p>Badan Otorita Borobudur</p>
+                <p>Badan Pelaksana Otorita Danau Toba</p>
+                <p>Badan Pelaksana Otorita Labuan Bajo Flores</p>
+                <p>Poltekpar Medan</p>
+                <p>Poltekpar Palembang</p>
+                <p>Poltekpar NHI Bandung</p>
+                <p>Poltekpar Makasar</p>
+                <p>Poltekpar Lombok</p>
+                <p>Poltekpar Bali</p>
+            </div>
+        </div>
+        <div class="footer-bottom w-100 d-flex align-items-center justify-content-center">&copy; 2023 Kementerian
+            Pariwisata dan Ekonomi Kreatif / Badan Pariwisata dan Ekonomi Kreatif</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var swiper = new Swiper(".swiper", {
+                slidesPerView: '1',
+                spaceBetween: 1,
+                slidesPerGroup: 1,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        })
+    </script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+
+</body>
+
+</html>
