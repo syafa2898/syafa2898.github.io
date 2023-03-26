@@ -1,0 +1,20 @@
+Project: Build a blog post editor
+
+Instructions: You are to create a simple blog post editor using Vue.js. The blog post editor should have the following features:
+
+1.    A form that allows users to create a new blog post by entering a title, body, and author name.
+2.    A list of all existing blog posts, including their title, body, and author name.
+3.    The ability to delete existing blog posts.
+4.    The ability to edit existing blog posts by clicking on them and updating their title, body, or author name.
+5.    All data should be persisted using Vuex and a mock API.
+
+Requirements:
+
+- Use Vue.js for the frontend.
+- Use Vuex for state management.
+- Use a mock API to persist data (you don't need to build a backend).
+- Write clean, readable, and maintainable code.
+- Use best practices for organizing your code, including using components, mixins, and filters where appropriate.
+- Use CSS to style the user interface.
+
+Deadline:  make sure to finish the assessment before the expiry date (Sunday, 26 February 2023)

@@ -1,0 +1,195 @@
+header {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+a:visited {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+a:active {
+    text-decoration: none;
+}
+
+.header-top {
+    background: #1E293B;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-top-left {
+    display: flex;
+}
+
+.title-box {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.title-desc {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.header-bottom {
+    background: #E2E8F0;
+}
+
+.menu {
+    margin: 4px 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #132B50;
+    align-self: center;
+}
+
+.header-bottom a {
+    align-self: center;
+}
+
+.login-button {
+    position: absolute;
+    width: 81.61px;
+    height: 34px;
+    background: #FFFFFF;
+    border: 1px solid #102B4F;
+    border-radius: 6px;
+}
+
+.color-primary {
+    color: #132B50;
+}
+
+.swiper {
+    height: 800px;
+    text-align: center;
+    background: #102B4F;
+    color: #FFFFFF;
+}
+
+.box-pengumuman {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    margin: 0 8px;
+}
+
+.button-pengumuman {
+    padding: 11.3999px 14.8px 11.6001px 14px;
+    border: 1px solid #CBD5E1;
+    border-radius: 9999px;
+}
+
+.box-umum {
+    padding: 0px 0.164062px;
+
+    width: 427px;
+    height: 200px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+footer {
+    color: #FFFFFF;
+}
+
+.footer-top {
+    background: #1F365D;
+    border-top: 4px solid #EAC170;
+}
+
+.footer-top h5 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #EAC170;
+}
+
+.text-footer {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+}
+
+.footer-bottom {
+    height: 53px;
+    background: #132B50;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #EAC170;
+}
+
+.permohonan {
+    height: 224px;
+    background: #102B4F;
+}
+
+.permohonan p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 101px;
+    color: #FFFFFF;
+}
+
+.permohonan p small {
+    font-size: 24px;
+    line-height: 33px;
+    vertical-align: middle;
+}
+
+.button-pelatihan {
+    background: #132B50;
+    border-radius: 9999px;
+    color: #FFFFFF;
+}

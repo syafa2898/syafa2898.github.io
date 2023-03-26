@@ -1,0 +1,15 @@
+.card-login {
+    background: linear-gradient(0deg, #EF7E31 0%, rgba(31, 12, 61, 0.87) 17%);
+    border: 2px solid #EEEEEE;
+    border-radius: 13px;
+    color: white;
+}
+
+/* 
+.card {
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+} */

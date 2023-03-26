@@ -1,0 +1,24 @@
+table,
+label,
+h6,
+p {
+    font-size: 14px;
+}
+
+.title-topBar {
+    font-size: 14px;
+}
+
+/* 
+.btn {
+    border-radius: 7px;
+    padding: 8px 12px;
+} */
+
+.rounded-5 {
+    border-radius: 14px;
+}
+
+.font-weight-semibold {
+    font-weight: 600;
+}
