@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Primary Meta Tags -->
-    <title>Pengguna</title>
+    <title>Tambah Transaksi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title" content="Volt - Free Bootstrap 5 Dashboard">
     <meta name="author" content="Themesberg">
@@ -113,8 +113,8 @@
                         <span class="mt-1 ms-1 sidebar-text">Volt Overview</span>
                     </a>
                 </li>
-                <li class="nav-item  active ">
-                    <a href="pengguna.html" class="nav-link">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
                         <span class="sidebar-icon">
                             <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -154,8 +154,8 @@
                         <span class="sidebar-text">Inventori</span>
                     </a>
                 </li>
-                <li class="nav-item ">
-                    <a href="kegiatan.html" class="nav-link">
+                <li class="nav-item active">
+                    <a href="transaksi.html" class="nav-link">
                         <span class="sidebar-icon">
                             <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -164,7 +164,7 @@
                                     clip-rule="evenodd"></path>
                             </svg>
                         </span>
-                        <span class="sidebar-text">Kegiatan</span>
+                        <span class="sidebar-text">Transaksi</span>
                     </a>
                 </li>
             </ul>
@@ -172,7 +172,6 @@
     </nav>
 
     <main class="content">
-
         <nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark ps-0 pe-2 pb-0 mb-5">
             <div class="container-fluid px-0">
                 <div class="d-flex justify-content-between w-100" id="navbarSupportedContent">
@@ -217,7 +216,7 @@
                                             <div class="col-auto">
                                                 <!-- Avatar -->
                                                 <img alt="Image placeholder"
-                                                    src="../assets/img/team/profile-picture-1.jpg"
+                                                    src="../../assets/img/team/profile-picture-1.jpg"
                                                     class="avatar-md rounded">
                                             </div>
                                             <div class="col ps-0 ms-2">
@@ -240,7 +239,7 @@
                                             <div class="col-auto">
                                                 <!-- Avatar -->
                                                 <img alt="Image placeholder"
-                                                    src="../assets/img/team/profile-picture-2.jpg"
+                                                    src="../../assets/img/team/profile-picture-2.jpg"
                                                     class="avatar-md rounded">
                                             </div>
                                             <div class="col ps-0 ms-2">
@@ -262,7 +261,7 @@
                                             <div class="col-auto">
                                                 <!-- Avatar -->
                                                 <img alt="Image placeholder"
-                                                    src="../assets/img/team/profile-picture-3.jpg"
+                                                    src="../../assets/img/team/profile-picture-3.jpg"
                                                     class="avatar-md rounded">
                                             </div>
                                             <div class="col ps-0 m-2">
@@ -284,7 +283,7 @@
                                             <div class="col-auto">
                                                 <!-- Avatar -->
                                                 <img alt="Image placeholder"
-                                                    src="../assets/img/team/profile-picture-4.jpg"
+                                                    src="../../assets/img/team/profile-picture-4.jpg"
                                                     class="avatar-md rounded">
                                             </div>
                                             <div class="col ps-0 ms-2">
@@ -306,7 +305,7 @@
                                             <div class="col-auto">
                                                 <!-- Avatar -->
                                                 <img alt="Image placeholder"
-                                                    src="../assets/img/team/profile-picture-5.jpg"
+                                                    src="../../assets/img/team/profile-picture-5.jpg"
                                                     class="avatar-md rounded">
                                             </div>
                                             <div class="col ps-0 ms-2">
@@ -342,7 +341,7 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <div class="media d-flex align-items-center">
                                     <img class="avatar rounded-circle" alt="Image placeholder"
-                                        src="../assets/img/team/profile-picture-3.jpg">
+                                        src="../../assets/img/team/profile-picture-3.jpg">
                                     <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
                                         <span class="mb-0 font-small fw-bold text-gray-900">Bonnie Green</span>
                                     </div>
@@ -402,95 +401,56 @@
             </div>
         </nav>
 
-        <div class="row">
-            <div class="col-12 col-xl-8">
-                <div class="card card-body border-0 shadow mb-4">
-                    <h2 class="h5 mb-4">General information</h2>
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <div>
-                                    <label for="first_name">First Name</label>
-                                    <input class="form-control" id="first_name" type="text"
-                                        placeholder="Enter your first name" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div>
-                                    <label for="last_name">Last Name</label>
-                                    <input class="form-control" id="last_name" type="text"
-                                        placeholder="Also your last name" required>
-                                </div>
-                            </div>
+        <div class="d-flex justify-content-between mb-3">
+            <h5>Tambah Transaksi</h5>
+            <a href="transaksi.html" class="btn btn-primary">Back</a>
+        </div>
+
+        <div class="card border-0 shadow mb-4 p-3">
+            <div class="card-body">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <label for="barang">Nama Barang<span class="text-danger">*</span></label>
+                        <select class="form-select" aria-label="Default select example" id="barang">
+                            <option selected disabled>Pilih Barang</option>
+                            <option value="1">Pulpen</option>
+                            <option value="2">Spidol</option>
+                            <option value="2">Sapu</option>
+                            <option value="2">Laptop</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <div class="mb-4">
+                            <label for="Kuantitas">Kuantitas<span class="text-danger">*</span></label>
+                            <input value="" type="number" class="form-control" id="Kuantitas">
                         </div>
-                        <div class="row align-items-center">
-                            <div class="col-md-6 mb-3">
-                                <label for="birthday">Birthday</label>
-                                <div class="input-group">
-                                    <span class="input-group-text">
-                                        <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
-                                                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                                                clip-rule="evenodd"></path>
-                                        </svg>
-                                    </span>
-                                    <input data-datepicker="" class="form-control" id="birthday" type="text"
-                                        placeholder="dd/mm/yyyy" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="gender">Gender</label>
-                                <select class="form-select mb-0" id="gender" aria-label="Gender select example">
-                                    <option selected>Gender</option>
-                                    <option value="1">Female</option>
-                                    <option value="2">Male</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input class="form-control" id="email" type="email" placeholder="name@company.com"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="form-group">
-                                    <label for="phone">Phone</label>
-                                    <input class="form-control" id="phone" type="number" placeholder="+12-345 678 910"
-                                        required>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-xl-4">
-                <div class="row">
-                    <div class="col-12 mb-4">
-                        <div class="card shadow border-0 text-center p-0">
-                            <div class="profile-cover rounded-top" data-background="../assets/img/profile-cover.jpg">
-                            </div>
-                            <div class="card-body pb-5">
-                                <img src="../assets/img/team/profile-picture-1.jpg"
-                                    class="avatar-xl rounded-circle mx-auto mt-n7 mb-4" alt="Neil Portrait">
-                                <h4 class="h3">Neil Sims</h4>
-                                <h5 class="fw-normal">Senior Software Engineer</h5>
-                                <p class="text-gray mb-4">New York, USA</p>
-                                <a class="btn btn-sm btn-gray-800 d-inline-flex align-items-center me-2" href="#">
-                                    <svg class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z">
-                                        </path>
-                                    </svg>
-                                    Connect
-                                </a>
-                                <a class="btn btn-sm btn-secondary" href="#">Send Message</a>
-                            </div>
+                <div class="row row-cols-1 row-cols-md-1 g-4 mb-3">
+                    <div class="col">
+                        <div class="">
+                            <label for="status">Status Barang<span class="text-danger">*</span></label>
                         </div>
+                        <input type="radio" class="btn-check" name="options-outlined" id="success-outlined"
+                            autocomplete="off" checked>
+                        <label class="btn btn-outline-success me-3" for="success-outlined">Barang Masuk</label>
+                        <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined"
+                            autocomplete="off">
+                        <label class="btn btn-outline-danger me-3" for="danger-outlined">Barang Keluar</label>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-1 g-4">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="keterangan" class="form-label">Keterangan</label>
+                            <textarea class="form-control" id="keterangan" rows="2"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-1 g-4 mt-3">
+                    <div class="col">
+                        <!-- <button type="submit" class="btn btn-primary w-100">Save</button> -->
+                        <a href="transaksi.html" class="btn btn-primary w-100">Save</a>
                     </div>
                 </div>
             </div>

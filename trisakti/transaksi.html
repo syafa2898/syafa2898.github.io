@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Primary Meta Tags -->
-    <title>Kategori</title>
+    <title>Transaksi Barang</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title" content="Volt - Free Bootstrap 5 Dashboard">
     <meta name="author" content="Themesberg">
@@ -125,7 +125,7 @@
                         <span class="sidebar-text">Pengguna</span>
                     </a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a href="kategori.html" class="nav-link d-flex justify-content-between">
                         <span>
                             <span class="sidebar-icon">
@@ -140,7 +140,7 @@
                         </span>
                     </a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item">
                     <a href="inventori.html" class="nav-link">
                         <span class="sidebar-icon">
                             <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
@@ -154,7 +154,7 @@
                         <span class="sidebar-text">Inventori</span>
                     </a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item active">
                     <a href="transaksi.html" class="nav-link">
                         <span class="sidebar-icon">
                             <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
@@ -216,7 +216,7 @@
                                             <div class="col-auto">
                                                 <!-- Avatar -->
                                                 <img alt="Image placeholder"
-                                                    src="../../assets/img/team/profile-picture-1.jpg"
+                                                    src="../assets/img/team/profile-picture-1.jpg"
                                                     class="avatar-md rounded">
                                             </div>
                                             <div class="col ps-0 ms-2">
@@ -239,7 +239,7 @@
                                             <div class="col-auto">
                                                 <!-- Avatar -->
                                                 <img alt="Image placeholder"
-                                                    src="../../assets/img/team/profile-picture-2.jpg"
+                                                    src="../assets/img/team/profile-picture-2.jpg"
                                                     class="avatar-md rounded">
                                             </div>
                                             <div class="col ps-0 ms-2">
@@ -261,7 +261,7 @@
                                             <div class="col-auto">
                                                 <!-- Avatar -->
                                                 <img alt="Image placeholder"
-                                                    src="../../assets/img/team/profile-picture-3.jpg"
+                                                    src="../assets/img/team/profile-picture-3.jpg"
                                                     class="avatar-md rounded">
                                             </div>
                                             <div class="col ps-0 m-2">
@@ -283,7 +283,7 @@
                                             <div class="col-auto">
                                                 <!-- Avatar -->
                                                 <img alt="Image placeholder"
-                                                    src="../../assets/img/team/profile-picture-4.jpg"
+                                                    src="../assets/img/team/profile-picture-4.jpg"
                                                     class="avatar-md rounded">
                                             </div>
                                             <div class="col ps-0 ms-2">
@@ -305,7 +305,7 @@
                                             <div class="col-auto">
                                                 <!-- Avatar -->
                                                 <img alt="Image placeholder"
-                                                    src="../../assets/img/team/profile-picture-5.jpg"
+                                                    src="../assets/img/team/profile-picture-5.jpg"
                                                     class="avatar-md rounded">
                                             </div>
                                             <div class="col ps-0 ms-2">
@@ -341,7 +341,7 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <div class="media d-flex align-items-center">
                                     <img class="avatar rounded-circle" alt="Image placeholder"
-                                        src="../../assets/img/team/profile-picture-3.jpg">
+                                        src="../assets/img/team/profile-picture-3.jpg">
                                     <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
                                         <span class="mb-0 font-small fw-bold text-gray-900">Bonnie Green</span>
                                     </div>
@@ -402,8 +402,8 @@
         </nav>
 
         <div class="d-flex justify-content-between mb-3">
-            <h5>Tabel Kategori</h5>
-            <a href="addKategori.html" class="btn btn-primary">Tambah Kategori</a>
+            <h5>Daftar Transaksi Barang</h5>
+            <a href="addTransaksi.html" class="btn btn-primary">Tambah Transaksi</a>
         </div>
         <div class="card border-0 shadow mb-4">
             <div class="card-body">
@@ -412,17 +412,31 @@
                         <thead class="thead-light">
                             <tr>
                                 <th class="border-0 rounded-start">#</th>
-                                <th class="border-0">Kategori</th>
+                                <th class="border-0">Nama Barang</th>
+                                <th class="border-0">Kuantitas</th>
+                                <th class="border-0">Status</th>
+                                <th class="border-0">Total Stok</th>
+                                <th class="border-0">Keterangan</th>
                                 <th class="border-0 rounded-end">Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><a href="#" class="text-primary fw-bold">1</a> </td>
-                                <td class="">
-                                    Peralatan Kantor
-                                </td>
+                                <td class="">Spidol</td>
+                                <td class="">200 pcs</td>
+                                <td class=""><span class="badge bg-success py-2 px-3 rounded-1">Barang Masuk</span></td>
+                                <td class="">400 pcs</td>
+                                <td class="">Pembelian barang</td>
                                 <td>
+                                    <a href="#!" class="btn btn-primary py-1 me-2 px-2 btn-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                            <path
+                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                        </svg>
+                                    </a>
                                     <a href="#!" class="btn btn-warning py-1 me-2 px-2 btn-sm">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -443,10 +457,20 @@
                             </tr>
                             <tr>
                                 <td><a href="#" class="text-primary fw-bold">2</a> </td>
-                                <td class="">
-                                    Peralatan Elektronik
-                                </td>
+                                <td class="">Kertas</td>
+                                <td class="">10 rim</td>
+                                <td class=""><span class="badge bg-danger py-2 px-3 rounded-1">Barang Keluar</span></td>
+                                <td class="">50 rim</td>
+                                <td class="">Untuk mencetak soal ujian</td>
                                 <td>
+                                    <a href="#!" class="btn btn-primary py-1 me-2 px-2 btn-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                            <path
+                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                        </svg>
+                                    </a>
                                     <a href="#!" class="btn btn-warning py-1 me-2 px-2 btn-sm">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -467,10 +491,20 @@
                             </tr>
                             <tr>
                                 <td><a href="#" class="text-primary fw-bold">3</a> </td>
-                                <td class="">
-                                    Peralatan Kebersihan
-                                </td>
+                                <td class="">Sapu</td>
+                                <td class="">3 pcs</td>
+                                <td class=""><span class="badge bg-danger py-2 px-3 rounded-1">Barang Keluar</span></td>
+                                <td class="">44 pcs</td>
+                                <td class="">Sapu Rusak</td>
                                 <td>
+                                    <a href="#!" class="btn btn-primary py-1 me-2 px-2 btn-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                            <path
+                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                        </svg>
+                                    </a>
                                     <a href="#!" class="btn btn-warning py-1 me-2 px-2 btn-sm">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -491,10 +525,20 @@
                             </tr>
                             <tr>
                                 <td><a href="#" class="text-primary fw-bold">4</a> </td>
-                                <td class="">
-                                    Peralatan Keamanan
-                                </td>
+                                <td class="">Laptop</td>
+                                <td class="">20 pcs</td>
+                                <td class=""><span class="badge bg-success py-2 px-3 rounded-1">Barang Masuk</span></td>
+                                <td class="">60 pcs</td>
+                                <td class="">Pembelian laptop untuk dosen</td>
                                 <td>
+                                    <a href="#!" class="btn btn-primary py-1 me-2 px-2 btn-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                            <path
+                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                        </svg>
+                                    </a>
                                     <a href="#!" class="btn btn-warning py-1 me-2 px-2 btn-sm">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
