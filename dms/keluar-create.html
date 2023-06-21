@@ -5,7 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DMS</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <style>
+        .container {
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 30px;
+        }
+
+        .select2.select2-container .select2-selection {
+            border: 1px solid #ccc;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            height: 34px;
+            margin-bottom: 15px;
+            outline: none !important;
+            transition: all .15s ease-in-out;
+        }
+
+        .select2.select2-container .select2-selection .select2-selection__rendered {
+            color: #333;
+            line-height: 32px;
+            padding-right: 33px;
+        }
+
+        .select2.select2-container .select2-selection .select2-selection__arrow {
+            background: #f8f8f8;
+            border-left: 1px solid #ccc;
+            -webkit-border-radius: 0 3px 3px 0;
+            -moz-border-radius: 0 3px 3px 0;
+            border-radius: 0 3px 3px 0;
+            height: 32px;
+            width: 33px;
+        }
+
+        .select2.select2-container.select2-container--open .select2-selection.select2-selection--single {
+            background: #f8f8f8;
+        }
+
+        .select2.select2-container.select2-container--open .select2-selection.select2-selection--single .select2-selection__arrow {
+            -webkit-border-radius: 0 3px 0 0;
+            -moz-border-radius: 0 3px 0 0;
+            border-radius: 0 3px 0 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -39,7 +84,7 @@
                             <span class="hide-menu">DOKUMEN</span>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link active" href="masuk-index.html" aria-expanded="false">
+                            <a class="sidebar-link" href="masuk-index.html" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-article"></i>
                                 </span>
@@ -47,11 +92,19 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="keluar-index.html" aria-expanded="false">
+                            <a class="sidebar-link active" href="keluar-index.html" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-file-description"></i>
                                 </span>
                                 <span class="hide-menu">Dokumen Keluar</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="arsip-index.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-file"></i>
+                                </span>
+                                <span class="hide-menu">Data Arsip</span>
                             </a>
                         </li>
                     </ul>
@@ -115,60 +168,209 @@
             <div class="container-fluid">
                 <div class="d-flex justify-content-between my-3">
                     <h5>Tambah Dokumen Keluar</h5>
-                    <a href="masuk-index.html" class="btn btn-primary">Kembali</a>
+                    <a href="keluar-index.html" class="btn btn-primary">Kembali</a>
                 </div>
-                <div class="card w-100 mt-3">
+
+                <div class="card w-100 mt-4">
                     <div class="card-body">
+                        <h5 class="mb-3">Jenis Dokumen</h5>
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active btn" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Dokumen Baru</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Dokumen lama</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content my-4" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab" tabindex="0">
+                                <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+                                    <div class="col">
+                                        <label for="name" class="form-label">Nama dokumen</label>
+                                        <input type="text" class="form-control" id="name">
+                                    </div>
+                                    <div class="col">
+                                        <label for="exampleFormControlInput1" class="form-label">No
+                                            Registrasi</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" disabled>
+                                    </div>
+                                    <div class="col">
+                                        <label for="date" class="form-label">Tanggal Surat</label>
+                                        <input type="date" class="form-control" id="date">
+                                    </div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3 g-4">
+                                    <div class="col">
+                                        <label for="jenis" class="form-label">Jenis Dokumen</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Pilih jenis dokumen</option>
+                                            <option value="1">Belanja Modal`</option>
+                                            <option value="2">Belanja Barang</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="no" class="form-label">No Dokumen</label>
+                                        <input type="text" class="form-control" id="no">
+                                    </div>
+                                    <div class="col">
+                                        <label for="jenis" class="form-label">Sifat</label>
+                                        <div class="">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Biasa</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">Segera</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab" tabindex="0">
+                                <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
+                                    <div class="col">
+                                        <label for="jenis" class="form-label">Jenis Dokumen</label>
+                                        <div class="">
+                                            <select class="form-select select2" aria-label="Default select example"
+                                                style="width: 100%;">
+                                                <option>Pilih jenis dokumen</option>
+                                                <option selected value="1">Dokumen AAA</option>
+                                                <option value="2">Dokumen BBB</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label for="exampleFormControlInput1" class="form-label">No
+                                            Registrasi</label>
+                                        <input disabled type="text" class="form-control" id="exampleFormControlInput1"
+                                            value="001">
+                                    </div>
+                                    <div class="col">
+                                        <label for="dateSurat" class="form-label">Tanggal Surat</label>
+                                        <input disabled type="date" class="form-control" id="dateSurat">
+                                    </div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3 g-4">
+                                    <div class="col">
+                                        <label for="jenis" class="form-label">Jenis Dokumen</label>
+                                        <select disabled class="form-select" aria-label="Default select example">
+                                            <option>Pilih jenis dokumen</option>
+                                            <option value="1" selected>Belanja Modal</option>
+                                            <option value="2">Belanja Barang</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="no" class="form-label">No Dokumen</label>
+                                        <input disabled type="text" class="form-control" id="no"
+                                            value="ST/001/XII/2022">
+                                    </div>
+                                    <div class="col">
+                                        <label for="jenis" class="form-label">Sifat</label>
+                                        <div class="">
+                                            <div class="form-check form-check-inline">
+                                                <input checked class="form-check-input" type="radio"
+                                                    name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Biasa</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">Segera</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card w-100 mt-4">
+                    <div class="card-body">
+                        <h5 class="mb-3">File</h5>
                         <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
                             <div class="col">
                                 <label for="formFile" class="form-label">Upload Dokumen</label>
                                 <input class="form-control" type="file" id="formFile">
                             </div>
-                            <div class="col">
-                                <label for="exampleFormControlInput1" class="form-label">No Registrasi</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" disabled>
-                            </div>
-                            <div class="col">
-                                <label for="date" class="form-label">Tanggal Surat</label>
-                                <input type="date" class="form-control" id="date">
-                            </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="card w-100 mt-4">
+                    <div class="card-body">
+                        <!-- <h5 class="mb-3">Ceklist Kelengkapan</h5> -->
                         <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
                             <div class="col">
-                                <label for="jenis" class="form-label">Jenis Dokumen</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Pilih jenis dokumen</option>
-                                    <option value="1">Belanja Modal`</option>
-                                    <option value="2">Belanja Barang</option>
-                                </select>
+                                <label for="formFile" class="form-label">Checklist Kelengkapan</label>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="1">
+                                    <label class="form-check-label" for="1">
+                                        Checklist 1
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="2">
+                                    <label class="form-check-label" for="2">
+                                        Checklist 2
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="3">
+                                    <label class="form-check-label" for="3">
+                                        Checklist 3
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="4">
+                                    <label class="form-check-label" for="4">
+                                        Checklist 4
+                                    </label>
+                                </div>
                             </div>
                             <div class="col">
-                                <label for="no" class="form-label">No Dokumen</label>
-                                <input type="text" class="form-control" id="no">
-                            </div>
-                            <div class="col">
-                                <label for="jenis" class="form-label">Sifat</label>
-                                <div class="">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio1" value="option1">
-                                        <label class="form-check-label" for="inlineRadio1">Biasa</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio2" value="option2">
-                                        <label class="form-check-label" for="inlineRadio2">Segera</label>
-                                    </div>
+                                <label for="formFile" class="form-label">Target</label>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="11">
+                                    <label class="form-check-label" for="1">
+                                        Target 1
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="12">
+                                    <label class="form-check-label" for="2">
+                                        Target 2
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="13">
+                                    <label class="form-check-label" for="3">
+                                        Target 3
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="14">
+                                    <label class="form-check-label" for="4">
+                                        Target 4
+                                    </label>
                                 </div>
                             </div>
                         </div>
-                        <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
-                            <div class="col">
-                                <label for="no" class="form-label">Instansi Pengirim</label>
-                                <input type="text" class="form-control" id="no">
-                            </div>
-                        </div>
-                        <a href="keluar-index.html" class="btn btn-primary w-100 mt-5">Submit</a>
+                    </div>
+                </div>
+
+                <div class="card w-100 mt-4">
+                    <div class="card-body">
+                        <a href="keluar-index.html" class="btn btn-primary w-100">Submit</a>
                     </div>
                 </div>
             </div>
@@ -181,6 +383,31 @@
     <script src="assets/libs/apexcharts/dist/apexcharts.min.js"></script>
     <script src="assets/libs/simplebar/dist/simplebar.js"></script>
     <script src="assets/js/dashboard.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.select2').select2();
+        });
+
+        $(document).ready(function () {
+            var today = new Date();
+            var formattedDate = formatDate(today);
+
+            $('#dateSurat').val(formattedDate);
+        });
+
+        function formatDate(date) {
+            var day = date.getDate();
+            var month = date.getMonth() + 1; // Januari dimulai dari 0
+            var year = date.getFullYear();
+
+            // Format tanggal ke "YYYY-MM-DD"
+            var formattedDate = year + '-' + month.toString().padStart(2, '0') + '-' + day.toString().padStart(2, '0');
+
+            return formattedDate;
+        }
+    </script>
 </body>
 
 </html>
