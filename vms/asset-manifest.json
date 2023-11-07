@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/vehicle_management_admin/static/css/main.acced474.css",
+    "main.js": "/vehicle_management_admin/static/js/main.a150fb8a.js",
+    "static/media/gps_background.jpeg": "/vehicle_management_admin/static/media/gps_background.0c156b016703aff1b00b.jpeg",
+    "static/media/home-decor-3.jpg": "/vehicle_management_admin/static/media/home-decor-3.74d13fcbd3c631fc7908.jpg",
+    "static/media/home-decor-2.jpg": "/vehicle_management_admin/static/media/home-decor-2.b4e5397c9846645ba275.jpg",
+    "static/media/home-decor-1.jpg": "/vehicle_management_admin/static/media/home-decor-1.05e218fd495ccc65c99d.jpg",
+    "static/media/bg-profile.jpeg": "/vehicle_management_admin/static/media/bg-profile.af1219a742e09fc7b612.jpeg",
+    "static/media/logo-tf.png": "/vehicle_management_admin/static/media/logo-tf.d2f2046720719e9790a6.png",
+    "static/media/home-decor-4.jpeg": "/vehicle_management_admin/static/media/home-decor-4.5b448fd339a14695f6aa.jpeg",
+    "static/media/driver.png": "/vehicle_management_admin/static/media/driver.8af20472b3986d62e308.png",
+    "static/media/races.png": "/vehicle_management_admin/static/media/races.eebefe25c362fa5f2b2e.png",
+    "static/media/car (2).png": "/vehicle_management_admin/static/media/car (2).92c086051c9a0e973097.png",
+    "static/media/fender-bender.png": "/vehicle_management_admin/static/media/fender-bender.4dcb200ca9849f7bff36.png",
+    "static/media/car (1).png": "/vehicle_management_admin/static/media/car (1).a74df4c4d31c2fd059d7.png",
+    "static/media/dms_logo.png": "/vehicle_management_admin/static/media/dms_logo.11a27d2eed5a9c67c0d2.png",
+    "static/media/team-1.jpg": "/vehicle_management_admin/static/media/team-1.0fd36e0ee93dcfacdef8.jpg",
+    "static/media/bruce-mars.jpg": "/vehicle_management_admin/static/media/bruce-mars.8a606c4a6dab54c9ceff.jpg",
+    "static/media/marie.jpg": "/vehicle_management_admin/static/media/marie.c28f32663b6432b46f78.jpg",
+    "static/media/team-2.jpg": "/vehicle_management_admin/static/media/team-2.13ae2ce3e12f4cfed420.jpg",
+    "static/media/technician.png": "/vehicle_management_admin/static/media/technician.2b1e290a28a59a71f527.png",
+    "static/media/team-3.jpg": "/vehicle_management_admin/static/media/team-3.0ef0be95e6850814c79e.jpg",
+    "static/media/ivana-square.jpg": "/vehicle_management_admin/static/media/ivana-square.f7bc23b269d1d2509c82.jpg",
+    "static/media/map.png": "/vehicle_management_admin/static/media/map.82056140ce3605dfbf34.png",
+    "static/media/kal-visuals-square.jpg": "/vehicle_management_admin/static/media/kal-visuals-square.3210e28a48ff572ae88b.jpg",
+    "static/media/car.png": "/vehicle_management_admin/static/media/car.640b408d9af6f271df84.png",
+    "static/media/car (3).png": "/vehicle_management_admin/static/media/car (3).22130337bd06b8dc6306.png",
+    "static/media/gps.png": "/vehicle_management_admin/static/media/gps.a73b7adc0633f35680b2.png",
+    "static/media/emergency-stop.png": "/vehicle_management_admin/static/media/emergency-stop.45a1cef0194190a81654.png",
+    "static/media/UploadImage.png": "/vehicle_management_admin/static/media/UploadImage.12432672c9ef81445e48.png",
+    "static/media/bus-stop.png": "/vehicle_management_admin/static/media/bus-stop.148e54b644d289605b01.png",
+    "static/media/team-4.jpg": "/vehicle_management_admin/static/media/team-4.85c82b6e60178804017f.jpg",
+    "index.html": "/vehicle_management_admin/index.html",
+    "main.acced474.css.map": "/vehicle_management_admin/static/css/main.acced474.css.map",
+    "main.a150fb8a.js.map": "/vehicle_management_admin/static/js/main.a150fb8a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.acced474.css",
+    "static/js/main.a150fb8a.js"
+  ]
+}
