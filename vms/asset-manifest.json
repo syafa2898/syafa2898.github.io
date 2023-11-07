@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vehicle_management_admin/static/css/main.acced474.css",
-    "main.js": "/vehicle_management_admin/static/js/main.a150fb8a.js",
+    "main.js": "/vehicle_management_admin/static/js/main.ea401826.js",
     "static/media/gps_background.jpeg": "/vehicle_management_admin/static/media/gps_background.0c156b016703aff1b00b.jpeg",
     "static/media/home-decor-3.jpg": "/vehicle_management_admin/static/media/home-decor-3.74d13fcbd3c631fc7908.jpg",
     "static/media/home-decor-2.jpg": "/vehicle_management_admin/static/media/home-decor-2.b4e5397c9846645ba275.jpg",
@@ -33,10 +33,10 @@
     "static/media/team-4.jpg": "/vehicle_management_admin/static/media/team-4.85c82b6e60178804017f.jpg",
     "index.html": "/vehicle_management_admin/index.html",
     "main.acced474.css.map": "/vehicle_management_admin/static/css/main.acced474.css.map",
-    "main.a150fb8a.js.map": "/vehicle_management_admin/static/js/main.a150fb8a.js.map"
+    "main.ea401826.js.map": "/vehicle_management_admin/static/js/main.ea401826.js.map"
   },
   "entrypoints": [
     "static/css/main.acced474.css",
-    "static/js/main.a150fb8a.js"
+    "static/js/main.ea401826.js"
   ]
 }
