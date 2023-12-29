@@ -2712,6 +2712,7 @@
  /* home two about */
  .home-two-about {
    padding-top: 120px;
+   padding-bottom: 120px;
    position: relative;
  }
 
@@ -3425,7 +3426,7 @@
    line-height: 62px;
    text-align: center;
    color: #FFFFFF;
-   margin-bottom: 70px;
+   /* margin-bottom: 70px; */
  }
 
  .video2-container {
@@ -3722,7 +3723,6 @@
    padding: 30px;
    background: #FFFFFF;
    border-radius: 5px;
-   width: 275px;
    margin-bottom: 30px;
    border-bottom: 3px solid #ffffff;
    transition: 0.3s;
