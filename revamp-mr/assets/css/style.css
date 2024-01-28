@@ -185,6 +185,10 @@
    background-position: center;
  }
 
+ .bg-dark-gray {
+   background-color: #21293B;
+ }
+
  /** main-menu **/
  .main-menu .navbar-collapse {
    padding: 0px;
@@ -4471,7 +4475,7 @@ about us
 causes single
 ===================*/
  .causes-single {
-   padding: 120px 0;
+   padding: 100px 0;
  }
 
  .causes-single .col-lg-3 {
@@ -4509,9 +4513,9 @@ causes single
    left: 30px;
  }
 
- .causes-single-content {
+ /* .causes-single-content {
    padding-left: 30px;
- }
+ } */
 
  .causes-single-content .common-title {
    margin-top: 30px;
